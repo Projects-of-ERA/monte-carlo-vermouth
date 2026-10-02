@@ -1,0 +1,96 @@
+.hero-content {
+  margin-left: 40px;
+  transform: translateY(25px);
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.12rem;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-title em {
+  font-weight: 400;
+}
+
+.hero-title-offset {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title-last {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-shop-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 194px;
+  padding: 7px 0px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.hero-shop-button:hover {
+  background-color: white;
+  color: var(--color-primary-blue);
+}
+
+.hero-shop-button::before,
+.hero-shop-button::after {
+  content: '';
+
+  position: absolute;
+  left: -2px;
+
+  width: calc(100% + 4px);
+  height: 1px;
+
+  background-color: white;
+
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* верхняя линия */
+.hero-shop-button::before {
+  top: -2px;
+}
+
+/* нижняя линия */
+.hero-shop-button::after {
+  bottom: -2px;
+}
+
+/* верхняя линия уходит вверх */
+.hero-shop-button:hover::before {
+  transform: translateY(-8px);
+}
+
+/* нижняя линия уходит вниз */
+.hero-shop-button:hover::after {
+  transform: translateY(8px);
+}

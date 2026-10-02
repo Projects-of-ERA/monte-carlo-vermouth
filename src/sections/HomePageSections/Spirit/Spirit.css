@@ -1,0 +1,119 @@
+.spirit {
+  padding-top: 60px;
+  color: var(--color-primary-blue);
+}
+
+.spirit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.spirit-content {
+  display: flex;
+  align-items: center;
+}
+
+.spirit-content-inner {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.spirit-title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.spirit-title span {
+  display: block;
+}
+
+.spirit-title em {
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.spirit-text {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.spirit-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 194px;
+  padding: 7px 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--color-primary-blue);
+  color: var(--color-primary-blue);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.spirit-button:hover {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.spirit-button::before,
+.spirit-button::after {
+  content: '';
+
+  position: absolute;
+  left: -2px;
+
+  width: calc(100% + 4px);
+  height: 1px;
+
+  background-color: var(--color-primary-blue);
+
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spirit-button::before {
+  top: -2px;
+}
+
+.spirit-button::after {
+  bottom: -2px;
+}
+
+.spirit-button:hover::before {
+  transform: translateY(-8px);
+}
+
+.spirit-button:hover::after {
+  transform: translateY(8px);
+}
+
+.spirit-image {
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.spirit-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}

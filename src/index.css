@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Bodoni Moda', serif;
+
+  --color-primary-blue: #1c355e;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
