@@ -1,0 +1,92 @@
+.mixology-quotes {
+  background-color: rgb(206, 223, 215);
+}
+
+.mixology-quotes-swiper {
+  position: relative;
+}
+
+.mixology-quote {
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.mixology-quote-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 35px 45px;
+}
+
+.mixology-quote-text {
+  margin: 0;
+  font-size: 42px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.mixology-quote-mark {
+  position: absolute;
+
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.mixology-quote-mark-top {
+  top: 0;
+  left: 0;
+}
+
+.mixology-quote-mark-bottom {
+  right: 0;
+  bottom: 0;
+}
+
+.mixology-quote-author {
+  margin-top: 18px;
+
+  text-align: center;
+}
+
+.mixology-quote-author p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mixology-quote-author span {
+  display: block;
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.mixology-quotes-swiper .swiper-button-prev,
+.mixology-quotes-swiper .swiper-button-next {
+  color: rgba(190, 190, 190, 0.55);
+  transition: color 0.3s ease;
+}
+
+.mixology-quotes-swiper .swiper-button-prev:hover,
+.mixology-quotes-swiper .swiper-button-next:hover {
+  color: var(--color-primary);
+}
+
+.mixology-quotes-swiper .swiper-button-prev {
+  left: calc(50% - 540px);
+}
+
+.mixology-quotes-swiper .swiper-button-next {
+  right: calc(50% - 540px);
+}

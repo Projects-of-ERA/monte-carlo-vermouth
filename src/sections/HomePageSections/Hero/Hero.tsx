@@ -2,8 +2,8 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-black text-white">
-      <div className="mx-auto flex min-h-screen max-w-[1450px] items-center px-8">
+    <section className="relative h-[min(100vh,1080px)] bg-black text-white">
+      <div className="mx-auto flex h-full max-w-[1450px] max-h-[1080px] items-center px-8">
         <div className="hero-content">
           <h1 className="hero-title font-serif">
             <span>

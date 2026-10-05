@@ -1,0 +1,113 @@
+.craftsmanship {
+  background-color: white;
+  color: var(--color-primary-blue);
+}
+
+.craftsmanship-intro {
+  padding: 60px 0 80px;
+  background: linear-gradient(to bottom, #dce8e3 0%, #e8f0ed 35%, #f5f8f7 70%, #ffffff 100%);
+}
+
+.craftsmanship-intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.craftsmanship-eyebrow {
+  margin: 0 0 32px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.craftsmanship-title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.craftsmanship-title span {
+  display: block;
+}
+
+.craftsmanship-title em {
+  font-size: 0.7em;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.craftsmanship-description {
+  max-width: 980px;
+  margin: 32px auto 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.craftsmanship-button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 210px;
+  padding: 7px 0;
+  margin-top: 38px;
+
+  border: 2px solid var(--color-primary-blue);
+
+  color: var(--color-primary-blue);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.craftsmanship-button:hover {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.craftsmanship-button::before,
+.craftsmanship-button::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: 1px;
+  background-color: var(--color-primary-blue);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.craftsmanship-button::before {
+  top: -2px;
+}
+
+.craftsmanship-button::after {
+  bottom: -2px;
+}
+
+.craftsmanship-button:hover::before {
+  transform: translateY(-8px);
+}
+
+.craftsmanship-button:hover::after {
+  transform: translateY(8px);
+}
