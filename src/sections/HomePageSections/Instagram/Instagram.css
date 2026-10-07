@@ -1,0 +1,192 @@
+.instagram-section {
+  padding-bottom: 60px;
+  padding-top: 20px;
+
+  background-color: white;
+  color: var(--color-primary-blue);
+}
+
+.instagram-profile {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto 32px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.instagram-logo-wrapper {
+  position: relative;
+
+  width: 72px;
+  height: 72px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.instagram-logo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.instagram-logo-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: black;
+  color: white;
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+}
+
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.instagram-profile:hover .instagram-logo {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+.instagram-profile:hover .instagram-logo-overlay {
+  opacity: 1;
+}
+
+.instagram-profile-copy {
+  margin-left: 20px;
+}
+
+.instagram-username {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.instagram-description {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.instagram-post {
+  display: block;
+
+  min-height: 0;
+  overflow: hidden;
+}
+
+.instagram-post {
+  display: block;
+
+  min-height: 0;
+  overflow: hidden;
+}
+
+.instagram-post-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  will-change: filter;
+
+  transition: filter 0.5s ease;
+}
+
+.instagram-post:hover .instagram-post-image {
+  filter: brightness(0.7);
+}
+
+.instagram-follow-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 30px;
+  width: fit-content;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid var(--color-primary-blue);
+  background-color: transparent;
+  color: var(--color-primary-blue);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.instagram-follow-button:hover {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.instagram-follow-button::before,
+.instagram-follow-button::after {
+  content: '';
+
+  position: absolute;
+  left: -2px;
+
+  width: calc(100% + 4px);
+  height: 1px;
+
+  background-color: var(--color-primary-blue);
+
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.instagram-follow-button::before {
+  top: -2px;
+}
+
+.instagram-follow-button::after {
+  bottom: -2px;
+}
+
+.instagram-follow-button:hover::before {
+  transform: translateY(-8px);
+}
+
+.instagram-follow-button:hover::after {
+  transform: translateY(8px);
+}
