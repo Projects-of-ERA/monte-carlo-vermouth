@@ -1,12 +1,28 @@
+import { useEffect, useState } from 'react';
+
 import CartIcon from './CartIcon';
 import './Header.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header className="py-8 absolute top-0 left-0 z-50 w-full text-white">
-      <div className="mx-auto flex max-w-8xl items-center px-8">
-        {/* LEFT NAVIGATION */}
-        <nav className="flex flex-1 items-center gap-14">
+    <header className="header">
+      <div className="header-container mx-auto max-w-8xl px-8">
+        {/* DESKTOP LEFT NAVIGATION */}
+        <nav className="header-desktop-nav header-desktop-nav-left">
           <a href="#" className="header-link">
             Our Varietals
           </a>
@@ -25,20 +41,13 @@ const Header = () => {
         </nav>
 
         {/* LOGO */}
-        <div className="flex shrink-0 justify-center">
-          <img
-            src="/images/header/main-logo.svg"
-            alt="Monte Carlo Vermouth"
-            className="w-[160px]"
-          />
-        </div>
+        <a href="#" className="header-logo">
+          <img src="/images/header/main-logo.svg" alt="Monte Carlo Vermouth" />
+        </a>
 
-        {/* RIGHT NAVIGATION */}
-        <nav className="flex flex-1 items-center justify-end gap-14">
-          <button
-            type="button"
-            aria-label="Open cart"
-            className="flex cursor-pointer items-center justify-center px-2 py-2">
+        {/* DESKTOP RIGHT NAVIGATION */}
+        <nav className="header-desktop-nav header-desktop-nav-right">
+          <button type="button" aria-label="Open cart" className="header-cart-button">
             <CartIcon />
           </button>
 
@@ -50,6 +59,52 @@ const Header = () => {
             News
           </a>
         </nav>
+
+        {/* BURGER */}
+        <button
+          type="button"
+          className={`header-burger ${isMenuOpen ? 'is-open' : ''}`}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
+          onClick={() => setIsMenuOpen((prev) => !prev)}>
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      <div className={`header-mobile-menu ${isMenuOpen ? 'is-open' : ''}`}>
+        <nav className="header-mobile-nav">
+          <a href="#" onClick={closeMenu}>
+            Our Varietals
+          </a>
+
+          <a href="#" onClick={closeMenu}>
+            The Vermouth
+          </a>
+
+          <a href="#" onClick={closeMenu}>
+            Our Story
+          </a>
+
+          <a href="#" onClick={closeMenu}>
+            Mixology
+          </a>
+
+          <a href="#" onClick={closeMenu}>
+            Buy Now
+          </a>
+
+          <a href="#" onClick={closeMenu}>
+            News
+          </a>
+        </nav>
+
+        <button type="button" className="header-mobile-cart" onClick={closeMenu}>
+          <CartIcon />
+          <span>Cart</span>
+        </button>
       </div>
     </header>
   );
