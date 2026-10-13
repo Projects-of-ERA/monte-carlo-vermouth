@@ -6,7 +6,7 @@ const Mixology = () => {
     <section className="mixology">
       {/* INTRO */}
       <div className="mixology-intro">
-        <div className="mx-auto max-w-8xl px-8">
+        <div className="mx-auto max-w-8xl px-4 lg:px-8">
           <div className="mixology-intro-grid">
             <h2 className="mixology-title font-serif">
               <span className="mixology-title-elegant">elegant</span>

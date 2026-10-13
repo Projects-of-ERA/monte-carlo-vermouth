@@ -4,7 +4,6 @@
 }
 
 /* INTRO */
-
 .mixology-intro {
   padding-bottom: 60px;
 }
@@ -42,7 +41,6 @@
 }
 
 /* FEATURE */
-
 .mixology-feature {
   position: relative;
   width: 100%;
@@ -60,13 +58,10 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 60px 32px;
-
   color: white;
 }
 
@@ -88,4 +83,141 @@
 .mixology-feature-title em {
   font-weight: 400;
   text-transform: lowercase;
+}
+
+@media (max-width: 1536px) {
+  .mixology-title {
+    font-size: 54px;
+  }
+
+  .mixology-description {
+    font-size: 16px;
+  }
+
+  .mixology-feature-title {
+    font-size: 54px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .mixology-intro {
+    padding-bottom: 40px;
+  }
+
+  .mixology-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .mixology-title {
+    font-size: 42px;
+  }
+
+  .mixology-description {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  .mixology-feature-content {
+    padding: 40px 24px;
+  }
+
+  .mixology-feature-title {
+    font-size: 42px;
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .mixology-intro {
+    padding-bottom: 30px;
+  }
+
+  .mixology-feature {
+    height: 520px;
+  }
+
+  .mixology-feature-image {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  .mixology-intro-grid {
+    gap: 24px;
+  }
+
+  .mixology-title {
+    font-size: 38px;
+  }
+
+  .mixology-description {
+    max-width: 660px;
+    font-size: 16px;
+  }
+
+  .mixology-feature-content {
+    padding: 32px 20px;
+  }
+
+  .mixology-feature-title {
+    font-size: 38px;
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .mixology-title {
+    font-size: 32px;
+  }
+
+  .mixology-description {
+    max-width: 480px;
+
+    font-size: 15px;
+  }
+
+  .mixology-feature-content {
+    padding: 28px 16px;
+  }
+
+  .mixology-feature-title {
+    font-size: 32px;
+  }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .mixology-intro {
+    padding-bottom: 20px;
+  }
+
+  .mixology-intro-grid {
+    gap: 20px;
+  }
+
+  .mixology-title {
+    font-size: 28px;
+  }
+
+  .mixology-description {
+    max-width: 320px;
+
+    font-size: 14px;
+  }
+
+  .mixology-feature-content {
+    padding: 20px 12px;
+  }
+
+  .mixology-feature-title {
+    font-size: 28px;
+  }
 }

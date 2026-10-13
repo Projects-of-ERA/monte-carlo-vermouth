@@ -4,7 +4,7 @@ import './Instagram.css';
 const Instagram = () => {
   return (
     <section className="instagram-section">
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <a
           href="https://www.instagram.com/montecarlo_vermouth/"
           target="_blank"
@@ -31,8 +31,8 @@ const Instagram = () => {
             <h2 className="instagram-username">montecarlo_vermouth</h2>
 
             <p className="instagram-description">
-              Official brand licensing by Monaco Brands. Must be of legal drinking age, drink
-              responsibly.
+              Official brand licensing by Monaco Brands.
+              <br className="instagram-description-break" /> Must be of legal drinking age.
             </p>
           </div>
         </a>

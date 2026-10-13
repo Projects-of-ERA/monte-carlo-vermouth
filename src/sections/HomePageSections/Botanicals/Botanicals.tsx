@@ -3,7 +3,7 @@ import './Botanicals.css';
 const Botanicals = () => {
   return (
     <section className="botanicals">
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <div className="botanicals-grid">
           {/* LEFT */}
           <div className="botanicals-left">

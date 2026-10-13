@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <div className="footer-top">
           <div className="footer-divider" />
 

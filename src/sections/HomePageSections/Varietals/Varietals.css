@@ -4,7 +4,7 @@
 }
 
 .varietals-heading {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 48px;
   letter-spacing: 0.06rem;
   font-weight: 400;
@@ -41,12 +41,10 @@
   will-change: transform;
 }
 
-/* Hover по карточке */
 .varietals-card:hover .varietals-image {
   transform: scale(1.05);
 }
 
-/* Hover по кнопке — возвращаем картинку обратно */
 .varietals-card:has(.varietals-button:hover) .varietals-image {
   transform: scale(1);
 }
@@ -125,4 +123,155 @@
 
 .varietals-button:hover::after {
   transform: translateY(8px);
+}
+
+@media (max-width: 1536px) {
+  .varietals {
+    padding-bottom: 50px;
+  }
+
+  .varietals-heading {
+    font-size: 44px;
+  }
+
+  .varietals-grid {
+    gap: 60px;
+  }
+
+  .varietals-title h3 {
+    font-size: 38px;
+  }
+
+  .varietals-title span {
+    font-size: 22px;
+  }
+
+  .varietals-button {
+    font-size: 15px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .varietals {
+    padding-bottom: 40px;
+  }
+
+  .varietals-heading {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+
+  .varietals-grid {
+    grid-template-columns: minmax(0, 520px);
+    gap: 50px;
+  }
+
+  .varietals-title {
+    margin-top: 16px;
+  }
+
+  .varietals-title h3 {
+    font-size: 36px;
+  }
+
+  .varietals-title span {
+    font-size: 20px;
+  }
+
+  .varietals-button {
+    width: 185px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .varietals {
+    padding-bottom: 30px;
+  }
+
+  .varietals-heading {
+    font-size: 38px;
+  }
+
+  .varietals-grid {
+    grid-template-columns: minmax(0, 500px);
+    gap: 40px;
+  }
+
+  .varietals-title h3 {
+    font-size: 32px;
+  }
+
+  .varietals-title span {
+    font-size: 18px;
+  }
+
+  .varietals-button {
+    width: 170px;
+    padding: 7px 0;
+    font-size: 14px;
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .varietals-heading {
+    font-size: 32px;
+  }
+
+  .varietals-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .varietals-title {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .varietals-title h3 {
+    font-size: 28px;
+  }
+
+  .varietals-title span {
+    font-size: 16px;
+  }
+
+  .varietals-button {
+    width: 160px;
+    font-size: 13px;
+  }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .varietals {
+    padding-bottom: 30px;
+  }
+
+  .varietals-heading {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .varietals-grid {
+    gap: 30px;
+  }
+
+  .varietals-title h3 {
+    font-size: 24px;
+  }
+
+  .varietals-title span {
+    font-size: 14px;
+  }
+
+  .varietals-button {
+    width: 120px;
+    margin-top: 16px;
+    font-size: 11px;
+  }
 }

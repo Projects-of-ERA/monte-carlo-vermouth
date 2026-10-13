@@ -6,7 +6,7 @@ const Craftsmanship = () => {
     <section className="craftsmanship">
       {/* INTRO */}
       <div className="craftsmanship-intro">
-        <div className="mx-auto max-w-8xl px-8">
+        <div className="mx-auto max-w-8xl px-4 lg:px-8">
           <div className="craftsmanship-intro-content">
             <p className="craftsmanship-eyebrow">The Perfect Addition to Elegant Cocktail</p>
 
@@ -34,7 +34,7 @@ const Craftsmanship = () => {
       </div>
 
       {/* SWIPER */}
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <CraftsmanshipSlider />
       </div>
     </section>

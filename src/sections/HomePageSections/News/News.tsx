@@ -28,7 +28,7 @@ const News = () => {
 
   return (
     <section ref={sectionRef} className="news-section">
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <div className="news-list">
           {visibleNews.map((item) => (
             <a

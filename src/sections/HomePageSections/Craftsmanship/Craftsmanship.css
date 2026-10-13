@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
@@ -28,9 +27,7 @@
 .craftsmanship-title {
   display: flex;
   flex-direction: column;
-
   margin: 0;
-
   font-size: 60px;
   font-weight: 400;
   line-height: 1;
@@ -57,24 +54,19 @@
 
 .craftsmanship-button {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 210px;
   padding: 7px 0;
   margin-top: 38px;
-
   border: 2px solid var(--color-primary-blue);
-
   color: var(--color-primary-blue);
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-decoration: none;
   text-transform: uppercase;
-
   transition:
     background-color 0.5s ease,
     color 0.5s ease;
@@ -110,4 +102,144 @@
 
 .craftsmanship-button:hover::after {
   transform: translateY(8px);
+}
+
+@media (max-width: 1536px) {
+  .craftsmanship-eyebrow {
+    font-size: 16px;
+  }
+
+  .craftsmanship-title {
+    font-size: 54px;
+  }
+
+  .craftsmanship-description {
+    max-width: 900px;
+    font-size: 16px;
+  }
+
+  .craftsmanship-button {
+    width: 195px;
+    font-size: 15px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .craftsmanship-intro {
+    padding: 50px 0 65px;
+  }
+
+  .craftsmanship-eyebrow {
+    margin-bottom: 28px;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+  }
+
+  .craftsmanship-title {
+    font-size: 42px;
+  }
+
+  .craftsmanship-description {
+    max-width: 790px;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .craftsmanship-button {
+    width: 185px;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+}
+
+/* <= 768px */
+@media (max-width: 768px) {
+  .craftsmanship-intro {
+    padding: 45px 0 55px;
+  }
+
+  .craftsmanship-eyebrow {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .craftsmanship-title {
+    font-size: 38px;
+  }
+
+  .craftsmanship-description {
+    max-width: 560px;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .craftsmanship-button {
+    width: 170px;
+    margin-top: 26px;
+    font-size: 14px;
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .craftsmanship-intro {
+    padding: 40px 0 50px;
+  }
+
+  .craftsmanship-eyebrow {
+    max-width: 420px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+  }
+
+  .craftsmanship-title {
+    font-size: 32px;
+  }
+
+  .craftsmanship-description {
+    max-width: 480px;
+    margin-top: 22px;
+    font-size: 15px;
+  }
+
+  .craftsmanship-button {
+    width: 160px;
+    padding: 6px 0;
+    margin-top: 24px;
+    font-size: 13px;
+  }
+}
+
+/* <= 480px */
+@media (max-width: 480px) {
+  .craftsmanship-intro {
+    padding: 35px 0 45px;
+  }
+
+  .craftsmanship-eyebrow {
+    max-width: 335px;
+    margin-bottom: 18px;
+    font-size: 11px;
+  }
+
+  .craftsmanship-title {
+    font-size: 28px;
+  }
+
+  .craftsmanship-description {
+    max-width: 355px;
+    margin-top: 18px;
+    font-size: 14px;
+  }
+
+  .craftsmanship-button {
+    width: 140px;
+    margin-top: 20px;
+    font-size: 11px;
+  }
 }

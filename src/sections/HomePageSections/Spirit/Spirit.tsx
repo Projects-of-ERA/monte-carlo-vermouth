@@ -3,7 +3,7 @@ import './Spirit.css';
 const Spirit = () => {
   return (
     <section className="spirit">
-      <div className="mx-auto max-w-8xl px-8">
+      <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <div className="spirit-grid">
           <div className="spirit-content">
             <div className="spirit-content-inner">

@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header-container mx-auto max-w-8xl px-8">
+      <div className="header-container mx-auto max-w-8xl px-4 lg:px-8">
         {/* DESKTOP LEFT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-left">
           <a href="#" className="header-link">
