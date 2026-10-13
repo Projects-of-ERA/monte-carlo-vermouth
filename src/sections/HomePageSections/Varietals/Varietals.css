@@ -41,12 +41,14 @@
   will-change: transform;
 }
 
-.varietals-card:hover .varietals-image {
-  transform: scale(1.05);
-}
+@media (hover: hover) and (pointer: fine) {
+  .varietals-card:hover .varietals-image {
+    transform: scale(1.05);
+  }
 
-.varietals-card:has(.varietals-button:hover) .varietals-image {
-  transform: scale(1);
+  .varietals-card:has(.varietals-button:hover) .varietals-image {
+    transform: scale(1);
+  }
 }
 
 .varietals-title {

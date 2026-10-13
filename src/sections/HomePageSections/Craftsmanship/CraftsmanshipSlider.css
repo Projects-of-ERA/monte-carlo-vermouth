@@ -22,8 +22,10 @@
   will-change: transform;
 }
 
-.cocktail-card:hover .cocktail-image {
-  transform: scale(1.04);
+@media (hover: hover) and (pointer: fine) {
+  .cocktail-card:hover .cocktail-image {
+    transform: scale(1.04);
+  }
 }
 
 .cocktail-title {

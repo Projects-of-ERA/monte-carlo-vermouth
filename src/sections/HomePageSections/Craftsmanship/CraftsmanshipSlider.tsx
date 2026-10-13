@@ -42,7 +42,7 @@ const CraftsmanshipSlider = () => {
         loop
         spaceBetween={24}
         slidesPerView={1}
-        speed={800}
+        speed={1200}
         breakpoints={{
           768: {
             slidesPerView: 2,
