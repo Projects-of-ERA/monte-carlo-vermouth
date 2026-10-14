@@ -1,0 +1,96 @@
+/* HERO */
+.story-hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 650px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* BACKGROUND */
+.story-hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.story-hero-background picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.story-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* OVERLAY */
+.story-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* CONTENT */
+.story-hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* TITLE */
+.story-hero-title {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.story-hero-title span {
+  display: block;
+}
+
+.story-hero-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+@media (max-width: 1536px) {
+  .story-hero-title {
+    font-size: 68px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .story-hero-title {
+    font-size: 62px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .story-hero-title {
+    font-size: 58px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .story-hero {
+    min-height: 550px;
+  }
+
+  .story-hero-title {
+    font-size: 38px;
+  }
+}

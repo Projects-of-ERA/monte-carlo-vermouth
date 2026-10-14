@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import CartIcon from './CartIcon';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : '';
@@ -18,32 +20,57 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40);
+    };
+
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'is-scrolled' : ''}`}>
       <div className="header-container mx-auto max-w-8xl px-4 lg:px-8">
         {/* DESKTOP LEFT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-left">
-          <a href="#" className="header-link">
+          <Link to="#" className="header-link">
             Our Varietals
-          </a>
+          </Link>
 
-          <a href="#" className="header-link">
+          <Link to="#" className="header-link">
             The Vermouth
-          </a>
+          </Link>
 
-          <a href="#" className="header-link">
+          <NavLink
+            to="/story"
+            className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
             Our Story
-          </a>
+          </NavLink>
 
-          <a href="#" className="header-link">
+          <Link to="#" className="header-link">
             Mixology
-          </a>
+          </Link>
         </nav>
 
         {/* LOGO */}
-        <a href="#" className="header-logo">
-          <img src="/images/header/main-logo.svg" alt="Monte Carlo Vermouth" />
-        </a>
+        <Link to="/" className="header-logo" onClick={closeMenu}>
+          <img
+            src={
+              isMenuOpen
+                ? '/images/header/main-logo.svg'
+                : isScrolled
+                  ? '/images/header/main-logo-blue.svg'
+                  : '/images/header/main-logo.svg'
+            }
+            alt="Monte Carlo Vermouth"
+          />
+        </Link>
 
         {/* DESKTOP RIGHT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-right">
@@ -51,13 +78,13 @@ const Header = () => {
             <CartIcon />
           </button>
 
-          <a href="#" className="header-link">
+          <Link to="#" className="header-link">
             Buy Now
-          </a>
+          </Link>
 
-          <a href="#" className="header-link">
+          <Link to="#" className="header-link">
             News
-          </a>
+          </Link>
         </nav>
 
         {/* BURGER */}
@@ -76,29 +103,32 @@ const Header = () => {
       {/* MOBILE MENU */}
       <div className={`header-mobile-menu ${isMenuOpen ? 'is-open' : ''}`}>
         <nav className="header-mobile-nav">
-          <a href="#" onClick={closeMenu}>
+          <Link to="#" onClick={closeMenu}>
             Our Varietals
-          </a>
+          </Link>
 
-          <a href="#" onClick={closeMenu}>
+          <Link to="#" onClick={closeMenu}>
             The Vermouth
-          </a>
+          </Link>
 
-          <a href="#" onClick={closeMenu}>
+          <NavLink
+            to="/story"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'is-active' : '')}>
             Our Story
-          </a>
+          </NavLink>
 
-          <a href="#" onClick={closeMenu}>
+          <Link to="#" onClick={closeMenu}>
             Mixology
-          </a>
+          </Link>
 
-          <a href="#" onClick={closeMenu}>
+          <Link to="#" onClick={closeMenu}>
             Buy Now
-          </a>
+          </Link>
 
-          <a href="#" onClick={closeMenu}>
+          <Link to="#" onClick={closeMenu}>
             News
-          </a>
+          </Link>
         </nav>
 
         <button type="button" className="header-mobile-cart" onClick={closeMenu}>

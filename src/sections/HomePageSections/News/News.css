@@ -2,6 +2,7 @@
   padding: 40px 0 60px;
   background-color: white;
   color: var(--color-primary-blue);
+  scroll-margin-top: 90px;
 }
 
 .news-list {

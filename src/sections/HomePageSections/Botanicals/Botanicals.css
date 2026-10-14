@@ -373,3 +373,71 @@
     font-size: 13px;
   }
 }
+
+/* Swiper */
+.botanicals-slider,
+.botanicals-swiper,
+.botanicals-swiper .swiper-wrapper,
+.botanicals-swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.botanicals-slider {
+  position: relative;
+  height: 100%;
+}
+
+.botanicals-swiper {
+  overflow: hidden;
+}
+
+.botanicals-slider-navigation {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: white;
+}
+
+.botanicals-slider-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.botanicals-slider-counter span:nth-child(2) {
+  font-size: 14px;
+}
+
+.botanicals-slider-counter span:nth-child(3) {
+  font-size: 14px;
+}
+
+.botanicals-slider-next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 10px;
+
+  border: 0;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.botanicals-slider-arrow {
+  display: block;
+  width: 50px;
+  height: 8px;
+}
