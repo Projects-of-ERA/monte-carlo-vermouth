@@ -1,0 +1,173 @@
+/* SECTION */
+.story-botanicals {
+  padding: 60px 0;
+  background-color: #fff;
+  color: var(--color-primary-blue);
+}
+
+/* HEADER */
+.story-botanicals-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* TITLE */
+.story-botanicals-title {
+  margin-bottom: 15px;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.story-botanicals-title span {
+  display: block;
+}
+
+.story-botanicals-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* SUBTITLE */
+.story-botanicals-subtitle {
+  max-width: 930px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* CONTENT GRID */
+.story-botanicals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* TEXT */
+.story-botanicals-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.story-botanicals-text p {
+  margin: 0;
+}
+
+/* IMAGE */
+.story-botanicals-image-wrapper {
+  width: 100%;
+  max-height: 650px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.story-botanicals-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1536px) {
+  .story-botanicals {
+    padding: 50px 0;
+  }
+
+  .story-botanicals-header {
+    margin-bottom: 40px;
+  }
+
+  .story-botanicals-grid {
+    gap: 40px;
+  }
+
+  .story-botanicals-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .story-botanicals-subtitle {
+    max-width: 820px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .story-botanicals-text {
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .story-botanicals {
+    padding: 40px 0;
+  }
+
+  .story-botanicals-header {
+    margin-bottom: 20px;
+  }
+
+  .story-botanicals-title {
+    font-size: 42px;
+  }
+
+  .story-botanicals-subtitle {
+    max-width: 710px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .story-botanicals-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .story-botanicals-text {
+    max-width: 780px;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .story-botanicals {
+    padding: 30px 0;
+  }
+
+  .story-botanicals-header {
+    margin-bottom: 15px;
+  }
+
+  .story-botanicals-title {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .story-botanicals-subtitle {
+    max-width: 338px;
+  }
+
+  .story-botanicals-grid {
+    gap: 20px;
+  }
+
+  .story-botanicals-text {
+    gap: 10px;
+  }
+}

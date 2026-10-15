@@ -1,0 +1,137 @@
+/* SECTION */
+.story-grapes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  min-height: 750px;
+  color: var(--color-primary-blue);
+}
+
+/* IMAGE */
+.story-grapes-image-wrapper {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.story-grapes-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* CENTER CONTENT */
+.story-grapes-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 60px 30px;
+  background: linear-gradient(to bottom, #dce8e3 0%, #e8f0ed 35%, #f5f8f7 70%, #ffffff 100%);
+  text-align: center;
+}
+
+/* TITLE */
+.story-grapes-title {
+  margin-bottom: 25px;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.story-grapes-title span {
+  display: block;
+}
+
+.story-grapes-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* TEXT */
+.story-grapes-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1536px) {
+  .story-grapes {
+    min-height: 550px;
+  }
+
+  .story-grapes-content {
+    padding: 40px 30px;
+  }
+
+  .story-grapes-title {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+
+  .story-grapes-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .story-grapes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
+  }
+
+  .story-grapes-content {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 40px;
+  }
+
+  .story-grapes-title {
+    font-size: 42px;
+  }
+
+  .story-grapes-text {
+    max-width: 750px;
+    font-size: 16px;
+  }
+
+  .story-grapes-image-wrapper {
+    aspect-ratio: 4 / 4;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .story-grapes {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grapes-content {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 30px 20px;
+  }
+
+  .story-grapes-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .story-grapes-text {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 450px;
+  }
+
+  .story-grapes-image-wrapper {
+    aspect-ratio: 4 / 4.5;
+  }
+}
