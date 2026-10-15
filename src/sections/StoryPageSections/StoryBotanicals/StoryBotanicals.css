@@ -60,6 +60,12 @@
   line-height: 1.6;
 }
 
+.story-botanicals-text-part {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .story-botanicals-text p {
   margin: 0;
 }
@@ -91,6 +97,10 @@
 
   .story-botanicals-grid {
     gap: 40px;
+  }
+
+  .story-botanicals-text-part {
+    gap: 15px;
   }
 
   .story-botanicals-title {
@@ -137,10 +147,38 @@
   }
 
   .story-botanicals-text {
+    display: contents;
+  }
+
+  .story-botanicals-text-part {
+    width: 100%;
     max-width: 780px;
     gap: 15px;
     font-size: 14px;
     line-height: 1.4;
+  }
+
+  .story-botanicals-text-part {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    gap: 15px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .story-botanicals-text-part:first-child {
+    order: 1;
+  }
+
+  .story-botanicals-image-wrapper {
+    order: 2;
+  }
+
+  .story-botanicals-text-part:last-child {
+    order: 3;
   }
 }
 
@@ -152,6 +190,10 @@
 
   .story-botanicals-header {
     margin-bottom: 15px;
+  }
+
+  .story-botanicals-text-part {
+    gap: 10px;
   }
 
   .story-botanicals-title {
