@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { locations } from '../../../data/locations';
 
 import 'leaflet/dist/leaflet.css';
+import '../../../utils/fixLeafletIcon';
 import './Locations.css';
 
 const Locations = () => {
