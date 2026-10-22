@@ -39,13 +39,11 @@ const Header = () => {
       <div className="header-container mx-auto max-w-8xl px-4 lg:px-8">
         {/* DESKTOP LEFT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-left">
-          <Link to="#" className="header-link">
-            Our Varietals
-          </Link>
-
-          <Link to="#" className="header-link">
+          <NavLink
+            to="/vermouth"
+            className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
             The Vermouth
-          </Link>
+          </NavLink>
 
           <NavLink
             to="/story"
@@ -53,9 +51,11 @@ const Header = () => {
             Our Story
           </NavLink>
 
-          <Link to="#" className="header-link">
+          <NavLink
+            to="/mixology"
+            className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
             Mixology
-          </Link>
+          </NavLink>
         </nav>
 
         {/* LOGO */}
@@ -103,13 +103,12 @@ const Header = () => {
       {/* MOBILE MENU */}
       <div className={`header-mobile-menu ${isMenuOpen ? 'is-open' : ''}`}>
         <nav className="header-mobile-nav">
-          <Link to="#" onClick={closeMenu}>
-            Our Varietals
-          </Link>
-
-          <Link to="#" onClick={closeMenu}>
+          <NavLink
+            to="/vermouth"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'is-active' : '')}>
             The Vermouth
-          </Link>
+          </NavLink>
 
           <NavLink
             to="/story"
@@ -118,9 +117,12 @@ const Header = () => {
             Our Story
           </NavLink>
 
-          <Link to="#" onClick={closeMenu}>
+          <NavLink
+            to="/mixology"
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'is-active' : '')}>
             Mixology
-          </Link>
+          </NavLink>
 
           <Link to="#" onClick={closeMenu}>
             Buy Now

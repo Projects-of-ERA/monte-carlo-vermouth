@@ -1,0 +1,185 @@
+/* SECTION */
+.vermouth-tasting {
+  color: var(--color-primary-blue);
+}
+
+/* HEADER */
+.vermouth-tasting-header {
+  padding: 40px 0;
+  background-color: rgb(206, 223, 215);
+  text-align: center;
+}
+
+/* TITLE */
+.vermouth-tasting-title {
+  margin: 0 0 25px;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.vermouth-tasting-title span {
+  display: block;
+}
+
+.vermouth-tasting-title span em {
+  display: block;
+}
+
+/* SUBTITLE */
+.vermouth-tasting-subtitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+/* CONTENT */
+.vermouth-tasting-content {
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+.vermouth-tasting-background {
+  position: absolute;
+  inset: 0;
+}
+
+.vermouth-tasting-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* OVERLAY */
+.vermouth-tasting-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* CONTAINER */
+.vermouth-tasting-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* TEXT */
+.vermouth-tasting-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  color: #ffff;
+}
+
+/* DESCRIPTION */
+.vermouth-tasting-description {
+  margin: 0 0 35px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* DETAILS */
+.vermouth-tasting-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vermouth-tasting-detail h3 {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid currentColor;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.vermouth-tasting-detail p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* <= 1536px */
+@media (max-width: 1536px) {
+  .vermouth-tasting-title {
+    font-size: 60px;
+  }
+
+  .vermouth-tasting-subtitle {
+    font-size: 16px;
+  }
+
+  .vermouth-tasting-description {
+    font-size: 16px;
+  }
+
+  .vermouth-tasting-detail p {
+    font-size: 15px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .vermouth-tasting-header {
+    padding: 50px 0;
+  }
+
+  .vermouth-tasting-title {
+    font-size: 48px;
+  }
+
+  .vermouth-tasting-subtitle {
+    font-size: 14px;
+  }
+
+  .vermouth-tasting-text {
+    padding: 30px;
+  }
+
+  .vermouth-tasting-description,
+  .vermouth-tasting-detail p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .vermouth-tasting-detail h3 {
+    font-size: 14px;
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .vermouth-tasting-header {
+    padding: 30px 0;
+  }
+
+  .vermouth-tasting-title {
+    margin-bottom: 15px;
+    font-size: 38px;
+  }
+
+  .vermouth-tasting-subtitle {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .vermouth-tasting-text {
+    padding: 30px 0;
+  }
+
+  .vermouth-tasting-description {
+    margin-bottom: 25px;
+  }
+
+  .vermouth-tasting-details {
+    gap: 22px;
+  }
+}

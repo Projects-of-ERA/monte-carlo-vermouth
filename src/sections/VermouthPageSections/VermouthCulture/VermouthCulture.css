@@ -1,0 +1,174 @@
+/* SECTION */
+.vermouth-culture {
+  padding: 60px 0;
+  background-color: #fff;
+  color: var(--color-primary-blue);
+}
+
+/* HEADER */
+.vermouth-culture-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* TITLE */
+.vermouth-culture-title {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.vermouth-culture-title span {
+  display: block;
+}
+
+.vermouth-culture-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* CONTENT GRID */
+.vermouth-culture-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* TEXT */
+.vermouth-culture-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+  margin: 0 auto;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.vermouth-culture-text p {
+  margin: 0;
+}
+
+/* IMAGE */
+.vermouth-culture-image-wrapper {
+  width: 100%;
+  max-height: 650px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.vermouth-culture-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SECOND PART */
+.vermouth-culture-grid-reverse {
+  margin-top: 30px;
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1536px) {
+  .vermouth-culture {
+    padding: 50px 0;
+  }
+
+  .vermouth-culture-header {
+    margin-bottom: 40px;
+  }
+
+  .vermouth-culture-title {
+    font-size: 42px;
+  }
+
+  .vermouth-culture-grid {
+    gap: 40px;
+  }
+
+  .vermouth-culture-text {
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .vermouth-culture-grid-reverse {
+    margin-top: 20px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .vermouth-culture {
+    padding: 40px 0;
+  }
+
+  .vermouth-culture-header {
+    margin-bottom: 20px;
+  }
+
+  .vermouth-culture-title {
+    font-size: 42px;
+  }
+
+  .vermouth-culture-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vermouth-culture-text {
+    max-width: 780px;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* .vermouth-culture-image-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+  } */
+
+  .vermouth-culture-grid-reverse {
+    margin-top: 15px;
+  }
+
+  .vermouth-culture-grid-reverse .vermouth-culture-text {
+    order: 1;
+  }
+
+  .vermouth-culture-grid-reverse .vermouth-culture-image-wrapper {
+    order: 2;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .vermouth-culture {
+    padding: 30px 0;
+  }
+
+  .vermouth-culture-header {
+    margin-bottom: 15px;
+  }
+
+  .vermouth-culture-title {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .vermouth-culture-grid {
+    gap: 20px;
+  }
+
+  .vermouth-culture-text {
+    gap: 10px;
+  }
+}

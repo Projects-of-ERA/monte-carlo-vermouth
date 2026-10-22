@@ -1,0 +1,105 @@
+/* HERO */
+.vermouth-hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 650px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* BACKGROUND */
+.vermouth-hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.vermouth-hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* OVERLAY */
+.vermouth-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* CONTAINER */
+.vermouth-hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* CONTENT */
+.vermouth-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/* TITLE */
+.vermouth-hero-title {
+  margin: 0;
+  color: #fff;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.vermouth-hero-title span {
+  display: block;
+}
+
+.vermouth-hero-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* <= 1536px */
+@media (max-width: 1536px) {
+  .vermouth-hero-title {
+    font-size: 68px;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .vermouth-hero-title {
+    font-size: 62px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .vermouth-hero-content {
+    width: 100%;
+  }
+
+  .vermouth-hero-title {
+    font-size: 58px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .vermouth-hero {
+    min-height: 550px;
+  }
+
+  .vermouth-hero-title {
+    font-size: 38px;
+  }
+}

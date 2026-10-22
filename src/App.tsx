@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import StoryPage from './pages/StoryPage/StoryPage';
 import ScrollToTop from './utils/ScrollToTop';
+import VermouthPage from './pages/VermouthPage/VermouthPage';
+import MixologyPage from './pages/MixologyPage/MixologyPage';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/story" element={<StoryPage />} />
+          <Route path="/vermouth" element={<VermouthPage />} />
+          <Route path="/mixology" element={<MixologyPage />} />
         </Routes>
 
         <Footer />

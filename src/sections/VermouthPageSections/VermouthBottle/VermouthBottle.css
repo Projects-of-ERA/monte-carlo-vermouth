@@ -1,0 +1,215 @@
+/* SECTION */
+.vermouth-bottle {
+  padding: 60px 0;
+  background-color: #fff;
+  color: var(--color-primary-blue);
+}
+
+/* HEADER */
+.vermouth-bottle-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* TITLE */
+.vermouth-bottle-title {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.vermouth-bottle-title span {
+  display: block;
+}
+
+.vermouth-bottle-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* CONTENT GRID */
+.vermouth-bottle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  /* gap: 60px; */
+}
+
+/* LEFT CONTENT */
+.vermouth-bottle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+}
+
+/* TEXT */
+.vermouth-bottle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.vermouth-bottle-text p {
+  margin: 0;
+}
+
+.vermouth-bottle-intro,
+.vermouth-bottle-text strong {
+  font-weight: 600;
+}
+
+/* DETAIL IMAGES */
+.vermouth-bottle-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.vermouth-bottle-detail-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.vermouth-bottle-detail-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.vermouth-bottle-detail-wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 2 / 0.7;
+}
+
+/* MAIN IMAGE */
+.vermouth-bottle-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.vermouth-bottle-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1536px) {
+  .vermouth-bottle {
+    padding: 50px 0;
+  }
+
+  .vermouth-bottle-title {
+    font-size: 42px;
+  }
+
+  .vermouth-bottle-content {
+    gap: 20px;
+  }
+
+  .vermouth-bottle-text {
+    gap: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .vermouth-bottle {
+    padding: 40px 0;
+  }
+
+  .vermouth-bottle-header {
+    margin-bottom: 20px;
+  }
+
+  .vermouth-bottle-title {
+    font-size: 42px;
+  }
+
+  .vermouth-bottle-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vermouth-bottle-content {
+    max-width: 100%;
+    gap: 25px;
+  }
+
+  .vermouth-bottle-text {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .vermouth-bottle-image-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .vermouth-bottle-image-wrapper {
+    height: auto;
+    aspect-ratio: 4 / 5;
+    max-height: 750px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .vermouth-bottle {
+    padding: 30px 0;
+  }
+
+  .vermouth-bottle-header {
+    margin-bottom: 15px;
+  }
+
+  .vermouth-bottle-title {
+    font-size: 28px;
+  }
+
+  .vermouth-bottle-grid {
+    gap: 20px;
+  }
+
+  .vermouth-bottle-content {
+    gap: 20px;
+  }
+
+  .vermouth-bottle-text {
+    gap: 10px;
+  }
+
+  .vermouth-bottle-details {
+    gap: 8px;
+  }
+
+  .vermouth-bottle-image-wrapper {
+    aspect-ratio: 4 / 5;
+  }
+}

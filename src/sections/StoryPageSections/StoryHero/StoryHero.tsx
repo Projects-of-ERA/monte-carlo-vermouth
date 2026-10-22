@@ -8,7 +8,11 @@ const StoryHero = () => {
         <picture>
           <source media="(max-width: 640px)" srcSet="/images/StoryPage/hero/story-hero_mob.png" />
 
-          <img src="/images/StoryPage/hero/story-hero.png" alt="" className="story-hero-image" />
+          <img
+            src="/images/StoryPage/hero/story-hero.png"
+            alt="story-hero"
+            className="story-hero-image"
+          />
         </picture>
       </div>
 

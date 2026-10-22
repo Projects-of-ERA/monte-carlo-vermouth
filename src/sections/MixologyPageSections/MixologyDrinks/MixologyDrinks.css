@@ -1,0 +1,315 @@
+/* SECTION */
+.mixology-drinks {
+  padding: 60px 0;
+  background-color: #fff;
+  color: var(--color-primary-blue);
+}
+
+/* HEADER */
+.mixology-drinks-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* TITLE */
+.mixology-drinks-title {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.mixology-drinks-title span {
+  display: block;
+}
+
+.mixology-drinks-title em {
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1536px) {
+  .mixology-drinks {
+    padding: 50px 0;
+  }
+
+  .mixology-drinks-title {
+    font-size: 42px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .mixology-drinks {
+    padding: 40px 0;
+  }
+
+  .mixology-drinks-header {
+    margin-bottom: 20px;
+  }
+
+  .mixology-drinks-title {
+    font-size: 42px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .mixology-drinks {
+    padding: 30px 0;
+  }
+
+  .mixology-drinks-header {
+    margin-bottom: 15px;
+  }
+
+  .mixology-drinks-title {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+/* DRINKS LIST */
+.mixology-drinks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* DRINK ITEM */
+.mixology-drink {
+  border-top: 1px solid var(--color-primary-blue);
+}
+
+/* TOGGLE */
+.mixology-drink-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px 0px;
+
+  border: 0;
+  background: transparent;
+  color: inherit;
+
+  text-align: left;
+  cursor: pointer;
+}
+
+/* REVERSED TOGGLE */
+.mixology-drink.is-reversed .mixology-drink-toggle {
+  flex-direction: row-reverse;
+}
+
+/* DRINK NAME */
+.mixology-drink-name {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* CHEVRON */
+.mixology-drink-chevron {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  fill: currentColor;
+
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mixology-drink.is-open .mixology-drink-chevron {
+  transform: rotate(180deg);
+}
+
+/* EXPANDABLE PANEL */
+.mixology-drink-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mixology-drink.is-open .mixology-drink-panel {
+  grid-template-rows: 1fr;
+}
+
+.mixology-drink-panel-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* CONTENT GRID */
+.mixology-drink-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 60px;
+  padding: 0px 40px;
+}
+
+/* REVERSED CONTENT */
+.mixology-drink.is-reversed .mixology-drink-content {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.mixology-drink.is-reversed .mixology-drink-image-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* TEXT */
+.mixology-drink-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 710px;
+  width: 100%;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mixology-drink-description,
+.mixology-drink-method {
+  margin: 0;
+}
+
+/* RECIPE AND METHOD */
+.mixology-drink-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mixology-drink-info-title {
+  margin: 0;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid currentColor;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.mixology-drink-recipe {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-style: italic;
+}
+
+/* IMAGE */
+.mixology-drink-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 650px;
+  overflow: hidden;
+}
+
+.mixology-drink-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* <= 1536px */
+@media (max-width: 1536px) {
+  .mixology-drink-toggle {
+    padding: 25px 15px;
+  }
+
+  .mixology-drink-name {
+    font-size: 36px;
+  }
+
+  .mixology-drink-grid {
+    gap: 40px;
+  }
+
+  .mixology-drink-content {
+    gap: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 1024px) {
+  .mixology-drink-toggle {
+    padding: 20px 10px;
+  }
+
+  .mixology-drink-name {
+    font-size: 30px;
+  }
+
+  .mixology-drink-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 15px 10px 40px;
+  }
+
+  .mixology-drink-content {
+    max-width: 780px;
+    gap: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .mixology-drink.is-reversed .mixology-drink-content,
+  .mixology-drink.is-reversed .mixology-drink-image-wrapper {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .mixology-drink-image-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+}
+
+/* <= 640px */
+@media (max-width: 640px) {
+  .mixology-drink-toggle {
+    padding: 18px 0;
+  }
+
+  .mixology-drink-name {
+    font-size: 24px;
+  }
+
+  .mixology-drink-chevron {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mixology-drink-grid {
+    gap: 20px;
+    padding: 10px 0 30px;
+  }
+
+  .mixology-drink-content {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .mixology-drink-image-wrapper {
+    aspect-ratio: 4 / 4.5;
+    max-height: 400px;
+  }
+}
