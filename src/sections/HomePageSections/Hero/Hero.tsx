@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './Hero.css';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="hero relative h-[min(100vh,1080px)] overflow-hidden bg-black text-white">
       <video className="hero-video" autoPlay loop muted playsInline>
@@ -19,18 +23,18 @@ const Hero = () => {
         <div className="hero-content">
           <h1 className="hero-title font-serif">
             <span>
-              <em>a</em> VERMOUTH
+              <em>{t('hero.title1')}</em> {t('hero.title1Accent')}
             </span>
 
             <span className="hero-title-offset">
-              <em>a</em> WORLD
+              <em>{t('hero.title2')}</em> {t('hero.title2Accent')}
             </span>
 
-            <span className="hero-title-last">APART</span>
+            <span className="hero-title-last">{t('hero.title3')}</span>
           </h1>
 
           <a href="#" className="hero-shop-button">
-            Shop Now
+            {t('hero.button')}
           </a>
         </div>
       </div>

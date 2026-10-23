@@ -1,7 +1,11 @@
-import './Mixology.css';
+import { useTranslation } from 'react-i18next';
 import MixologyQuotes from './MixologyQuotes';
 
+import './Mixology.css';
+
 const Mixology = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="mixology">
       {/* INTRO */}
@@ -9,17 +13,15 @@ const Mixology = () => {
         <div className="mx-auto max-w-8xl px-4 lg:px-8">
           <div className="mixology-intro-grid">
             <h2 className="mixology-title font-serif">
-              <span className="mixology-title-elegant">elegant</span>
+              <span className="mixology-title-elegant">{t('mixology.title1')}</span>
 
-              <span>Mixology</span>
+              <span>{t('mixology.title2')}</span>
             </h2>
 
             <p className="mixology-description">
-              Enjoy Monte Carlo Vermouth simply on ice, with tonic, or in a selection of cocktails
-              such as classics revisited and delightful innovations for the discerning palate.
+              {t('mixology.description1')}
               <br />
-              Created by our expert mixologist exclusively for Monte Carlo Vermouth, discover the
-              next cocktails of the season.
+              {t('mixology.description2')}
             </p>
           </div>
         </div>
@@ -39,14 +41,14 @@ const Mixology = () => {
         <div className="mixology-feature-content">
           <h3 className="mixology-feature-title font-serif">
             <span>
-              Find Us <em>inside</em>
+              {t('mixology.featureTitle1')} <em>{t('mixology.featureTitle1Accent')}</em>
             </span>
 
             <span>
-              <em>the</em> World’s
+              <em>{t('mixology.featureTitle2')}</em> {t('mixology.featureTitle2Accent')}
             </span>
 
-            <span>Finest Bars</span>
+            <span>{t('mixology.featureTitle3')}</span>
           </h3>
         </div>
       </div>

@@ -1,12 +1,25 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 import CartIcon from './CartIcon';
 import './Header.css';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { t } = useTranslation();
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
+
+  const localizedPath = (path: string) =>
+    path === '/' ? langPrefix || '/' : `${langPrefix}${path}`;
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : '';
@@ -40,26 +53,26 @@ const Header = () => {
         {/* DESKTOP LEFT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-left">
           <NavLink
-            to="/vermouth"
+            to={localizedPath('/vermouth')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            The Vermouth
+            {t('header.theVermouth')}
           </NavLink>
 
           <NavLink
-            to="/story"
+            to={localizedPath('/story')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            Our Story
+            {t('header.ourStory')}
           </NavLink>
 
           <NavLink
-            to="/mixology"
+            to={localizedPath('/mixology')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            Mixology
+            {t('header.mixology')}
           </NavLink>
         </nav>
 
         {/* LOGO */}
-        <Link to="/" className="header-logo" onClick={closeMenu}>
+        <Link to={localizedPath('/')} className="header-logo" onClick={closeMenu}>
           <img
             src={
               isMenuOpen
@@ -74,24 +87,26 @@ const Header = () => {
 
         {/* DESKTOP RIGHT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-right">
-          <button type="button" aria-label="Open cart" className="header-cart-button">
+          <button type="button" aria-label={t('header.openCart')} className="header-cart-button">
             <CartIcon />
           </button>
 
           <Link to="#" className="header-link">
-            Buy Now
+            {t('header.buyNow')}
           </Link>
 
           <Link to="#" className="header-link">
-            News
+            {t('header.news')}
           </Link>
+
+          <LanguageSwitcher />
         </nav>
 
         {/* BURGER */}
         <button
           type="button"
           className={`header-burger ${isMenuOpen ? 'is-open' : ''}`}
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((prev) => !prev)}>
           <span />
@@ -104,39 +119,41 @@ const Header = () => {
       <div className={`header-mobile-menu ${isMenuOpen ? 'is-open' : ''}`}>
         <nav className="header-mobile-nav">
           <NavLink
-            to="/vermouth"
+            to={localizedPath('/vermouth')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            The Vermouth
+            {t('header.theVermouth')}
           </NavLink>
 
           <NavLink
-            to="/story"
+            to={localizedPath('/story')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            Our Story
+            {t('header.ourStory')}
           </NavLink>
 
           <NavLink
-            to="/mixology"
+            to={localizedPath('/mixology')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            Mixology
+            {t('header.mixology')}
           </NavLink>
 
           <Link to="#" onClick={closeMenu}>
-            Buy Now
+            {t('header.buyNow')}
           </Link>
 
           <Link to="#" onClick={closeMenu}>
-            News
+            {t('header.news')}
           </Link>
         </nav>
 
         <button type="button" className="header-mobile-cart" onClick={closeMenu}>
           <CartIcon />
-          <span>Cart</span>
+          <span>{t('header.cart')}</span>
         </button>
+
+        <LanguageSwitcher />
       </div>
     </header>
   );

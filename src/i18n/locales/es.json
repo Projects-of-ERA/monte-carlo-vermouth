@@ -1,0 +1,175 @@
+{
+  "header": {
+    "theVermouth": "El Vermut",
+    "ourStory": "Nuestra Historia",
+    "mixology": "Coctelería",
+    "buyNow": "Comprar",
+    "news": "Noticias",
+    "cart": "Carrito",
+    "openCart": "Abrir el carrito",
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú"
+  },
+  "hero": {
+    "title1": "un",
+    "title1Accent": "VERMUT",
+    "title2": "de",
+    "title2Accent": "OTRO",
+    "title3": "MUNDO",
+    "button": "Comprar ahora"
+  },
+  "spirit": {
+    "title1": "el",
+    "title1Accent": "ESPÍRITU",
+    "title2": "de",
+    "title2Accent": "LUJO",
+    "title3": "MONEGASCO",
+    "description1": "Nuestros exquisitos vermú rosso y vermú bianco nacen de los pétalos de rosa más raros, seleccionados a mano, de los jardines de Mónaco, un santuario de elegancia y refinamiento.",
+    "description2": "Su paladar distintivo encanta con la deliciosa interacción de las uvas Moscato d'Asti DOCG de la famosa región italiana de Piamonte y los ingredientes botánicos de la más alta calidad del corazón aromático de la Costa Azul, Grasse. Esta mezcla verdaderamente excepcional de sabores, aromas, ingredientes preciosos y artesanía ancestral expresa plenamente lo mejor del savoir-faire francés, italiano y monegasco.",
+    "button": "Leer más"
+  },
+  "botanicals": {
+    "title1": "elaborado",
+    "title2": "con los",
+    "title2Accent": "MEJORES",
+    "title3": "BOTÁNICOS",
+    "title4": "de la",
+    "title4Accent": "COSTA",
+    "title5": "AZUL",
+    "button": "Nuestra historia",
+
+    "slider": {
+      "premiumGrapes": {
+        "title": "Uvas de primera calidad",
+        "text": "El vermut Monte-Carlo se elabora mediante métodos artesanales de la reconocida región del Piamonte, cuyos viñedos están declarados Patrimonio Mundial por la UNESCO. Viticultores italianos crean el Moscato d’Asti DOCG para obtener una base aromática incomparable, utilizando la uva entera, cultivada especialmente para este propósito."
+      },
+      "botanicals": {
+        "title": "Los botánicos",
+        "text": "El líquido se mezcla después con ingredientes botánicos de la Costa Azul, procedentes exclusivamente de destiladores expertos de Grasse, la capital mundial del perfume. Reconocida internacionalmente por la calidad de sus fragancias desde el siglo XVIII, es allí donde se elaboran los perfumes de lujo más refinados."
+      },
+      "monegasqueRoses": {
+        "title": "Rosas monegascas",
+        "text": "Finalmente, el vermut adquiere un carácter excepcional gracias a un toque del terruño monegasco: pétalos de rosa recogidos a mano en los jardines del Principado, que aportan misterio, elegancia, delicadeza, sofisticación y un sabor divino."
+      }
+    }
+  },
+  "varietals": {
+    "title": "Nuestras Variedades",
+    "whiteVermouth": "vermut blanco",
+    "redVermouth": "vermut rojo",
+    "button": "Pedir ahora"
+  },
+  "craftsmanship": {
+    "eyebrow": "El complemento perfecto para cócteles elegantes",
+    "title1": "ELABORADO",
+    "title2": "por",
+    "title2Accent": "MAESTROS",
+    "title3": "DESTILADORES",
+    "description": "El sabor ligero, intensamente aromático y fresco del vermut Monte Carlo le aporta una gran versatilidad para disfrutarlo solo, con hielo, o en cócteles, dando una sofisticación renovada a los grandes clásicos.",
+    "button": "Descubre la coctelería"
+  },
+  "mixology": {
+    "title1": "elegante",
+    "title2": "Coctelería",
+    "description1": "Disfruta del vermut Monte Carlo simplemente con hielo, con tónica o en una selección de cócteles que combina clásicos reinventados y deliciosas innovaciones para los paladares más exigentes.",
+    "description2": "Creados exclusivamente para Monte Carlo Vermouth por nuestro experto coctelero, descubre los nuevos cócteles de la temporada.",
+    "featureTitle1": "Encuéntranos",
+    "featureTitle1Accent": "en",
+    "featureTitle2": "los",
+    "featureTitle2Accent": "mejores",
+    "featureTitle3": "bares del mundo"
+  },
+  "mixologyQuotes": {
+    "gregoryBuda": {
+      "quote": "Monte Carlo Vermouth aporta algo fresco y único a toda la categoría, abriendo nuevas posibilidades tanto para los cócteles como para disfrutar del vermut solo.",
+      "position": "Socio y formador en « Bar Bisou Bisou », « Dead Rabbit » y « BlackTail »"
+    },
+    "lucaRubinacci": {
+      "quote": "Monte Carlo Vermouth, con su evocadora nota inicial de rosas monegascas, se ha convertido en nuestro aperitivo favorito: ligero, distintivo y exquisitamente equilibrado. Es como una puesta de sol mediterránea en una copa.",
+      "position": "Director creativo de la casa de sastrería napolitana Rubinacci"
+    },
+    "slavaArakelov": {
+      "quote": "Monte Carlo Vermouth refleja la herencia y el savoir-faire de Mónaco, Francia e Italia. Los dos perfiles vinícolas del Moscato d’Asti DOCG y el Langhe Nebbiolo DOC destacan por su equilibrio perfecto y su delicadeza, con una sorprendente nota final de rosa, ligera y sutil.",
+      "position": "Sumiller jefe de Wine Palace Monte Carlo"
+    },
+    "matthiasGiroud": {
+      "quote": "Lo que diferencia a MCV de otros vermuts es el uso de ingredientes de alta calidad y su carácter único, que combina los mundos del perfume y del vino. Esta mezcla aporta una elegancia sencilla pero compleja, perfecta para disfrutar sola o en cócteles.",
+      "position": "Cofundador de Alchimiste Group y jefe de coctelería"
+    }
+  },
+  "news": {
+    "showMore": "Ver más",
+    "showLess": "Ver menos",
+    "months": {
+      "January": "Enero",
+      "February": "Febrero",
+      "March": "Marzo",
+      "April": "Abril",
+      "May": "Mayo",
+      "June": "Junio",
+      "July": "Julio",
+      "August": "Agosto",
+      "September": "Septiembre",
+      "October": "Octubre",
+      "November": "Noviembre",
+      "December": "Diciembre"
+    },
+    "articles": {
+      "wineParis2026": {
+        "title": "Descubre Monte Carlo Vermouth en Wine Paris 2026",
+        "text": "Del 9 al 11 de febrero, París vuelve a convertirse en el punto de encuentro mundial del sector del vino y los espirituosos."
+      },
+      "merryChristmas": {
+        "title": "Feliz Navidad de parte de Monte Carlo Vermouth",
+        "text": "¡Ya casi es Navidad y queremos agradeceros que hayáis descubierto nuestro producto, disfrutado del primer sorbo y finalmente os hayáis enamorado de él! Sirvamos nuestro vermut en una copa y deseémonos una feliz Navidad. ¡Salud!"
+      },
+      "bitterTincture": {
+        "title": "De tintura amarga a tendencia dulce",
+        "text": "Los orígenes del vermut se remontan a la antigüedad. Sin embargo, las cualidades por las que ha sido apreciado han cambiado considerablemente con el tiempo."
+      },
+      "availableOnline": {
+        "title": "Monte Carlo Vermouth ya disponible online",
+        "text": "¡Por fin ha llegado el momento! Hemos lanzado la venta online de Monte Carlo Vermouth en determinados países, un producto creado para representar el espíritu de Mónaco, su estilo de vida y su gusto refinado."
+      },
+      "chalet": {
+        "title": "El chalet Monte Carlo Vermouth",
+        "text": "La magia de la Navidad llega a Mónaco. En esta ocasión, nos complace anunciar la apertura del chalet Monte Carlo Vermouth."
+      },
+      "livingWall": {
+        "title": "El muro vegetal de Monte Carlo Vermouth",
+        "text": "El 3 de septiembre disfrutamos de una jornada maravillosa en la fiesta organizada por Club La Vigie Monte-Carlo, donde presentamos con orgullo nuestro muro vegetal."
+      }
+    }
+  },
+  "instagram": {
+    "description1": "Licencia oficial de la marca otorgada por Monaco Brands.",
+    "description2": "Debes tener la edad legal para consumir alcohol.",
+    "button": "Síguenos en Instagram"
+  },
+  "locations": {
+    "title1": "Disfruta",
+    "title1Accent": "Monte Carlo",
+    "title2": "Vermouth en",
+    "title3": "estos",
+    "title3Accent": "selectos",
+    "title4": "establecimientos"
+  },
+  "footer": {
+    "menu": "Menú",
+    "shop": "Tienda",
+    "theVermouth": "El Vermut",
+    "ourStory": "Nuestra Historia",
+    "mixology": "Coctelería",
+    "news": "Noticias",
+    "social": "Redes sociales",
+    "legalMenu": "Información legal",
+    "terms": "Términos y condiciones de venta",
+    "cookies": "Política de cookies",
+    "legalNotice": "Aviso legal",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto",
+    "copyright": "Todos los derechos reservados.",
+    "responsibleDrinking": "El abuso del alcohol es perjudicial para la salud. Consume con responsabilidad.",
+    "licensedTrademark": "Monte Carlo, marca utilizada bajo licencia oficial de Monaco Brands"
+  }
+}

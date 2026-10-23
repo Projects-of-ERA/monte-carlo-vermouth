@@ -259,42 +259,30 @@
 .header-mobile-cart {
   display: flex;
   align-items: center;
-
-  gap: 10px;
-
-  margin-top: 32px;
+  gap: 8px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   padding: 8px 12px;
-
   border: 0;
   background: transparent;
-
   color: white;
-
   font-family: inherit;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.08em;
-
   text-transform: uppercase;
-
   cursor: pointer;
 }
 
 @media (max-width: 1536px) {
-  .header-desktop-nav {
-    gap: 50px;
-  }
-
   .header-link {
     padding: 6px;
-
     font-size: 12px;
     letter-spacing: 0.06em;
   }
 
   .header-link::after {
     left: 6px;
-
     width: calc(100% - 12px);
   }
 
@@ -306,7 +294,7 @@
 
 @media (max-width: 1280px) {
   .header-desktop-nav {
-    gap: 35px;
+    gap: 55px;
   }
 
   .header-link {
@@ -373,6 +361,10 @@
   }
 
   .header-mobile-nav a {
+    font-size: 18px;
+  }
+
+  .header-mobile-cart {
     font-size: 18px;
   }
 }

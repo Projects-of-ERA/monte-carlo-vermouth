@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { instagramPosts } from '../../../data/instagramPosts';
 import './Instagram.css';
 
 const Instagram = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="instagram-section">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -31,8 +34,8 @@ const Instagram = () => {
             <h2 className="instagram-username">montecarlo_vermouth</h2>
 
             <p className="instagram-description">
-              Official brand licensing by Monaco Brands.
-              <br className="instagram-description-break" /> Must be of legal drinking age.
+              {t('instagram.description1')}
+              <br className="instagram-description-break" /> {t('instagram.description2')}
             </p>
           </div>
         </a>
@@ -55,7 +58,7 @@ const Instagram = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="instagram-follow-button">
-          Follow on Instagram
+          {t('instagram.button')}
         </a>
       </div>
     </section>

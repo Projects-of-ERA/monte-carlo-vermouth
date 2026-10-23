@@ -1,8 +1,16 @@
 import './Botanicals.css';
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import BotanicalsSlider from './BotanicalsSlider';
 
 const Botanicals = () => {
+  const { t } = useTranslation();
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
+
   return (
     <section className="botanicals">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -18,24 +26,24 @@ const Botanicals = () => {
             <div className="botanicals-left-content">
               <h2 className="botanicals-title font-serif">
                 <span>
-                  <em>made</em>
+                  <em>{t('botanicals.title1')}</em>
                 </span>
 
                 <span>
-                  <em>with the</em> FINEST
+                  <em>{t('botanicals.title2')}</em> {t('botanicals.title2Accent')}
                 </span>
 
-                <span>BOTANICALS</span>
+                <span>{t('botanicals.title3')}</span>
 
                 <span>
-                  <em>from the</em> CÔTE
+                  <em>{t('botanicals.title4')}</em> {t('botanicals.title4Accent')}
                 </span>
 
-                <span>D’AZUR</span>
+                <span>{t('botanicals.title5')}</span>
               </h2>
 
-              <Link to="/story" className="botanicals-button">
-                Our story
+              <Link to={`${langPrefix}/story`} className="botanicals-button">
+                {t('botanicals.button')}
               </Link>
             </div>
           </div>

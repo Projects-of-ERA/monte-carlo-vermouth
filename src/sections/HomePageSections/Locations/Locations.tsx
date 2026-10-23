@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useTranslation } from 'react-i18next';
 
 import { locations } from '../../../data/locations';
 
@@ -7,6 +8,8 @@ import '../../../utils/fixLeafletIcon';
 import './Locations.css';
 
 const Locations = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="locations-section">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -14,16 +17,16 @@ const Locations = () => {
           <div className="locations-copy">
             <h2 className="locations-title font-serif">
               <span>
-                <em>Sip</em> Monte Carlo
+                <em>{t('locations.title1')}</em> {t('locations.title1Accent')}
               </span>
 
-              <span>Vermouth at</span>
+              <span>{t('locations.title2')}</span>
 
               <span>
-                <em>these</em> fine
+                <em>{t('locations.title3')}</em> {t('locations.title3Accent')}
               </span>
 
-              <span>establishments</span>
+              <span>{t('locations.title4')}</span>
             </h2>
           </div>
 

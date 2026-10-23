@@ -1,0 +1,85 @@
+.language-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.language-switcher-button,
+.language-switcher-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.language-switcher-flag {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* FLAGS EXPAND TO THE LEFT */
+
+.language-switcher-dropdown {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(12px, -50%);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s ease;
+}
+
+.language-switcher-dropdown.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translate(0, -50%);
+}
+
+.header-mobile-menu .language-switcher-dropdown {
+  position: absolute;
+  inset: auto;
+
+  top: 50%;
+  left: 50%;
+
+  width: 128px;
+
+  display: flex;
+  justify-content: space-between;
+
+  transform: translate(-50%, -50%);
+}
+
+.header-mobile-menu .language-switcher-dropdown.is-open {
+  transform: translate(-50%, -50%);
+}
+
+.header-mobile-menu .language-switcher-dropdown .language-switcher-option {
+  width: 40px;
+  height: 40px;
+}
+
+.header-mobile-menu .language-switcher-dropdown .language-switcher-option:last-child {
+  margin-left: auto;
+}
+
+.header-mobile-menu .language-switcher-button {
+  position: relative;
+  z-index: 11;
+}

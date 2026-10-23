@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'react-i18next';
 import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
@@ -7,34 +8,27 @@ import 'swiper/css';
 const slides = [
   {
     id: 'premium-grapes',
-    title: 'Premium Grapes',
+    titleKey: 'botanicals.slider.premiumGrapes.title',
+    textKey: 'botanicals.slider.premiumGrapes.text',
     image: '/images/HomePage/botanicals/grapes.png',
-    text: `Monte-Carlo Vermouth is created using artisanal methods of vermouth making from
-      the renowned Piedmont region, whose vineyards are listed among the UNESCO World
-      Heritage. Expert Italian winemakers create Moscato d’Asti DOCG to form an
-      unparalleled aromatic base using the whole grape, grown expressly for this
-      purpose.`,
   },
   {
     id: 'botanicals',
-    title: 'The Botanicals',
+    titleKey: 'botanicals.slider.botanicals.title',
+    textKey: 'botanicals.slider.botanicals.text',
     image: '/images/HomePage/botanicals/botanicals-slide.png',
-    text: `The liquid is then blended with Côte d’Azur botanicals exclusively from expert
-      distillers in the perfume capital of the world, Grasse. Known around the globe
-      for the quality of its fragrances since the 18th century, it is where the finest
-      luxury perfumes are made.`,
   },
   {
     id: 'monegasque-roses',
-    title: 'Monégasque Roses',
+    titleKey: 'botanicals.slider.monegasqueRoses.title',
+    textKey: 'botanicals.slider.monegasqueRoses.text',
     image: '/images/HomePage/botanicals/roses.png',
-    text: `Finally, the liquid is made more exceptional with a touch of the Monégasque
-      terroir: hand-picked rose petals from the principality’s rose garden to impart
-      intrigue, elegance, and a divine taste.`,
   },
 ];
 
 const BotanicalsSlider = () => {
+  const { t } = useTranslation();
+
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -56,14 +50,14 @@ const BotanicalsSlider = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="botanicals-right-image">
-              <img src={slide.image} alt={slide.title} />
+              <img src={slide.image} alt={t(slide.titleKey)} />
 
               <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
               <div className="botanicals-right-content">
-                <h3 className="botanicals-right-title">{slide.title}</h3>
+                <h3 className="botanicals-right-title">{t(slide.titleKey)}</h3>
 
-                <p className="botanicals-right-text">{slide.text}</p>
+                <p className="botanicals-right-text">{t(slide.textKey)}</p>
               </div>
             </div>
           </SwiperSlide>
@@ -72,11 +66,6 @@ const BotanicalsSlider = () => {
 
       <div className="botanicals-slider-navigation">
         <div className="botanicals-slider-counter font-serif">
-          {/* <span>{String(activeIndex + 1).padStart(2, '0')}</span>
-
-          <span>/</span>
-
-          <span>{String(totalSlides).padStart(2, '0')}</span> */}
           <span>{activeIndex + 1}</span>
 
           <span>/</span>

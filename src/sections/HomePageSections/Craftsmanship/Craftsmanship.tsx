@@ -1,34 +1,41 @@
-import './Craftsmanship.css';
+import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import CraftsmanshipSlider from './CraftsmanshipSlider';
 
+import './Craftsmanship.css';
+
 const Craftsmanship = () => {
+  const { t } = useTranslation();
+
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
+
   return (
     <section className="craftsmanship">
       {/* INTRO */}
       <div className="craftsmanship-intro">
         <div className="mx-auto max-w-8xl px-4 lg:px-8">
           <div className="craftsmanship-intro-content">
-            <p className="craftsmanship-eyebrow">The Perfect Addition to Elegant Cocktail</p>
+            <p className="craftsmanship-eyebrow">{t('craftsmanship.eyebrow')}</p>
 
             <h2 className="craftsmanship-title font-serif">
-              <span>Crafted</span>
+              <span>{t('craftsmanship.title1')}</span>
 
               <span>
-                <em>by</em> Master
+                <em>{t('craftsmanship.title2')}</em> {t('craftsmanship.title2Accent')}
               </span>
 
-              <span>Distillers</span>
+              <span>{t('craftsmanship.title3')}</span>
             </h2>
 
-            <p className="craftsmanship-description">
-              The light, highly aromatic and fresh palate of Monte Carlo Vermouth gives it great
-              versatility to be enjoyed on its own on ice, or in cocktails to give renewed
-              sophistication to a classic favourite.
-            </p>
+            <p className="craftsmanship-description">{t('craftsmanship.description')}</p>
 
-            <a href="#" className="craftsmanship-button">
-              Tasting Notes
-            </a>
+            <Link to={`${langPrefix}/mixology`} className="craftsmanship-button">
+              {t('craftsmanship.button')}
+            </Link>
           </div>
         </div>
       </div>

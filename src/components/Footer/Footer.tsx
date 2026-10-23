@@ -1,6 +1,15 @@
+import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
+
 import './Footer.css';
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
+
   return (
     <footer className="footer">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -8,7 +17,7 @@ const Footer = () => {
           <div className="footer-divider" />
 
           <div className="footer-logo">
-            <img src="/images/footer/main-logo-blue.svg" alt="Monte Carlo Vermouth" />
+            <img src="/images/footer/main-logo-blue.svg" alt="Monte Carlo Vermouth logo" />
           </div>
 
           <div className="footer-divider" />
@@ -16,35 +25,31 @@ const Footer = () => {
 
         <div className="footer-grid">
           <div className="footer-column">
-            <h3>Menu</h3>
+            <h3>{t('footer.menu')}</h3>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Shop</span>
+              <span>{t('footer.shop')}</span>
             </a>
 
-            <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Our Varietals</span>
-            </a>
+            <Link to={`${langPrefix}/vermouth`}>
+              <span>{t('footer.theVermouth')}</span>
+            </Link>
+
+            <Link to={`${langPrefix}/story`}>
+              <span>{t('footer.ourStory')}</span>
+            </Link>
+
+            <Link to={`${langPrefix}/mixology`}>
+              <span>{t('footer.mixology')}</span>
+            </Link>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>The Vermouth</span>
-            </a>
-
-            <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Our Story</span>
-            </a>
-
-            <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Mixology</span>
-            </a>
-
-            <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>News</span>
+              <span>{t('footer.news')}</span>
             </a>
           </div>
 
           <div className="footer-column">
-            <h3>Social</h3>
+            <h3>{t('footer.social')}</h3>
 
             <a
               href="https://www.instagram.com/montecarlo_vermouth/"
@@ -62,27 +67,27 @@ const Footer = () => {
           </div>
 
           <div className="footer-column">
-            <h3>Legal Menu</h3>
+            <h3>{t('footer.legalMenu')}</h3>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Terms and conditions of sale</span>
+              <span>{t('footer.terms')}</span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Cookies Policy</span>
+              <span>{t('footer.cookies')}</span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Legal Notice</span>
+              <span>{t('footer.legalNotice')}</span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>Privacy Policy</span>
+              <span>{t('footer.privacy')}</span>
             </a>
           </div>
 
           <div className="footer-column footer-contact">
-            <h3>Contact</h3>
+            <h3>{t('footer.contact')}</h3>
 
             <a href="mailto:info@montecarlovermouth.com" className="footer-contact-link">
               <span>info@montecarlovermouth.com</span>
@@ -96,12 +101,12 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <p>© 2026 Monte Carlo Vermouth. All rights reserved.</p>
-            <p>Alcohol abuse is harmful to your health. Please drink responsibly.</p>
+            <p>© 2026 Monte Carlo Vermouth. {t('footer.copyright')}</p>
+            <p>{t('footer.responsibleDrinking')}</p>
           </div>
 
           <div className="footer-bottom-right">
-            <p>Monte Carlo, official licensed trademark by Monaco Brands</p>
+            <p>{t('footer.licensedTrademark')}</p>
           </div>
         </div>
       </div>

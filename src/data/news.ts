@@ -5,8 +5,8 @@ export type NewsItem = {
     month: string;
     year: string;
   };
-  title: string;
-  text: string;
+  titleKey: string;
+  textKey: string;
   image: string;
 };
 
@@ -18,8 +18,8 @@ export const news: NewsItem[] = [
       month: 'February',
       year: '2026',
     },
-    title: 'Meet Monte Carlo Vermouth at Wine Paris 2026',
-    text: 'From February 9 to 11, Paris once again becomes the global meeting point for the wine and spirits world.',
+    titleKey: 'news.articles.wineParis2026.title',
+    textKey: 'news.articles.wineParis2026.text',
     image: '/images/HomePage/news/wine-paris-2026.png',
   },
   {
@@ -29,8 +29,8 @@ export const news: NewsItem[] = [
       month: 'December',
       year: '2025',
     },
-    title: 'Merry Christmas from Monte Carlo Vermouth',
-    text: 'It’s almost Christmas and we would like to thank you all for learning about our product, taking the first sip and finally — falling in love with it! Let’s pour our Vermouth into a glass and wish each other a Merry Christmas — cin-cin!',
+    titleKey: 'news.articles.merryChristmas.title',
+    textKey: 'news.articles.merryChristmas.text',
     image: '/images/HomePage/news/christmas.png',
   },
   {
@@ -40,8 +40,8 @@ export const news: NewsItem[] = [
       month: 'November',
       year: '2025',
     },
-    title: 'From Bitter Tincture To Sweet Trendsetter',
-    text: 'The basis of what vermouth is goes back to ancient times. However, the qualities for which it has been valued has changed significantly.',
+    titleKey: 'news.articles.bitterTincture.title',
+    textKey: 'news.articles.bitterTincture.text',
     image: '/images/HomePage/news/from-bitter.png',
   },
   {
@@ -51,8 +51,8 @@ export const news: NewsItem[] = [
       month: 'December',
       year: '2023',
     },
-    title: 'Monte Carlo Vermouth Available Online',
-    text: 'The moment has finally arrived! We’ve opened online sales of Monte Carlo Vermouth in selected countries – a product created to embody the spirit of Monaco, as well as its lifestyle and refined taste.',
+    titleKey: 'news.articles.availableOnline.title',
+    textKey: 'news.articles.availableOnline.text',
     image: '/images/HomePage/news/available-online.png',
   },
   {
@@ -62,8 +62,8 @@ export const news: NewsItem[] = [
       month: 'November',
       year: '2023',
     },
-    title: 'Chalet Monte Carlo Vermouth',
-    text: 'The magic of Christmas comes to Monaco. On this occasion, we are delighted to announce the opening of Monte Carlo Vermouth Chalet.',
+    titleKey: 'news.articles.chalet.title',
+    textKey: 'news.articles.chalet.text',
     image: '/images/HomePage/news/chalet.png',
   },
   {
@@ -73,8 +73,8 @@ export const news: NewsItem[] = [
       month: 'September',
       year: '2023',
     },
-    title: 'Monte Carlo Vermouth Living Wall',
-    text: 'On September 3rd, we spent a delightful day at the party hosted by Club La Vigie Monte-Carlo, where we proudly presented our living wall.',
+    titleKey: 'news.articles.livingWall.title',
+    textKey: 'news.articles.livingWall.text',
     image: '/images/HomePage/news/living-wall.png',
   },
 ];
