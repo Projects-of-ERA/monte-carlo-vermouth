@@ -171,5 +171,43 @@
     "copyright": "Todos los derechos reservados.",
     "responsibleDrinking": "El abuso del alcohol es perjudicial para la salud. Consume con responsabilidad.",
     "licensedTrademark": "Monte Carlo, marca utilizada bajo licencia oficial de Monaco Brands"
+  },
+  "storyHero": {
+    "title1": "los",
+    "title1Accent": "MEJORES",
+    "title2": "BOTÁNICOS",
+    "title2Accent": "de",
+    "title3": "la",
+    "title3Accent": "COSTA AZUL"
+  },
+  "storyBotanicals": {
+    "title1": "los",
+    "title2": "BOTÁNICOS",
+    "subtitle": "Monte Carlo Vermouth se infusiona con ingredientes botánicos destilados en la histórica y singular ciudad de Grasse, capital mundial del perfume, donde nacen los aromas más refinados.",
+    "description1": "Los inconfundibles pétalos de rosas monegascas se realzan con un toque de flores de la Costa Azul, incluida la mimosa, creando una armonía de delicados matices.",
+    "description2": "Las notas cítricas mediterráneas de mandarina, cáscara de limón, naranja y pomelo forman la refrescante base de Monte Carlo Vermouth, evocando la frescura revitalizante de una puesta de sol sobre la Riviera francesa.",
+    "description3": "Apreciada por los antiguos egipcios, que la utilizaban en inciensos y perfumes, la raíz de lirio aporta una combinación única de sensaciones, descrita a veces como una delicada mezcla de violeta y frambuesa.",
+    "description4": "El ajenjo romano y el ajenjo blanco aportan el amargor tan característico del vermut. De hecho, la palabra vermut deriva del inglés antiguo wermod, mientras que la especie vegetal Artemisia absinthium recibe su nombre de Artemisa, diosa griega de la caza y protectora de los bosques.",
+    "description5": "Estos aromas se enriquecen con hierbas y especias como el cilantro, la pimienta de Sichuan, la siempreviva y el jengibre fresco, que aportan complejidad, variedad y profundidad a la receta. Juntos, añaden el toque justo de intensidad para convertir cada copa en un nuevo capítulo de la historia interminable de Monte Carlo Vermouth."
+  },
+  "storyGrapes": {
+    "title1": "UVAS MOSCATO",
+    "title2": "D’ASTI DOCG",
+    "title3": "de la región del",
+    "title4": "PIAMONTE",
+    "description": "Monte Carlo Vermouth se elabora mediante métodos artesanales de producción de vermut de la reconocida región del Piamonte, cuyos viñedos están declarados Patrimonio Mundial por la UNESCO. Expertos viticultores italianos utilizan uvas Moscato d’Asti DOCG para crear una base aromática incomparable, empleando la uva entera, cultivada especialmente para este propósito."
+  },
+  "storyRoses": {
+    "title1": "SELECCIONADOS A MANO",
+    "title2": "PÉTALOS DE ROSA",
+    "title2Accent": "de los",
+    "title3": "JARDINES DE MÓNACO",
+    "description": "Infusionado con pétalos de rosa recogidos a mano en los jardines de rosas de Mónaco, famosos por su belleza y por albergar 168 variedades raras de rosas, Monte Carlo Vermouth captura la delicada fragancia de estas flores excepcionales. Su cautivador aroma aporta una elegancia floral a cada sorbo, reflejando la pureza y sofisticación de Mónaco."
+  },
+  "storyFinal": {
+    "subtitle": "LA ESENCIA DE MÓNACO",
+    "title": "EL SABOR DE LA RIVIERA",
+    "description": "Una celebración de ingredientes botánicos excepcionales, una elaboración refinada y el encanto atemporal de Montecarlo.",
+    "button": "Descubre nuestro vermut"
   }
 }

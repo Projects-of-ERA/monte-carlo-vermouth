@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './StoryBotanicals.css';
 
 const StoryBotanicals = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="story-botanicals">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -8,16 +12,13 @@ const StoryBotanicals = () => {
         <div className="story-botanicals-header">
           <h2 className="story-botanicals-title font-serif">
             <span>
-              <em>the</em>
+              <em>{t('storyBotanicals.title1')}</em>
             </span>
 
-            <span>BOTANICALS</span>
+            <span>{t('storyBotanicals.title2')}</span>
           </h2>
 
-          <p className="story-botanicals-subtitle">
-            Monte Carlo Vermouth is infused with botanicals distilled in the historical and unique
-            city of Grasse, the world’s perfume capital where the finest aromatics are born.
-          </p>
+          <p className="story-botanicals-subtitle">{t('storyBotanicals.subtitle')}</p>
         </div>
 
         {/* CONTENT */}
@@ -26,39 +27,18 @@ const StoryBotanicals = () => {
           <div className="story-botanicals-text">
             {/* FIRST PART */}
             <div className="story-botanicals-text-part">
-              <p>
-                The inimitable Monégasque rose petals are thus enhanced with a touch of Côte d’Azur
-                florals including mimosa creating a harmony of nuances.
-              </p>
+              <p>{t('storyBotanicals.description1')}</p>
 
-              <p>
-                Mediterranean citrus notes of mandarin, lemon peel, orange peel and grapefruit
-                together for the refreshing backbone of Monte Carlo Vermouth, imparting the
-                invigorating flavor of a sunset over the French Riviera.
-              </p>
+              <p>{t('storyBotanicals.description2')}</p>
             </div>
 
             {/* SECOND PART */}
             <div className="story-botanicals-text-part">
-              <p>
-                Treasured by the Ancient Egyptians who used it in incense and perfume, Orris root
-                imbues a unique combination of sensations sometimes described as a delicate mix of
-                violet and raspberry.
-              </p>
+              <p>{t('storyBotanicals.description3')}</p>
 
-              <p>
-                Roman and white wormwood impart bitters so characteristic of vermouth. Indeed, the
-                word vermouth itself is derived from the Old English wermod while the plant species,
-                artemisia absinthium is named for the Ancient Greek goddess of the hunt and
-                protectress of the forest.
-              </p>
+              <p>{t('storyBotanicals.description4')}</p>
 
-              <p>
-                Underscoring these aromas are herbs and spices such as coriander, Sichuan pepper,
-                Immortelle, and fresh ginger, that bring complexity, variety, and depth to the
-                recipe. Together, they add the right amount of piquant to make each glass a new
-                chapter in a never-ending story of Monte Carlo Vermouth.
-              </p>
+              <p>{t('storyBotanicals.description5')}</p>
             </div>
           </div>
 

@@ -7,29 +7,35 @@ import StoryPage from './pages/StoryPage/StoryPage';
 import ScrollToTop from './utils/ScrollToTop';
 import VermouthPage from './pages/VermouthPage/VermouthPage';
 import MixologyPage from './pages/MixologyPage/MixologyPage';
+import ProductsPage from './pages/ProductsPage/ProductsPage';
+import NewsPage from './pages/NewsPage/NewsPage';
+
+const languages = ['', '/fr', '/es'];
 
 function App() {
   return (
-    <>
-      <div className="site-wrapper">
-        <ScrollToTop />
+    <div className="site-wrapper">
+      <ScrollToTop />
 
-        <Header />
+      <Header />
 
-        <Routes>
-          {/* <Route path="/" element={<HomePage />} />
-          <Route path="/story" element={<StoryPage />} />
-          <Route path="/vermouth" element={<VermouthPage />} />
-          <Route path="/mixology" element={<MixologyPage />} /> */}
-          <Route path="/:lang?" element={<HomePage />} />
-          <Route path="/:lang?/story" element={<StoryPage />} />
-          <Route path="/:lang?/vermouth" element={<VermouthPage />} />
-          <Route path="/:lang?/mixology" element={<MixologyPage />} />
-        </Routes>
+      <Routes>
+        {languages.map((prefix) => (
+          <Route key={prefix} path={prefix || '/'}>
+            <Route index element={<HomePage />} />
+            <Route path="story" element={<StoryPage />} />
+            <Route path="vermouth" element={<VermouthPage />} />
+            <Route path="mixology" element={<MixologyPage />} />
+            <Route path="products" element={<ProductsPage />} />
+            <Route path="news" element={<NewsPage />} />
+          </Route>
+        ))}
 
-        <Footer />
-      </div>
-    </>
+        <Route path="*" element={<h1>404 — Page Not Found</h1>} />
+      </Routes>
+
+      <Footer />
+    </div>
   );
 }
 

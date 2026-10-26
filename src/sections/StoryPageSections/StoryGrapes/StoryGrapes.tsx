@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './StoryGrapes.css';
 
 const StoryGrapes = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="story-grapes mx-auto max-w-8xl px-4 lg:px-8">
       {/* LEFT IMAGE */}
@@ -16,20 +20,18 @@ const StoryGrapes = () => {
       {/* CENTER CONTENT */}
       <div className="story-grapes-content">
         <h2 className="story-grapes-title font-serif">
-          <span>MOSCATO D’ASTI</span>
-          <span>DOCG GRAPES</span>
+          <span>{t('storyGrapes.title1')}</span>
+
+          <span>{t('storyGrapes.title2')}</span>
+
           <span>
-            <em>from the</em>
+            <em>{t('storyGrapes.title3')}</em>
           </span>
-          <span> PIEDMONT REGION</span>
+
+          <span>{t('storyGrapes.title4')}</span>
         </h2>
 
-        <p className="story-grapes-text">
-          The Monte Carlo Vermouth is created using artisanal methods of vermouth making from the
-          renowned Piedmont region, whose vineyards are listed among the UNESCO World Heritage.
-          Expert Italian winemakers use Moscato d’Asti DOCG grapes to form an unparalleled aromatic
-          base using the whole grape, grown expressly for&nbsp;this&nbsp;purpose.
-        </p>
+        <p className="story-grapes-text">{t('storyGrapes.description')}</p>
       </div>
 
       {/* RIGHT IMAGE */}

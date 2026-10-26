@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './StoryHero.css';
 
 const StoryHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="story-hero">
       {/* BACKGROUND */}
@@ -23,15 +27,15 @@ const StoryHero = () => {
       <div className="story-hero-content mx-auto max-w-8xl px-4 lg:px-8">
         <h1 className="story-hero-title font-serif">
           <span>
-            <em>the</em> FINEST
+            <em>{t('storyHero.title1')}</em> {t('storyHero.title1Accent')}
           </span>
 
           <span>
-            BOTANICALS <em>from</em>
+            {t('storyHero.title2')} <em>{t('storyHero.title2Accent')}</em>
           </span>
 
           <span>
-            <em>the</em> CÔTE D’AZUR
+            <em>{t('storyHero.title3')}</em> {t('storyHero.title3Accent')}
           </span>
         </h1>
       </div>

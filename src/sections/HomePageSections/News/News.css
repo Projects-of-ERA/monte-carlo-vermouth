@@ -1,5 +1,5 @@
 .news-section {
-  padding: 40px 0 60px;
+  padding: 60px 0 60px;
   background-color: white;
   color: var(--color-primary-blue);
   scroll-margin-top: 90px;
@@ -130,6 +130,7 @@
 @media (max-width: 1536px) {
   .news-section {
     padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .news-title {
@@ -151,7 +152,7 @@
 }
 
 /* <= 1024px */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .news-section {
     padding: 40px 0;
   }
@@ -252,10 +253,6 @@
 
 /* <= 480px */
 @media (max-width: 480px) {
-  .news-section {
-    padding: 30px 0 30px;
-  }
-
   .news-list {
     gap: 26px;
   }

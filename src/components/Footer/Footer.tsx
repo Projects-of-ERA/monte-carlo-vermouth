@@ -27,9 +27,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>{t('footer.menu')}</h3>
 
-            <a href="#" onClick={(event) => event.preventDefault()}>
+            <Link to={`${langPrefix}/products`}>
               <span>{t('footer.shop')}</span>
-            </a>
+            </Link>
 
             <Link to={`${langPrefix}/vermouth`}>
               <span>{t('footer.theVermouth')}</span>
@@ -43,9 +43,9 @@ const Footer = () => {
               <span>{t('footer.mixology')}</span>
             </Link>
 
-            <a href="#" onClick={(event) => event.preventDefault()}>
+            <Link to={`${langPrefix}/news`}>
               <span>{t('footer.news')}</span>
-            </a>
+            </Link>
           </div>
 
           <div className="footer-column">

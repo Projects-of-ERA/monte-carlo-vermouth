@@ -91,13 +91,17 @@ const Header = () => {
             <CartIcon />
           </button>
 
-          <Link to="#" className="header-link">
+          <NavLink
+            to={localizedPath('/products')}
+            className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
             {t('header.buyNow')}
-          </Link>
+          </NavLink>
 
-          <Link to="#" className="header-link">
+          <NavLink
+            to={localizedPath('/news')}
+            className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
             {t('header.news')}
-          </Link>
+          </NavLink>
 
           <LanguageSwitcher />
         </nav>
@@ -139,13 +143,19 @@ const Header = () => {
             {t('header.mixology')}
           </NavLink>
 
-          <Link to="#" onClick={closeMenu}>
+          <NavLink
+            to={localizedPath('/products')}
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'is-active' : '')}>
             {t('header.buyNow')}
-          </Link>
+          </NavLink>
 
-          <Link to="#" onClick={closeMenu}>
+          <NavLink
+            to={localizedPath('/news')}
+            onClick={closeMenu}
+            className={({ isActive }) => (isActive ? 'is-active' : '')}>
             {t('header.news')}
-          </Link>
+          </NavLink>
         </nav>
 
         <button type="button" className="header-mobile-cart" onClick={closeMenu}>

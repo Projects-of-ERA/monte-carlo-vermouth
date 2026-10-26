@@ -171,5 +171,44 @@
     "copyright": "Tous droits réservés.",
     "responsibleDrinking": "L’abus d’alcool est dangereux pour la santé. À consommer avec modération.",
     "licensedTrademark": "Monte Carlo, marque utilisée sous licence officielle de Monaco Brands"
+  },
+  "storyHero": {
+    "title1": "les",
+    "title1Accent": "PLUS BELLES",
+    "title2": "BOTANIQUES",
+    "title2Accent": "de",
+    "title3": "la",
+    "title3Accent": "CÔTE D’AZUR"
+  },
+
+  "storyBotanicals": {
+    "title1": "les",
+    "title2": "BOTANIQUES",
+    "subtitle": "Monte Carlo Vermouth est infusé de plantes aromatiques distillées dans la ville historique et unique de Grasse, capitale mondiale du parfum, où naissent les essences les plus raffinées.",
+    "description1": "Les incomparables pétales de roses monégasques sont sublimés par une touche de fleurs de la Côte d’Azur, notamment le mimosa, créant une harmonie de nuances délicates.",
+    "description2": "Les notes d’agrumes méditerranéens, comme la mandarine, les zestes de citron et d’orange ainsi que le pamplemousse, constituent la base rafraîchissante de Monte Carlo Vermouth, évoquant la fraîcheur vivifiante d’un coucher de soleil sur la Riviera française.",
+    "description3": "Précieuse aux yeux des anciens Égyptiens, qui l’utilisaient dans les encens et les parfums, la racine d’iris apporte une combinaison unique de sensations, parfois décrite comme un délicat mélange de violette et de framboise.",
+    "description4": "L’absinthe romaine et l’absinthe blanche apportent l’amertume si caractéristique du vermouth. Le mot vermouth trouve d’ailleurs son origine dans l’ancien anglais wermod, tandis que l’espèce végétale Artemisia absinthium tire son nom d’Artémis, déesse grecque de la chasse et protectrice des forêts.",
+    "description5": "Ces arômes sont enrichis d’herbes et d’épices telles que la coriandre, le poivre du Sichuan, l’immortelle et le gingembre frais, qui apportent complexité, diversité et profondeur à la recette. Ensemble, ils ajoutent juste ce qu’il faut de piquant pour faire de chaque verre un nouveau chapitre de l’histoire infinie de Monte Carlo Vermouth."
+  },
+  "storyGrapes": {
+    "title1": "RAISINS MOSCATO",
+    "title2": "D’ASTI DOCG",
+    "title3": "de la région du",
+    "title4": "PIÉMONT",
+    "description": "Monte Carlo Vermouth est élaboré selon les méthodes artisanales de production du vermouth propres à la célèbre région du Piémont, dont les vignobles sont inscrits au patrimoine mondial de l’UNESCO. Des vignerons italiens expérimentés utilisent les raisins Moscato d’Asti DOCG pour créer une base aromatique incomparable, en employant le raisin entier, cultivé spécialement à\u00A0cet\u00A0effet."
+  },
+  "storyRoses": {
+    "title1": "SÉLECTIONNÉS À LA MAIN",
+    "title2": "PÉTALES DE ROSE",
+    "title2Accent": "des",
+    "title3": "JARDINS DE MONACO",
+    "description": "Infusé de pétales de rose cueillis à la main dans les roseraies monégasques, réputées pour leur beauté exceptionnelle et abritant 168 variétés rares de roses, Monte Carlo Vermouth capture le parfum délicat de ces fleurs d’exception. Leur arôme envoûtant apporte une subtile élégance florale à chaque gorgée, reflétant la pureté et le raffinement de Monaco."
+  },
+  "storyFinal": {
+    "subtitle": "L’ESSENCE DE MONACO",
+    "title": "UN GOÛT DE LA RIVIERA",
+    "description": "Une célébration de plantes aromatiques d’exception, d’un savoir-faire raffiné et du charme intemporel de Monte-Carlo.",
+    "button": "Découvrez notre vermouth"
   }
 }

@@ -171,5 +171,44 @@
     "copyright": "All rights reserved.",
     "responsibleDrinking": "Alcohol abuse is harmful to your health. Please drink responsibly.",
     "licensedTrademark": "Monte Carlo, official licensed trademark by Monaco Brands"
+  },
+  "storyHero": {
+    "title1": "the",
+    "title1Accent": "FINEST",
+    "title2": "BOTANICALS",
+    "title2Accent": "from",
+    "title3": "the",
+    "title3Accent": "CÔTE D’AZUR"
+  },
+
+  "storyBotanicals": {
+    "title1": "the",
+    "title2": "BOTANICALS",
+    "subtitle": "Monte Carlo Vermouth is infused with botanicals distilled in the historical and unique city of Grasse, the world’s perfume capital where the finest aromatics are born.",
+    "description1": "The inimitable Monégasque rose petals are thus enhanced with a touch of Côte d’Azur florals including mimosa creating a harmony of nuances.",
+    "description2": "Mediterranean citrus notes of mandarin, lemon peel, orange peel and grapefruit together for the refreshing backbone of Monte Carlo Vermouth, imparting the invigorating flavor of a sunset over the French Riviera.",
+    "description3": "Treasured by the Ancient Egyptians who used it in incense and perfume, Orris root imbues a unique combination of sensations sometimes described as a delicate mix of violet and raspberry.",
+    "description4": "Roman and white wormwood impart bitters so characteristic of vermouth. Indeed, the word vermouth itself is derived from the Old English wermod while the plant species, artemisia absinthium is named for the Ancient Greek goddess of the hunt and protectress of the forest.",
+    "description5": "Underscoring these aromas are herbs and spices such as coriander, Sichuan pepper, Immortelle, and fresh ginger, that bring complexity, variety, and depth to the recipe. Together, they add the right amount of piquant to make each glass a new chapter in a never-ending story of Monte Carlo Vermouth."
+  },
+  "storyGrapes": {
+    "title1": "MOSCATO D’ASTI",
+    "title2": "DOCG GRAPES",
+    "title3": "from the",
+    "title4": "PIEDMONT REGION",
+    "description": "The Monte Carlo Vermouth is created using artisanal methods of vermouth making from the renowned Piedmont region, whose vineyards are listed among the UNESCO World Heritage. Expert Italian winemakers use Moscato d’Asti DOCG grapes to form an unparalleled aromatic base using the whole grape, grown expressly for\u00A0this\u00A0purpose."
+  },
+  "storyRoses": {
+    "title1": "HAND-SELECTED",
+    "title2": "ROSE PETALS",
+    "title2Accent": "from the",
+    "title3": "GARDENS OF MONACO",
+    "description": "Infused with hand-picked rose petals from the Monégasque rose gardens, renowned for their exquisite beauty and home to 168 rare rose varieties, Monte Carlo Vermouth captures the delicate fragrance of these exceptional flowers. Their captivating aroma brings a subtle floral elegance to every sip, reflecting the purity and sophistication of Monaco."
+  },
+  "storyFinal": {
+    "subtitle": "THE ESSENCE OF MONACO",
+    "title": "A TASTE OF THE RIVIERA",
+    "description": "A celebration of exceptional botanicals, refined craftsmanship, and the timeless charm of Monte Carlo.",
+    "button": "Discover Our Vermouth"
   }
 }
