@@ -209,5 +209,137 @@
     "title": "EL SABOR DE LA RIVIERA",
     "description": "Una celebración de ingredientes botánicos excepcionales, una elaboración refinada y el encanto atemporal de Montecarlo.",
     "button": "Descubre nuestro vermut"
+  },
+  "vermouthHero": {
+    "title1": "ELABORADO",
+    "title2": "CON MAESTRÍA",
+    "title2Accent": "en",
+    "title3": "MÓNACO"
+  },
+  "vermouthCulture": {
+    "title1": "el",
+    "title2": "CORAZÓN CULTURAL",
+    "title3": "de la",
+    "title3Accent": "RIVIERA",
+    "description1": "Montecarlo y Mónaco representan juntos una combinación única, nacida de la influencia de sus vecinos franceses e italianos a lo largo de la historia, unida a un profundo orgullo por sus tradiciones, su saber hacer y un estilo de vida epicúreo incomparable.",
+    "description2": "Situado en la Costa Azul, a pocos pasos de la frontera italiana, el Principado de Mónaco es el corazón cultural de la Riviera. Durante siglos, ha atraído a visitantes de todo el mundo deseosos de descubrir experiencias excepcionales y disfrutar de cada instante de la vida. Esto lo convierte en un referente mundial indiscutible del lujo auténtico, refinado y multicultural.",
+    "description3": "Desde la corte real de Turín hace siglos hasta los iconos del cine de Hollywood o la generación perdida de Hemingway, el vermut siempre ha sido apreciado por los paladares más exigentes. Al igual que el Principado de Mónaco, Monte Carlo Vermouth se enorgullece de su herencia, sus influencias y su saber hacer ancestral, encarnando la máxima expresión de la artesanía y los ingredientes más refinados.",
+    "description4": "Monte Carlo Vermouth se elabora siguiendo métodos artesanales de producción de vermut de la reconocida región del Piamonte, cuyos viñedos están declarados Patrimonio Mundial por la UNESCO. Expertos viticultores italianos elaboran Moscato d’Asti DOCG para obtener una base aromática incomparable, utilizando la uva entera, cultivada especialmente para este propósito. Después, el líquido se combina con ingredientes botánicos de la Costa Azul, procedentes exclusivamente de destiladores expertos de Grasse, capital mundial del perfume. Reconocida internacionalmente por la calidad de sus fragancias desde el siglo XVIII, es allí donde se crean los perfumes de lujo más refinados.",
+    "description5": "Finalmente, el vermut adquiere un carácter aún más excepcional gracias a un toque del terruño monegasco: pétalos de rosa recogidos a mano en los jardines del Principado, que aportan misterio, elegancia y un sabor divino.",
+    "description6": "Ya sea para disfrutar de un fin de semana lleno de emoción, entre carreras de día y el Casino de noche, o para amarrar tu yate y prolongar la estancia, una cosa es segura: el aura de Montecarlo se convierte en parte de ti. Creado para capturar este espíritu único, Monte Carlo Vermouth es la bebida ideal para disfrutar de la elegancia cotidiana."
+  },
+  "vermouthTasting": {
+    "title1": "NOTAS DE",
+    "title2": "cata",
+    "subtitle": "CÍTRICO, FLORAL Y DELICADO, CON TOQUES DE ROSA",
+    "description": "Afrutado en nariz, con un paladar fresco de cítricos y notas de rosa, realzadas por un ligero amargor y especias florales. El carácter ligero, intensamente aromático y fresco de Monte Carlo Vermouth le aporta una gran versatilidad para disfrutarlo solo con hielo o en cócteles, dando un toque de sofisticación a los grandes clásicos. Prepara un dry martini con ginebra o vodka, o disfruta de Monte Carlo Vermouth con prosecco o tónica y hielo.",
+    "eyeTitle": "A LA VISTA",
+    "eyeDescription": "Monte Carlo Vermouth cautiva la mirada con su delicado tono rubí rosado.",
+    "noseTitle": "EN NARIZ",
+    "noseDescription": "Expresivo y floral, con notas de jazmín, verbena, mimosa y rosa que dan paso a aromas de frutas maduras como lichi, melón dulce y pomelo.",
+    "palateTitle": "EN BOCA",
+    "palateDescription": "En boca, Monte Carlo Vermouth es refrescante y afrutado, con notas de bergamota, ralladura de pomelo, mandarina y melón, acompañadas de un agradable amargor que recuerda a la parte blanca del pomelo y la naranja amarga. Su cuerpo pleno, rico y semidulce envuelve el paladar. El final largo y persistente da paso a sabores herbáceos y matices sabrosos que sustituyen a la fruta, mientras una sutil nota de rosa despierta la curiosidad."
+  },
+  "vermouthBottle": {
+    "title1": "una",
+    "title1Accent": "MAJESTUOSA",
+    "title2": "botella",
+    "intro": "El vermut se presenta en una majestuosa botella de cristal, una auténtica obra de arte cuidada hasta el último detalle.",
+    "closureTitle": "Cierre:",
+    "closureDescription": "El distinguido tapón de corcho está adornado con un medallón exclusivo de oro rosa que evoca la primera estrofa del himno monegasco.",
+    "topLabelTitle": "Etiqueta superior:",
+    "topLabelDescription": "Como reflejo de las flores que impregnan el preciado contenido, la rosa dorada hace referencia al sabor único de Monte Carlo Vermouth y a los emblemáticos jardines del Principado.",
+    "centralLabelTitle": "Etiqueta central:",
+    "centralLabelDescription": "El emblemático sello central con el monograma V refleja el espíritu de Mónaco."
+  },
+  "mixologyHero": {
+    "title1": "elegante",
+    "title2": "COCTELERÍA"
+  },
+
+  "mixologyDrinks": {
+    "title1": "el",
+    "title1Accent": "ARTE",
+    "title2": "de los",
+    "title2Accent": "CÓCTELES",
+    "recipeTitle": "RECETA",
+    "methodTitle": "PREPARACIÓN",
+    "cocktails": {
+      "pearDrop": {
+        "description": "Una versión refrescante y elegante del clásico Vermouth & Tonic, el Pear Drop combina el intenso sabor de Monte Carlo Rosso con la delicada esencia de la pera. Inspirado en el famoso dulce británico del mismo nombre, este cóctel es ideal para quienes prefieren bebidas más dulces. El Grand Marnier aporta una sutil complejidad de naranja, perfectamente equilibrada con la frescura de la tónica seca. Ideal para disfrutar de una pausa sofisticada por la tarde o relajarse al final del día.",
+        "recipe": [
+          "6 cl de Monte Carlo Vermouth Rosso",
+          "1,5 cl de aguardiente de pera",
+          "0,75 cl de Grand Marnier",
+          "Schweppes Dry Tonic"
+        ],
+        "method": "Vierte todos los ingredientes en un vaso alto vacío. Llénalo con cubitos de hielo y completa con tónica. Remueve brevemente con una cuchara de bar. Decora y sirve."
+      },
+      "parlourGame": {
+        "description": "El Parlour Game es un delicioso Vermouth Sour con influencias del Caribe. La combinación de Monte Carlo Vermouth Rosso, ron Plantation Barbados de 5 años y crema de cacao blanco ofrece un toque tropical con un delicado matiz de chocolate. Las notas cítricas de los zumos de naranja y lima se mezclan armoniosamente con la calidez especiada del bitter de pimienta de Jamaica. Una propuesta imprescindible para quienes disfrutan de cócteles intensos, frescos y atrevidos.",
+        "recipe": [
+          "6 cl de Monte Carlo Vermouth Rosso",
+          "0,75 cl de ron Plantation Barbados de 5 años",
+          "2,25 cl de crema de cacao blanco",
+          "1,5 cl de zumo de naranja",
+          "2,25 cl de zumo de lima"
+        ],
+        "method": "Añade todos los ingredientes a una coctelera. Incorpora cubitos de hielo y agita enérgicamente hasta que el cóctel esté bien frío. Cuela finamente en una copa sour previamente enfriada y decora con nuez moscada recién rallada."
+      },
+      "coteDazurCobbler": {
+        "description": "Inspirada en las notas de rosa de Monte Carlo Vermouth, esta creación reinventa el clásico Sherry Cobbler incorporando manzana y pomelo para conseguir una experiencia más fresca, luminosa y cítrica.",
+        "recipe": [
+          "6 cl de Monte Carlo Vermouth Bianco",
+          "2,2 cl de aguardiente de manzana Eddu",
+          "1,5 cl de licor Giffard Pamplemousse Rose",
+          "1,5 cl de sirope de azúcar concentrado",
+          "1,5 cl de zumo de limón fresco"
+        ],
+        "method": "Agita todos los ingredientes con un solo cubito de hielo para mezclarlos. Vierte el cóctel en el vaso y llénalo con hielo picado. Recipiente: copa julep de color oro rosa. Decoración: añade una pajita, una ramita de menta y una rodaja de pomelo."
+      },
+      "monteCarloSpritz": {
+        "description": "Esta receta deliciosamente sencilla conquista el paladar y ofrece una revelación para los amantes del spritz. Desde cualquier rincón del puerto donde contemples la puesta de sol, el Monte-Carlo Spritz convertirá ese instante en un recuerdo inolvidable. El sabor revitalizante de Monte-Carlo Vermouth se realza con un toque de exquisito prosecco, mientras un pétalo de rosa, que evoca su esencia, descansa delicadamente sobre un refrescante cubito de hielo. Un cóctel para descubrir y disfrutar en cualquier momento del día.",
+        "recipe": [
+          "16 cl de prosecco",
+          "6 cl de vermut",
+          "Pétalo de rosa para decorar",
+          "1 cubito de hielo grande"
+        ],
+        "method": "Remueve todos los ingredientes con hielo en un vaso mezclador y cuela en la copa. Copa: coupette. Decoración: exprime la piel de pomelo sobre el cóctel para liberar sus aceites y termina con una cereza fresca."
+      },
+      "cherryBlossom": {
+        "description": "No es tan dulce como parece. Inspirado en el clásico Adonis de 1884, uno de los primeros cócteles de baja graduación alcohólica en alcanzar gran popularidad, este cóctel realza las notas florales de Monte-Carlo Vermouth con el sabor intenso de la cereza y el anís de la absenta. El Supasawa aporta un toque de acidez que invita a seguir disfrutando. Delicado pero complejo, es ideal antes de una comida, acompañado de ostras o marisco, o al aire libre durante un caluroso día de verano.",
+        "recipe": [
+          "6 cl de MonteCarlo Vermouth Bianco",
+          "3 cl de jerez Manzanilla La Guita",
+          "1 cucharadita de sirope de cereza",
+          "0,5 cucharadita de Supasawa",
+          "2 golpes de absenta Pernod"
+        ],
+        "method": "Remueve todos los ingredientes con hielo en un vaso mezclador y cuela en la copa. Copa: coupette. Decoración: exprime la piel de pomelo sobre el cóctel para liberar sus aceites y termina con una cereza fresca."
+      }
+    }
+  },
+  "productsHero": {
+    "title1": "nuestros",
+    "title2": "PRODUCTOS"
+  },
+  "productsCollection": {
+    "title1": "la",
+    "title1Accent": "ESENCIA",
+    "title2": "del",
+    "title2Accent": "VERMUT",
+    "description1": "Vermuts blancos y rojos de lujo.",
+    "description2": "El Vermut Rosso se infusiona con cáscara de naranja amarga, siempreviva, pimienta de Timut, raíz de lirio y jengibre.",
+    "description3": "El Vermut Bianco combina bergamota, mandarina y melón con delicados matices de naranja amarga y la parte blanca de la piel del pomelo.",
+    "whiteVermouth": "vermut blanco",
+    "redVermouth": "vermut rojo",
+    "button": "Ver producto"
+  },
+  "productsFinal": {
+    "eyebrow": "MÁS ALLÁ DE LA COPA",
+    "title": "EL ARTE DE LA COCTELERÍA",
+    "description": "Descubre la versatilidad de Monte Carlo Vermouth a través de cócteles elegantes, desde clásicos atemporales hasta nuevas creaciones llenas de inspiración.",
+    "button": "Explora la coctelería"
   }
 }

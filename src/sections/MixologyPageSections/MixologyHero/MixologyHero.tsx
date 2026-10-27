@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './MixologyHero.css';
 
 const MixologyHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="mixology-hero">
       {/* BACKGROUND */}
@@ -19,10 +23,10 @@ const MixologyHero = () => {
       <div className="mixology-hero-content mx-auto max-w-8xl px-4 lg:px-8">
         <h1 className="mixology-hero-title font-serif">
           <span>
-            <em>elegant</em>
+            <em>{t('mixologyHero.title1')}</em>
           </span>
 
-          <span>MIXOLOGY</span>
+          <span>{t('mixologyHero.title2')}</span>
         </h1>
       </div>
     </section>

@@ -28,7 +28,7 @@
 }
 
 .product-collection-description {
-  max-width: 1100px;
+  max-width: fit-content;
   margin: 0 auto;
   font-size: 18px;
   line-height: 1.6;
@@ -162,7 +162,6 @@
 
   .product-collection-description {
     font-size: 16px;
-    max-width: 955px;
   }
 
   .product-collection-grid {
@@ -199,7 +198,6 @@
 
   .product-collection-description {
     font-size: 14px;
-    max-width: 825px;
   }
 
   .product-collection-grid {
@@ -312,6 +310,7 @@
 
   .product-collection-description {
     font-size: 14px;
+    max-width: 340px;
   }
 
   .product-collection-grid {

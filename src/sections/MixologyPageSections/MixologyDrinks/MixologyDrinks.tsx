@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { cocktails } from '../../../data/cocktails';
 import './MixologyDrinks.css';
 
 const MixologyDrinks = () => {
+  const { t, i18n } = useTranslation();
+
   const [openDrinks, setOpenDrinks] = useState<string[]>([]);
 
   const toggleDrink = (id: string) => {
@@ -19,11 +22,13 @@ const MixologyDrinks = () => {
         <div className="mixology-drinks-header">
           <h2 className="mixology-drinks-title font-serif">
             <span>
-              <em>the</em> ART
+              <em>{t('mixologyDrinks.title1')}</em>
+              {i18n.language === 'fr' ? '' : ' '}
+              {t('mixologyDrinks.title1Accent')}
             </span>
 
             <span>
-              <em>of</em> COCKTAILS
+              <em>{t('mixologyDrinks.title2')}</em> {t('mixologyDrinks.title2Accent')}
             </span>
           </h2>
         </div>
@@ -67,24 +72,29 @@ const MixologyDrinks = () => {
                     <div className="mixology-drink-grid">
                       {/* TEXT */}
                       <div className="mixology-drink-content">
-                        <p className="mixology-drink-description">{cocktail.description}</p>
+                        <p className="mixology-drink-description">{t(cocktail.descriptionKey)}</p>
 
                         {/* RECIPE */}
                         <div className="mixology-drink-info">
-                          <h3 className="mixology-drink-info-title">RECIPE</h3>
+                          <h3 className="mixology-drink-info-title">
+                            {' '}
+                            {t('mixologyDrinks.recipeTitle')}
+                          </h3>
 
                           <ul className="mixology-drink-recipe">
-                            {cocktail.recipe.map((ingredient, i) => (
-                              <li key={i}>{ingredient}</li>
+                            {cocktail.recipeKeys.map((ingredientKey) => (
+                              <li key={ingredientKey}>{t(ingredientKey)}</li>
                             ))}
                           </ul>
                         </div>
 
                         {/* METHOD */}
                         <div className="mixology-drink-info">
-                          <h3 className="mixology-drink-info-title">METHOD</h3>
+                          <h3 className="mixology-drink-info-title">
+                            {t('mixologyDrinks.methodTitle')}
+                          </h3>
 
-                          <p className="mixology-drink-method">{cocktail.method}</p>
+                          <p className="mixology-drink-method">{t(cocktail.methodKey)}</p>
                         </div>
                       </div>
 

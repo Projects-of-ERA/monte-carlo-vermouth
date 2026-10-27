@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './VermouthBottle.css';
 
 const VermouthBottle = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="vermouth-bottle">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -8,11 +12,11 @@ const VermouthBottle = () => {
         <div className="vermouth-bottle-header">
           <h2 className="vermouth-bottle-title font-serif">
             <span>
-              <em>a</em> MAJESTIC
+              <em>{t('vermouthBottle.title1')}</em> {t('vermouthBottle.title1Accent')}
             </span>
 
             <span>
-              <em>bottle</em>
+              <em>{t('vermouthBottle.title2')}</em>
             </span>
           </h2>
         </div>
@@ -22,25 +26,21 @@ const VermouthBottle = () => {
           {/* LEFT — TEXT AND DETAILS */}
           <div className="vermouth-bottle-content">
             <div className="vermouth-bottle-text">
-              <p className="vermouth-bottle-intro">
-                The liquid is presented in a majestic crystal bottle, a work of art down to each
-                detail.
+              <p className="vermouth-bottle-intro">{t('vermouthBottle.intro')}</p>
+
+              <p>
+                <strong>{t('vermouthBottle.closureTitle')}</strong>{' '}
+                {t('vermouthBottle.closureDescription')}
               </p>
 
               <p>
-                <strong>Closure:</strong> The noble cork is secured with a bespoke rose gold
-                medallion that recalls the first verse of the Monégasque anthem.
+                <strong>{t('vermouthBottle.topLabelTitle')}</strong>{' '}
+                {t('vermouthBottle.topLabelDescription')}
               </p>
 
               <p>
-                <strong>Top label:</strong> An echo of the flowers that infuse the treasure within,
-                the golden rose is a reference to the unique palate of Monte Carlo Vermouth and
-                principality’s iconic gardens.
-              </p>
-
-              <p>
-                <strong>Central label:</strong> The emblematic central seal with the V monogram
-                resonates the spirit of Monaco.
+                <strong>{t('vermouthBottle.centralLabelTitle')}</strong>{' '}
+                {t('vermouthBottle.centralLabelDescription')}
               </p>
             </div>
 

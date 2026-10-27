@@ -1,23 +1,27 @@
+import { useTranslation } from 'react-i18next';
+
 import './ProductsCollection.css';
 
 const products = [
   {
     id: 'bianco',
     name: 'BIANCO',
-    type: 'white vermouth',
+    typeKey: 'productsCollection.whiteVermouth',
     image: '/images/ProductPage/products/bianco.webp',
     alt: 'Monte Carlo Vermouth Bianco bottle',
   },
   {
     id: 'rosso',
     name: 'ROSSO',
-    type: 'red vermouth',
+    typeKey: 'productsCollection.redVermouth',
     image: '/images/ProductPage/products/rosso.webp',
     alt: 'Monte Carlo Vermouth Rosso bottle',
   },
 ];
 
 const ProductsCollection = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="product-collection">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
@@ -25,22 +29,22 @@ const ProductsCollection = () => {
         <div className="product-collection-intro">
           <h2 className="product-collection-heading font-serif">
             <span>
-              <em>the</em> ESSENCE
+              <em>{t('productsCollection.title1')}</em>
+              {i18n.language === 'fr' ? '' : ' '}
+              {t('productsCollection.title1Accent')}
             </span>
 
             <span>
-              <em>of</em> VERMOUTH
+              <em>{t('productsCollection.title2')}</em> {t('productsCollection.title2Accent')}
             </span>
           </h2>
 
           <p className="product-collection-description">
-            Luxury white and red vermouths.
+            {t('productsCollection.description1')}
             <br />
-            Vermouth Rosso is infused with bitter orange peel, immortelle, timur pepper, orris and
-            ginger.
+            {t('productsCollection.description2')}
             <br />
-            Vermouth Bianco includes bergamot, mandarin, and melon with delightful hints of bitter
-            orange and grapefruit pith.
+            {t('productsCollection.description3')}
           </p>
         </div>
 
@@ -55,7 +59,7 @@ const ProductsCollection = () => {
               <div className="product-collection-title">
                 <h3 className="font-serif">{product.name}</h3>
 
-                <span className="font-serif">{product.type}</span>
+                <span className="font-serif">{t(product.typeKey)}</span>
               </div>
 
               <a

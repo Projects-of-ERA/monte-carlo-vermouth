@@ -210,5 +210,132 @@
     "title": "A TASTE OF THE RIVIERA",
     "description": "A celebration of exceptional botanicals, refined craftsmanship, and the timeless charm of Monte Carlo.",
     "button": "Discover Our Vermouth"
+  },
+  "vermouthHero": {
+    "title1": "EXPERTLY",
+    "title2": "CRAFTED",
+    "title2Accent": "in",
+    "title3": "MONACO"
+  },
+  "vermouthCulture": {
+    "title1": "the",
+    "title2": "CULTURAL HEART",
+    "title3": "of the",
+    "title3Accent": "RIVIERA",
+    "description1": "Together Monte-Carlo and Monaco represent a unique blend born from the influence of their French and Italian neighbours throughout history, combined with fierce pride in tradition, savoir-faire and an inimitable epicurean lifestyle.",
+    "description2": "Situated along the French Riviera a mere stone’s throw from the Italian border the Principality of Monaco is the cultural heart of the Riviera. For centuries, the Principality attracted people from all over the world seeking to discover the best experiences and to enjoy every moment of their life. This makes it the undisputable worldwide reference in the most rooted, refined and multicultural luxury.",
+    "description3": "From the royal court of Turin centuries ago, to Hollywood’s cinematic icons or the Lost Generation of Hemingway, vermouth has always been celebrated by the truly discerning palate. Like the principality of Monaco, Monte Carlo Vermouth is proud of its heritage, its influences, and ancestral know-how, as it is the embodiment and culmination of the most refined craftsmanship and ingredients.",
+    "description4": "Monte Carlo Vermouth is created using artisanal methods of vermouth making from the renowned Piedmont region, whose vineyards are listed among the UNESCO World Heritage. Expert Italian winemakers create Moscato d’Asti DOCG to form an unparalleled aromatic base using the whole grape, grown expressly for this purpose. The liquid is then blended with Côte d’Azur botanicals exclusively from expert distillers in the perfume capital of the world, Grasse. Known around the globe for the quality of its fragrances since the 18th century, it is where the finest luxury perfumes are made.",
+    "description5": "Finally, the liquid is made more exceptional with a touch of the Monégasque terroir: hand-picked rose petals from the principality’s rose garden to impart intrigue, elegance, and a divine taste.",
+    "description6": "Whether visiting for a whirlwind weekend of racing by day and Casino by night, or stationing your yacht to stay a while, one thing is for certain: the aura of Monte-Carlo becomes part of you. Crafted to bottle this singular spirit, Monte Carlo Vermouth is the ideal refreshment for everyday chic."
+  },
+  "vermouthTasting": {
+    "title1": "TASTING",
+    "title2": "notes",
+    "subtitle": "CITRUS, FLORAL, AND DELICATE, WITH HINTS OF ROSE",
+    "description": "Fruity on the nose with a palate of fresh citrus and hints of rose underscored by light bitter flavours and floral spice. The light, highly aromatic and fresh palate of Monte Carlo Vermouth gives it great versatility to be enjoyed on its own on ice, or in cocktails to give renewed sophistication to a classic favorite. Create the ultimate dry gin or vodka martini or try Monte Carlo Vermouth with prosecco or tonic over ice.",
+    "eyeTitle": "ON THE EYE",
+    "eyeDescription": "Monte Carlo Vermouth enchants the eye with a ruby-blush hue.",
+    "noseTitle": "ON THE NOSE",
+    "noseDescription": "Expressive and floral with jasmine, verbena, mimosa, and rose giving way to ripe fruity aromas of lychee, honeydew melon, and grapefruit.",
+    "palateTitle": "ON THE PALATE",
+    "palateDescription": "On the palate, Monte Carlo Vermouth is invigorating and fruity with notes of bergamot, grapefruit zest, mandarin, and melon underscored by a hint of delightful bitterness reminiscent of grapefruit pith and bitter orange. Its full, rich, semi sweet body coats the mouth. A long and lingering finish on savoury flavours and herbs take over from the fruit as subtle rose evokes intrigue."
+  },
+  "vermouthBottle": {
+    "title1": "a",
+    "title1Accent": "MAJESTIC",
+    "title2": "bottle",
+    "intro": "The liquid is presented in a majestic crystal bottle, a work of art down to each detail.",
+    "closureTitle": "Closure:",
+    "closureDescription": "The noble cork is secured with a bespoke rose gold medallion that recalls the first verse of the Monégasque anthem.",
+    "topLabelTitle": "Top label:",
+    "topLabelDescription": "An echo of the flowers that infuse the treasure within, the golden rose is a reference to the unique palate of Monte Carlo Vermouth and principality’s iconic gardens.",
+    "centralLabelTitle": "Central label:",
+    "centralLabelDescription": "The emblematic central seal with the V monogram resonates the spirit of Monaco."
+  },
+  "mixologyHero": {
+    "title1": "elegant",
+    "title2": "MIXOLOGY"
+  },
+
+  "mixologyDrinks": {
+    "title1": "the",
+    "title1Accent": "ART",
+    "title2": "of",
+    "title2Accent": "COCKTAILS",
+    "recipeTitle": "RECIPE",
+    "methodTitle": "METHOD",
+    "cocktails": {
+      "pearDrop": {
+        "description": "A refreshing and elegant twist on the classic Vermouth & Tonic, the Pear Drop combines the rich flavor of Monte Carlo Rosso with the delicate essence of pear. The cocktail is for those who prefer sweeter drinks and is inspired by the famous British confectionery of the same name. The addition of Grand Marnier brings a subtle orange complexity, perfectly balanced with the crispness of dry tonic water. Ideal for a sophisticated afternoon refreshment or a relaxing evening treat.",
+        "recipe": [
+          "6 cl Monte Carlo Vermouth Rosso",
+          "1.5 cl Pear Eau de Vie",
+          "0.75 cl Grand Marnier",
+          "Schweppes Dry Tonic"
+        ],
+        "method": "Pour all ingredients into an empty highball glass. Fill the glass with cubed ice and top with tonic water. Briefly mix the ingredients in the glass with a bar spoon. Garnish and serve."
+      },
+      "parlourGame": {
+        "description": "The Parlour Game is a delightful Vermouth Sour that plays with the flavours of the Caribbean. Combining Monte Carlo Vermouth Rosso with Plantation 5 year Barbados Rum and Crème de Cacao Blanc, this cocktail offers a tropical twist with a touch of chocolate indulgence. The citrus notes from orange and lime juices blend harmoniously, topped off with the spicy warmth of pimento bitters. A must-try for those who enjoy a zesty and adventurous cocktail experience.",
+        "recipe": [
+          "6 cl Monte Carlo Vermouth Rosso",
+          "0.75 cl Plantation 5 year Barbados Rum",
+          "2.25 cl Crème de Cacao Blanc",
+          "1.5 cl Orange Juice",
+          "2.25 cl Lime Juice"
+        ],
+        "method": "Add all ingredients to a cocktail shaker. Add cubed ice and shake vigorously until the cocktail is ice cold. Fine strain into a chilled sour glass and garnish with freshly grated nutmeg."
+      },
+      "coteDazurCobbler": {
+        "description": "Playing off the rose notes of Monte Carlo Vermouth, this concoction is a new take on the classic sherry cobbler, adding apple and grapefruit to the mix for a brighter, more citrus experience.",
+        "recipe": [
+          "6 cl Monte Carlo Bianco Vermouth",
+          "2.2 cl Eddu Eau de Vie de Pomme",
+          "1.5 cl Giffard Pamplemousse Rose Liqueur",
+          "1.5 cl Rich Simple Syrup",
+          "1.5 cl Fresh Lemon Juice"
+        ],
+        "method": "Shake all ingredients with just one ice cube to mix them. Pour the cocktail into the glass and fill with pebble ice. Glassware: Rose Gold Julep Cup. Garnish: Add a straw and garnish with a mint plouche and a grapefruit slice."
+      },
+      "monteCarloSpritz": {
+        "description": "This delightfully simple recipe tantalizes the palate, in an epiphany for the spritz lover. From whichever side of the marina you happen to be watching the sunset, the Monte-Carlo Spritz will anchor the moment into memory. The invigorating flavor of Monte-Carlo Vermouth is exalted by a splash of sumptuous prosecco, while the rose petal garnish hinting at its essence is delicately placed on the refreshing ice cube. A cocktail to discover and enjoy, at any time of the day.",
+        "recipe": ["16 cl Prosecco", "6 cl Vermouth", "Rose petal garnish", "1 large ice cube"],
+        "method": "Stir all ingredients over ice in a mixing glass and strain into the glass. Glassware: Coupette. Garnish: Express a grapefruit peel over the top of the cocktail. Garnish with a fresh cherry."
+      },
+      "cherryBlossom": {
+        "description": "She’s not as sweet as she looks. Inspired by the classic Adonis cocktail from 1884, one of the first low ABV cocktails to become widely popular, this recipe brings out the floral flavors of Monte-Carlo Vermouth with bright cherry and anise from the absinthe, while the Supasawa adds a bit of acidity to encourage the next sip. Delicate yet complex, ideal before a meal, with oysters and seafood, or outside on a hot summer’s day.",
+        "recipe": [
+          "6 cl MonteCarlo Bianco Vermouth",
+          "3 cl La Guita Manzanilla Sherry",
+          "1 teaspoon Cherry Syrup",
+          "0.5 teaspoon Supasawa",
+          "2 dashes Pernod Absinthe"
+        ],
+        "method": "Stir all ingredients over ice in a mixing glass and strain into the glass. Glassware: Coupette. Garnish: Express a grapefruit peel over the top of the cocktail. Garnish with a fresh cherry."
+      }
+    }
+  },
+  "productsHero": {
+    "title1": "our",
+    "title2": "PRODUCTS"
+  },
+  "productsCollection": {
+    "title1": "the",
+    "title1Accent": "ESSENCE",
+    "title2": "of",
+    "title2Accent": "VERMOUTH",
+    "description1": "Luxury white and red vermouths.",
+    "description2": "Vermouth Rosso is infused with bitter orange peel, immortelle, timur pepper, orris and ginger.",
+    "description3": "Vermouth Bianco includes bergamot, mandarin, and melon with delightful hints of bitter orange and grapefruit pith.",
+    "whiteVermouth": "white vermouth",
+    "redVermouth": "red vermouth",
+    "button": "View Product"
+  },
+  "productsFinal": {
+    "eyebrow": "BEYOND THE GLASS",
+    "title": "THE ART OF MIXOLOGY",
+    "description": "Discover the versatility of Monte Carlo Vermouth through elegant cocktails, from timeless classics to inspired new creations.",
+    "button": "Explore Mixology"
   }
 }

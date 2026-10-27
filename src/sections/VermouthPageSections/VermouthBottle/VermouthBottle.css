@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
-  /* gap: 60px; */
+  gap: 20px;
 }
 
 /* LEFT CONTENT */
@@ -45,7 +45,7 @@
   flex-direction: column;
   gap: 25px;
   width: 100%;
-  max-width: 470px;
+  max-width: 473px;
   margin: 0 auto;
 }
 
@@ -125,6 +125,7 @@
 
   .vermouth-bottle-content {
     gap: 20px;
+    max-width: 510px;
   }
 
   .vermouth-bottle-text {

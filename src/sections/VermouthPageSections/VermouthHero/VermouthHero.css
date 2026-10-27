@@ -75,6 +75,13 @@
   }
 }
 
+/* <= 1280px */
+@media (max-width: 1280px) {
+  .vermouth-hero-content {
+    width: 100%;
+  }
+}
+
 /* <= 1024px */
 @media (max-width: 1024px) {
   .vermouth-hero-title {
@@ -84,10 +91,6 @@
 
 /* TABLET */
 @media (max-width: 768px) {
-  .vermouth-hero-content {
-    width: 100%;
-  }
-
   .vermouth-hero-title {
     font-size: 58px;
   }
