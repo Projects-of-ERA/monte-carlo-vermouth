@@ -66,7 +66,7 @@ const ProductsCollection = () => {
                 href="#"
                 className="product-collection-button"
                 onClick={(event) => event.preventDefault()}>
-                View Product
+                {t('productsCollection.button')}
               </a>
             </article>
           ))}
