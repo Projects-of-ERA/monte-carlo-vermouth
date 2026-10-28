@@ -341,5 +341,33 @@
     "title": "EL ARTE DE LA COCTELERÍA",
     "description": "Descubre la versatilidad de Monte Carlo Vermouth a través de cócteles elegantes, desde clásicos atemporales hasta nuevas creaciones llenas de inspiración.",
     "button": "Explora la coctelería"
+  },
+  "newsHero": {
+    "title1": "nuestras",
+    "title2": "NOTICIAS"
+  },
+  "productsNotFound": {
+    "title": "Producto no encontrado",
+    "button": "Volver a productos"
+  },
+
+  "productsDetail": {
+    "quantityLabel": "NÚMERO DE BOTELLAS",
+    "addToCart": "AÑADIR AL CARRITO",
+    "scentTitle": "Aroma y Sabor",
+    "switchTo": "Cambiar a",
+    "decreaseQuantity": "Disminuir la cantidad",
+    "increaseQuantity": "Aumentar la cantidad",
+    "bianco": {
+      "type": "VERMUT BLANCO",
+      "description1": "Acompañado de frutas, mariscos o postres, nuestro Bianco aporta un toque elegante a cualquier ocasión, tanto en la Costa Azul como en cualquier otro lugar. Este vermut ha recibido medallas de oro en las categorías « Bebidas a base de vino y vinos de frutas » y « Aperitivos a base de vino o vermut » del Concours International de Lyon. En 2024, también consiguió medallas de oro consecutivas en el London Spirits Competition y el International Wine & Spirits Competition.",
+      "scentDescription": "Una base de vino 100 % Moscato d’Asti DOCG y 12 valiosas hierbas aromáticas impregnadas de la fragancia de las rosas monegascas en plena floración: una expresión de ligereza, inspiración y magia. En boca, el Bianco revela notas de bergamota, mandarina y melón, acompañadas de delicados matices de naranja amarga y de la parte blanca de la piel del pomelo."
+    },
+    "rosso": {
+      "type": "VERMUT ROJO",
+      "description1": "Rico en sabores frutales y herbáceos, el Rosso es un ingrediente ideal para numerosos cócteles, destacando por su carácter propio mientras realza los demás aromas. Complejo y versátil tanto en nariz como en boca, se disfruta solo, con tónica o con hielo.",
+      "description2": "En 2024, ganó dos medallas de oro en el Concours de Lyon y el London Spirits Competition, además de una medalla de plata en el Frankfurt International Trophy.",
+      "scentDescription": "La profundidad y sofisticación del carácter masculino del Rosso nacen de la combinación de naranja amarga, siempreviva, raíz de lirio, pimienta de Timut y jengibre, en perfecta armonía con sus uvas 100 % Langhe Nebbiolo DOC. Su sabor cálido e intenso lo convierte en un vermut ideal para el otoño y el invierno, tanto como aperitivo como digestivo."
+    }
   }
 }

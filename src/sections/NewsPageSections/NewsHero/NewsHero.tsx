@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import './NewsHero.css';
 
 const NewsHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="news-hero">
       {/* BACKGROUND */}
@@ -19,10 +23,10 @@ const NewsHero = () => {
       <div className="news-hero-content mx-auto max-w-8xl px-4 lg:px-8">
         <h1 className="news-hero-title font-serif">
           <span>
-            <em>our</em>
+            <em>{t('newsHero.title1')}</em>
           </span>
 
-          <span>NEWS</span>
+          <span>{t('newsHero.title2')}</span>
         </h1>
       </div>
     </section>

@@ -342,5 +342,33 @@
     "title": "L’ART DE LA MIXOLOGIE",
     "description": "Découvrez toute la polyvalence de Monte Carlo Vermouth à travers des cocktails élégants, des grands classiques intemporels aux créations originales et inspirées.",
     "button": "Explorez la mixologie"
+  },
+  "newsHero": {
+    "title1": "nos",
+    "title2": "ACTUALITÉS"
+  },
+  "productsNotFound": {
+    "title": "Produit introuvable",
+    "button": "Retour aux produits"
+  },
+
+  "productsDetail": {
+    "quantityLabel": "NOMBRE DE BOUTEILLES",
+    "addToCart": "AJOUTER AU PANIER",
+    "scentTitle": "Arômes & Saveurs",
+    "switchTo": "Passer à",
+    "decreaseQuantity": "Diminuer la quantité",
+    "increaseQuantity": "Augmenter la quantité",
+    "bianco": {
+      "type": "VERMOUTH BLANC",
+      "description1": "Accompagnant aussi bien les fruits, les fruits de mer que les desserts, notre Bianco apporte une touche d’élégance à chaque occasion, sur la Côte d’Azur comme ailleurs. Ce vermouth a remporté des médailles d’or dans les catégories « Boissons à base de vin et vins de fruits » et « Apéritifs à base de vin ou vermouth » au Concours International de Lyon. En 2024, il a également décroché des médailles d’or successives au London Spirits Competition et à l’International Wine & Spirits Competition.",
+      "scentDescription": "Une base composée à 100 % de Moscato d’Asti DOCG et de 12 précieuses herbes épicées imprégnées du parfum des roses monégasques en pleine floraison : une invitation à la légèreté, à l’inspiration et à la magie. En bouche, le Bianco révèle des notes de bergamote, de mandarine et de melon, sublimées par de délicates touches d’orange amère et de ziste de pamplemousse."
+    },
+    "rosso": {
+      "type": "VERMOUTH ROUGE",
+      "description1": "Riche en saveurs fruitées et herbacées, le Rosso est un ingrédient idéal pour de nombreux cocktails, affirmant son caractère tout en mettant en valeur les autres arômes. Complexe et polyvalent au nez comme en bouche, il se savoure aussi bien pur, avec du tonic ou sur glace.",
+      "description2": "En 2024, il a remporté deux médailles d’or au Concours de Lyon et au London Spirits Competition, ainsi qu’une médaille d’argent au Frankfurt International Trophy.",
+      "scentDescription": "La profondeur et le raffinement du caractère masculin du Rosso naissent de l’association de l’orange amère, de l’immortelle, de la racine d’iris, du poivre de Timut et du gingembre, en parfaite harmonie avec ses raisins Langhe Nebbiolo DOC à 100 %. Sa saveur chaleureuse et prononcée en fait un vermouth idéal pour l’automne et l’hiver, aussi bien à l’apéritif qu’en digestif."
+    }
   }
 }

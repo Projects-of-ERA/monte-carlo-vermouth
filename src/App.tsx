@@ -9,6 +9,7 @@ import VermouthPage from './pages/VermouthPage/VermouthPage';
 import MixologyPage from './pages/MixologyPage/MixologyPage';
 import ProductsPage from './pages/ProductsPage/ProductsPage';
 import NewsPage from './pages/NewsPage/NewsPage';
+import ProductsDetailPage from './pages/ProductsDetailPage/ProductsDetailPage';
 
 const languages = ['', '/fr', '/es'];
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="vermouth" element={<VermouthPage />} />
             <Route path="mixology" element={<MixologyPage />} />
             <Route path="products" element={<ProductsPage />} />
+            <Route path="products/:productSlug" element={<ProductsDetailPage />} />
             <Route path="news" element={<NewsPage />} />
           </Route>
         ))}

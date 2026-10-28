@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 
 import './ProductsCollection.css';
 
 const products = [
   {
     id: 'bianco',
+    slug: 'bianco-white-vermouth',
     name: 'BIANCO',
     typeKey: 'productsCollection.whiteVermouth',
     image: '/images/ProductPage/products/bianco.webp',
@@ -12,6 +14,7 @@ const products = [
   },
   {
     id: 'rosso',
+    slug: 'rosso-red-vermouth',
     name: 'ROSSO',
     typeKey: 'productsCollection.redVermouth',
     image: '/images/ProductPage/products/rosso.webp',
@@ -21,6 +24,11 @@ const products = [
 
 const ProductsCollection = () => {
   const { t, i18n } = useTranslation();
+
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
 
   return (
     <section className="product-collection">
@@ -62,12 +70,11 @@ const ProductsCollection = () => {
                 <span className="font-serif">{t(product.typeKey)}</span>
               </div>
 
-              <a
-                href="#"
-                className="product-collection-button"
-                onClick={(event) => event.preventDefault()}>
+              <Link
+                to={`${langPrefix}/products/${product.slug}`}
+                className="product-collection-button">
                 {t('productsCollection.button')}
-              </a>
+              </Link>
             </article>
           ))}
         </div>
