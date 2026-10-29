@@ -287,7 +287,7 @@
 /* <= 1536px */
 @media (max-width: 1536px) {
   .products-detail {
-    padding: 110px 0 80px;
+    padding: 110px 0 50px;
   }
 
   .products-detail-grid {
@@ -316,7 +316,7 @@
 /* <= 1024px */
 @media (max-width: 1024px) {
   .products-detail {
-    padding: 50px 0 70px;
+    padding: 105px 0 40px;
   }
 
   .products-detail-grid {
@@ -342,7 +342,7 @@
 /* <= 768px */
 @media (max-width: 768px) {
   .products-detail {
-    padding: 40px 0 60px;
+    padding: 95px 0 40px;
   }
 
   .products-detail-slide {
@@ -358,7 +358,7 @@
 /* <= 640px */
 @media (max-width: 640px) {
   .products-detail {
-    padding: 30px 0 50px;
+    padding: 85px 0 30px;
   }
 
   .products-detail-slide {
