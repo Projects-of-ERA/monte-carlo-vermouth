@@ -23,6 +23,10 @@
 .varietals-card {
   width: 100%;
   cursor: pointer;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .varietals-image-wrapper {

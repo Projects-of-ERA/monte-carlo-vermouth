@@ -46,6 +46,9 @@
 .product-collection-card {
   width: 100%;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .product-collection-image-wrapper {

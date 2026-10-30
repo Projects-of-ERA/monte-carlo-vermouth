@@ -59,7 +59,10 @@ const ProductsCollection = () => {
         {/* PRODUCTS */}
         <div className="product-collection-grid">
           {products.map((product) => (
-            <article key={product.id} className="product-collection-card">
+            <Link
+              key={product.id}
+              to={`${langPrefix}/products/${product.slug}`}
+              className="product-collection-card">
               <div className="product-collection-image-wrapper">
                 <img src={product.image} alt={product.alt} className="product-collection-image" />
               </div>
@@ -70,12 +73,8 @@ const ProductsCollection = () => {
                 <span className="font-serif">{t(product.typeKey)}</span>
               </div>
 
-              <Link
-                to={`${langPrefix}/products/${product.slug}`}
-                className="product-collection-button">
-                {t('productsCollection.button')}
-              </Link>
-            </article>
+              <span className="product-collection-button">{t('productsCollection.button')}</span>
+            </Link>
           ))}
         </div>
       </div>
