@@ -350,7 +350,6 @@
     "title": "Producto no encontrado",
     "button": "Volver a productos"
   },
-
   "productsDetail": {
     "quantityLabel": "NÚMERO DE BOTELLAS",
     "addToCart": "AÑADIR AL CARRITO",
@@ -368,6 +367,225 @@
       "description1": "Rico en sabores frutales y herbáceos, el Rosso es un ingrediente ideal para numerosos cócteles, destacando por su carácter propio mientras realza los demás aromas. Complejo y versátil tanto en nariz como en boca, se disfruta solo, con tónica o con hielo.",
       "description2": "En 2024, ganó dos medallas de oro en el Concours de Lyon y el London Spirits Competition, además de una medalla de plata en el Frankfurt International Trophy.",
       "scentDescription": "La profundidad y sofisticación del carácter masculino del Rosso nacen de la combinación de naranja amarga, siempreviva, raíz de lirio, pimienta de Timut y jengibre, en perfecta armonía con sus uvas 100 % Langhe Nebbiolo DOC. Su sabor cálido e intenso lo convierte en un vermut ideal para el otoño y el invierno, tanto como aperitivo como digestivo."
+    }
+  },
+  "newsNotFound": {
+    "title": "Noticia no encontrada",
+    "button": "Volver a noticias"
+  },
+
+  "newsDetail": {
+    "content": {
+      "wine-paris-2026": [
+        {
+          "text": "Del 9 al 11 de febrero, París vuelve a convertirse en el punto de encuentro mundial del sector del vino y los espirituosos. Wine Paris es una de las ferias internacionales más importantes, que reúne a productores, distribuidores, sumilleres, compradores y profesionales de todo el mundo."
+        },
+        {
+          "text": "La edición de este año promete ser especialmente dinámica, con una presencia internacional aún mayor, un creciente interés por los productos prémium, los vinos que expresan su terruño y los espirituosos refinados, además de un amplio programa de catas, conferencias y encuentros profesionales."
+        },
+        {
+          "text": "Descubre nuestra selección"
+        },
+        {
+          "text": "Estaremos encantados de recibirte en el stand A011, pabellón 5.1, donde presentaremos una cuidada selección de nuestro catálogo:"
+        },
+        {
+          "items": [
+            "Vinos de Borgoña, que destacan por su elegancia, precisión y expresión de grandes terruños",
+            "Vinos de Nueva Zelanda, reconocidos por su pureza, frescura y estilo contemporáneo",
+            "Y, por supuesto, nuestra estrella: Monte Carlo Vermouth, una refinada expresión de la elegancia mediterránea y el saber hacer"
+          ]
+        },
+        {
+          "parts": [
+            "Compartiremos nuestro stand con nuestros amigos piamonteses de ",
+            "Scarpa",
+            ", lo que permitirá a los visitantes descubrir el diálogo entre la tradición italiana y la artesanía moderna."
+          ]
+        },
+        {
+          "text": "Por qué Wine Paris es importante"
+        },
+        {
+          "text": "Wine Paris se ha convertido en una plataforma fundamental para definir el futuro del sector. No es solo un escaparate, sino también un espacio donde se debaten tendencias, se establecen colaboraciones y las marcas presentan su visión ante un público internacional. Su creciente influencia refleja la evolución del mundo del vino y los espirituosos hacia la autenticidad, las historias de marca y las experiencias significativas."
+        },
+        {
+          "text": "Nos vemos en París"
+        },
+        {
+          "text": "Tanto si eres un colaborador de siempre como si descubres nuestra gama por primera vez, esperamos darte la bienvenida, compartir nuestros vinos y vermuts e intercambiar ideas en el animado ambiente de Wine Paris."
+        },
+        {
+          "text": "📍 Stand A011, pabellón 5.1"
+        },
+        {
+          "text": "🍷 Wine Paris 2026"
+        },
+        {
+          "text": "¡Nos vemos allí!"
+        }
+      ],
+      "merry-christmas-from-monte-carlo-vermouth": [
+        {
+          "text": "La Navidad está a punto de llegar y queremos daros las gracias por descubrir nuestro producto, probarlo por primera vez y, finalmente, ¡enamoraros de él!"
+        },
+        {
+          "text": "Sirvamos nuestro vermut en una copa y deseémonos una feliz Navidad. ¡Cin-cin!"
+        },
+        {
+          "text": "Esperamos que estéis disfrutando de estos maravillosos días con vuestros seres queridos y que hayáis elegido regalarles una botella de nuestro vermut, ya sea Rosso o Bianco."
+        },
+        {
+          "text": "Y si, por casualidad, habéis perdido la noción del tiempo y os habéis olvidado por completo de los regalos, la solución perfecta es comprar vuestro Monte Carlo Vermouth favorito en nuestro punto de venta de la avenida de Monte-Carlo, junto a la Place du Casino, o hacer un pedido online en 2026."
+        },
+        {
+          "text": "Sofisticado y elegante, elaborado según las mejores tradiciones del vermut y fruto de una magnífica combinación de las culturas italiana y francesa, hará feliz a cualquiera. Ya sea vuestro compañero de tenis, vuestro jefe o un amigo de la infancia, ¡seguro que apreciará este detalle!"
+        }
+      ],
+      "from-bitter-tincture-to-sweet-trendsetter": [
+        {
+          "text": "Los orígenes del vermut se remontan a la Antigüedad. Sin embargo, las cualidades por las que se ha valorado esta bebida han cambiado considerablemente. Con los años, su amargor y sus supuestas propiedades medicinales han perdido protagonismo, mientras que su dulzor y su relación con el ocio han adquirido mayor importancia. Este artículo ofrece una visión general de los cambios de fortuna y los caminos inesperados que pueden recorrer incluso los productos con más historia. Descubramos cómo ha evolucionado el destino de esta versátil bebida a lo largo de los siglos."
+        },
+        {
+          "text": "Los precursores del vermut"
+        },
+        {
+          "parts": [
+            "Aunque hoy destacamos su dulzor, antiguamente el vermut era apreciado sobre todo por su amargor. Al menos desde la época de Hipócrates se creía que los sabores amargos estimulaban el sistema digestivo. Por ello, se consideraba que las bebidas amargas favorecían la digestión. El ajenjo, del que deriva la palabra vermut (del alemán ",
+            "wurmut",
+            ", relacionado aquí con wur + mut, «valor», debido también a su supuesto uso como afrodisíaco), se promocionaba como remedio para prácticamente cualquier trastorno digestivo imaginable."
+          ]
+        },
+        {
+          "parts": [
+            "Un texto médico alemán de 1560 describía el ",
+            "«vino de vermut»",
+            " como ",
+            "«muy bueno para la vejez, tanto para los temperamentos fríos como para los cálidos… Elimina el mal aliento causado por problemas estomacales y estimula el hígado y el páncreas. Mejora la piel y el cutis y debe beberse antes y después de las comidas»."
+          ]
+        },
+        {
+          "text": "(Aviso: este artículo tiene únicamente fines de entretenimiento y no pretende realizar afirmaciones ni recomendaciones médicas.)"
+        },
+        {
+          "text": "Sin embargo, aunque sus supuestas propiedades medicinales, a menudo respaldadas por muy pocas pruebas, pudieron mantener su consumo a escala local, no fueron las responsables de su popularidad mundial. Para lograrla, la bebida tuvo que dar un giro de 180 grados."
+        },
+        {
+          "text": "El nacimiento del vermut moderno"
+        },
+        {
+          "text": "Precisamente en los albores de la modernidad nació el vermut tal como lo conocemos. A finales del siglo XVIII, cuando el descubrimiento portugués de la ruta del cabo de Buena Esperanza había provocado una caída de los precios de las especias, un joven ambicioso llamado Benedetto Carpano se trasladó a Turín con la receta familiar de vino con ajenjo en mente. Benedetto experimentó con una fórmula de unas treinta plantas aromáticas maceradas en vino dulce Moscato. Las especias ya no eran un lujo, lo que permitía realizar pruebas a menor coste. Envió una botella a la corte del rey Víctor Amadeo III, quien abandonó el aperitivo cortesano Rosalio en favor del vermut de Carpano. Así quedó asegurada su popularidad, ya que entonces, como ahora, la gente seguía las modas de ricos y famosos. Además, una bebida intensamente especiada, ligeramente áspera y de dulzor natural resultaba mucho más sabrosa que una sencilla mezcla de alcohol, azúcar y agua, como el Rosalio, que ni siquiera contenía rosas pese a lo que sugería su nombre."
+        },
+        {
+          "text": "Con el respaldo de la Casa de Saboya y una posición sólida en el mercado, Benedetto compró la participación de su socio y creó un negocio próspero que debía funcionar las veinticuatro horas del día para satisfacer la demanda. Desde entonces, la popularidad del vermut atravesó altibajos, pero siempre mantuvo una base estable gracias al éxito de las marcas italianas y francesas. Para seguir creciendo era necesario otro cambio: dejar atrás su papel de aperitivo y remedio popular para múltiples dolencias."
+        },
+        {
+          "text": "La transformación de bebida medicinal a bebida recreativa consumida por la alta sociedad provocó una auténtica moda que no pasó desapercibida para otras empresas. La histórica firma Cinzano, que llevaba en el negocio al menos treinta años antes que Carpano, observó las tendencias y dejó de destacar las propiedades medicinales del vermut para centrarse en su dulzor y su carácter social. También aprovechó pronto otra tendencia: la exportación al creciente mercado estadounidense a comienzos del siglo XX. Muchos italianos habían emigrado a Estados Unidos durante el siglo XIX, y los consumidores estadounidenses empezaban a familiarizarse con las marcas extranjeras. Desde los hermanos Cora en 1835, empresas como Cinzano y Martini buscaron hacerse un hueco en ese prometedor mercado. Como símbolo de esta transición y de su voluntad de modernizarse, Cinzano fue el primer producto anunciado mediante un letrero de neón."
+        },
+        {
+          "text": "De América a Italia y vuelta"
+        },
+        {
+          "text": "La práctica de aromatizar el vino con ajenjo y otras sustancias se remonta al menos a la China de la dinastía Shang, por lo que no sorprende que los soldados de la Revolución estadounidense consumieran su propia versión del vermut, aunque no la llamaran así. Según el historiador del vermut Adam Ford, los soldados rebeldes diluían una bebida británica llamada Royal Purl, una cerveza con ajenjo, comercializada bajo el sorprendente nombre de «Dr. Stoughton’s Elixir Magnum Stomachicum». Esta preparación de 22 hierbas o especias se mezclaba con vino tinto por razones económicas. Una vez más, se utilizaba con supuestos fines medicinales, pero en aquella época también se consideraba que el alcohol era necesario para mantener a los soldados en forma. De nuevo, este artículo no constituye ningún consejo médico."
+        },
+        {
+          "parts": [
+            "El mercado inicial de las grandes marcas europeas de vermut estaba formado por inmigrantes italianos. A su llegada a Estados Unidos, el vermut italiano, que se había convertido en sinónimo de vermut rojo (",
+            "rosso",
+            ") o dulce, comenzó a aparecer en numerosos recetarios de cócteles. También estuvo presente en la Exposición de la Industria de Todas las Naciones, celebrada en Nueva York en 1853, que reunió a más de 4390 expositores, entre ellos M. Bovone, G & L Cora, Carpano y los hermanos Dettone. Aunque esto contribuyó a mantener la presencia del vermut en Estados Unidos, no fue hasta la exportación de Martini en 1868 cuando la bebida alcanzó un verdadero éxito. Entre 1867 y 1889, la empresa exportó aproximadamente 612 000 litros de vermut a América."
+          ]
+        },
+        {
+          "text": "Esta llegada favoreció la popularidad de numerosos cócteles que hoy son auténticos clásicos. La receta del cóctel Marguerite, compuesto por partes iguales de ginebra y vermut, apareció en 1904 y actualmente se conoce como Martini. El posterior aumento de la demanda llevó a la creación del vermut Martini & Rossi Extra Dry en 1910, sin que sus creadores imaginaran lo casi premonitorio que acabaría siendo aquel nombre."
+        },
+        {
+          "text": "Fama y decadencia"
+        },
+        {
+          "parts": [
+            "La relación del vermut con legendarias figuras literarias, tanto reales como ficticias, reforzó su popularidad. Cuando el joven Ernest Hemingway resultó herido por metralla mientras trabajaba como conductor de ambulancias, llevando cigarrillos y chocolates a los soldados italianos durante la Primera Guerra Mundial, pedía a sus amigos que introdujeran botellas de vermut rojo (",
+            "rosso",
+            ") a escondidas en su habitación. ",
+            "«Mandé llamar al portero y, cuando llegó, le dije en italiano que me comprara una botella de Cinzano en la tienda de vinos, una garrafa de chianti y los periódicos de la tarde».",
+            " Fue precisamente su estancia en un hospital de Milán la que inspiró su famosa novela Adiós a las armas. Si nuestros lectores desean imitarlo, conviene saber que Hemingway prefería sus Martinis helados: ",
+            "«el martini más frío del mundo… tan frío que no puedes sostenerlo con la mano. Se pega a los dedos».",
+            " Así que enfriad bien las copas."
+          ]
+        },
+        {
+          "parts": [
+            "La influencia de América y de los estadounidenses también funcionó en ambos sentidos. Por ejemplo, el célebre cóctel Americano fue creado por Gaspare Campari en Milán cuando un cliente estadounidense sugirió que un cóctel de Campari estaría mejor servido con hielo y agua con gas, al estilo de un combinado largo americano. Después se convirtió en el Negroni cuando, según una historia posiblemente apócrifa, Camillo Negroni pidió sustituir el agua con gas por ginebra. La bebida se popularizó posteriormente en Estados Unidos gracias a actores de Hollywood como Orson Welles, quien afirmó: ",
+            "«Los amargos son excelentes para el hígado, la ginebra es mala para ti. Se equilibran entre sí»."
+          ]
+        },
+        {
+          "parts": [
+            "Mientras tanto, la cantidad de vermut, normalmente blanco/",
+            "bianco",
+            ", presente en el Martini se redujo hasta niveles casi cómicos. Inicialmente elaborado con partes iguales de vermut y ginebra, la proporción de vermut disminuyó progresivamente hasta resultar prácticamente inexistente durante el siglo XX. Aunque James Bond es famoso por el Vesper Martini, conviene saber tres cosas antes de intentar prepararlo. Primero, ya no es posible reproducir exactamente la receta original, porque el Kina Lillet, con un alto contenido en quinina, dejó de producirse en 1987. Segundo, a diferencia de un Martini tradicional, el Kina Lillet es un licor y no un vermut, pues no contiene ajenjo. Tercero, al propio Ian Fleming no le gustaba su creación, como reconoció al decir: ",
+            "«Me propuse inventar un cóctel para Bond (que probé varios meses después y encontré desagradable)».",
+            " Winston Churchill, por su parte, excluía completamente el vermut de sus Martinis. Se le atribuye la frase: ",
+            "«…basta con inclinarse en dirección a Francia (donde se elabora el vermut) mientras se sirve la ginebra».",
+            " Siguiendo esta tradición, el cineasta Luis Buñuel recomendaba ",
+            "«…dejar que un rayo de sol atravesara la botella de Noilly Prat antes de alcanzar la botella de ginebra»",
+            " como la cantidad ideal."
+          ]
+        },
+        {
+          "text": "Otro factor que contribuyó a su decadencia fue el desconocimiento de muchos camareros sobre cómo conservar una botella de vermut abierta, lo que provocaba que su sabor se deteriorara por oxidación. Debe mantenerse bien cerrada y refrigerada; generalmente conserva buenas condiciones durante alrededor de un mes y resulta aceptable durante dos. A lo largo de la segunda mitad del siglo XX, el vermut adquirió una imagen anticuada y pasada de moda. Para empeorar las cosas, su definición se volvió cada vez más flexible y algunos fabricantes lo transformaron en poco más que un ingrediente genérico de baja calidad para mezclas."
+        },
+        {
+          "text": "El resurgimiento"
+        },
+        {
+          "text": "Esta situación lamentable no ha perdurado. En los últimos años, el sabor dulce del vermut y su graduación alcohólica relativamente baja han contribuido a convertirlo en una de las bebidas más populares de un mercado en expansión. Otro factor importante ha sido el regreso de productores independientes que desean crear algo más que simples ingredientes para cócteles después de décadas de abandono. Han surgido vermuts de alta calidad, como Monte Carlo Vermouth, que permiten elaborar versiones refinadas de los cócteles clásicos e impulsan una revitalización emocionante e innovadora que continúa hasta hoy. Te invitamos a formar parte de ella y a descubrir nuevos sabores y sensaciones a través de una tradición cultivada con el máximo cuidado."
+        }
+      ],
+      "monte-carlo-vermouth-available-online": [
+        {
+          "text": "¡Por fin ha llegado el momento! Hemos inaugurado la venta online de Monte Carlo Vermouth en determinados países. Un producto creado para reflejar el espíritu de Mónaco, su estilo de vida y su gusto refinado."
+        },
+        {
+          "text": "Elaborado con vinos monovarietales de la más alta calidad procedentes del Piamonte, infusionados con valiosas hierbas francesas y rosas monegascas, este vermut prémium puede disfrutarse solo o en cócteles. También será un regalo ideal para los amantes de las bebidas de lujo."
+        },
+        {
+          "text": "Las dos variedades, Bianco y Rosso, están listas para revelar su carácter expresivo y sus versátiles matices de sabor. ¡Haz tu pedido y descubre algo realmente nuevo en el mundo del vermut!"
+        },
+        {
+          "text": "Si estás en Mónaco, Francia, España, Bélgica, los Países Bajos o el Reino Unido, puedes realizar tu pedido directamente en nuestra web. ¡Pronto ampliaremos los envíos a otros países!"
+        }
+      ],
+      "chalet-monte-carlo-vermouth": [
+        {
+          "text": "La magia de la Navidad llega a Mónaco. Para celebrarlo, nos complace anunciar la apertura del Chalet Monte Carlo Vermouth. Situado en el corazón del Principado, en la avenida de Monte-Carlo, junto a la Place du Casino, el Chalet te invita a disfrutar de un momento de elegancia y sofisticación con un producto único y local, elaborado con pétalos de rosa recogidos en los jardines de Mónaco."
+        },
+        {
+          "text": "Una cata guiada por nuestros expertos te permitirá descubrir la sutileza y la riqueza de sabores de Monte Carlo Vermouth Bianco y Monte Carlo Vermouth Rosso."
+        },
+        {
+          "text": "Nuestros productos naturales están profundamente ligados a las tradiciones de las que Mónaco, Francia e Italia se sienten orgullosos."
+        },
+        {
+          "text": "Se elaboran mediante tecnologías avanzadas, sin renunciar a los métodos artesanales de producción del vermut. Los vinos de la célebre región del Piamonte, algunos procedentes de territorios declarados Patrimonio Mundial por la UNESCO, como el Moscato d’Asti DOCG y el Langhe Nebbiolo DOC, aportan a nuestros vermuts una paleta aromática incomparable."
+        },
+        {
+          "text": "Los pétalos de rosa de los jardines de Mónaco son los elementos centrales de estas creaciones. Las plantas destiladas por los expertos franceses de Grasse añaden misterio y un sabor extraordinario."
+        },
+        {
+          "text": "Para quienes deseen sumergirse en el universo de nuestros productos, además de las botellas individuales, ofrecemos un estuche de regalo que incluye una botella de Monte Carlo Vermouth Bianco o Rosso y dos copas de cristal grabadas con el nombre de la marca."
+        },
+        {
+          "text": "Despierta tu creatividad añadiendo un toque de Mónaco a tus celebraciones navideñas."
+        }
+      ],
+      "monte-carlo-vermouth-living-wall": [
+        {
+          "text": "El 3 de septiembre pasamos un día maravilloso en la fiesta organizada por el Club La Vigie Monte-Carlo, donde presentamos con orgullo nuestro muro vegetal."
+        },
+        {
+          "text": "La próxima vez que encuentres nuestro muro en un evento de Mónaco, el proceso será muy sencillo: elige entre Monte Carlo Spritz o Monte Carlo Tonic, toca el timbre y disfruta de un cóctel preparado con nuestro exquisito Monte Carlo Vermouth."
+        }
+      ]
     }
   }
 }

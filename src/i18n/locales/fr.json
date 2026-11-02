@@ -351,7 +351,6 @@
     "title": "Produit introuvable",
     "button": "Retour aux produits"
   },
-
   "productsDetail": {
     "quantityLabel": "NOMBRE DE BOUTEILLES",
     "addToCart": "AJOUTER AU PANIER",
@@ -369,6 +368,225 @@
       "description1": "Riche en saveurs fruitées et herbacées, le Rosso est un ingrédient idéal pour de nombreux cocktails, affirmant son caractère tout en mettant en valeur les autres arômes. Complexe et polyvalent au nez comme en bouche, il se savoure aussi bien pur, avec du tonic ou sur glace.",
       "description2": "En 2024, il a remporté deux médailles d’or au Concours de Lyon et au London Spirits Competition, ainsi qu’une médaille d’argent au Frankfurt International Trophy.",
       "scentDescription": "La profondeur et le raffinement du caractère masculin du Rosso naissent de l’association de l’orange amère, de l’immortelle, de la racine d’iris, du poivre de Timut et du gingembre, en parfaite harmonie avec ses raisins Langhe Nebbiolo DOC à 100 %. Sa saveur chaleureuse et prononcée en fait un vermouth idéal pour l’automne et l’hiver, aussi bien à l’apéritif qu’en digestif."
+    }
+  },
+  "newsNotFound": {
+    "title": "Actualité introuvable",
+    "button": "Retour aux actualités"
+  },
+
+  "newsDetail": {
+    "content": {
+      "wine-paris-2026": [
+        {
+          "text": "Du 9 au 11 février, Paris redevient le rendez-vous mondial des professionnels du vin et des spiritueux. Wine Paris est l’un des plus importants salons internationaux, réunissant producteurs, distributeurs, sommeliers, acheteurs et professionnels du secteur venus du monde entier."
+        },
+        {
+          "text": "Cette édition s’annonce particulièrement dynamique, avec une présence internationale renforcée, un intérêt croissant pour le positionnement haut de gamme, les vins de terroir et les spiritueux raffinés, ainsi qu’un riche programme de dégustations, de conférences et de rencontres professionnelles."
+        },
+        {
+          "text": "Découvrez notre sélection"
+        },
+        {
+          "text": "Nous serons ravis de vous accueillir au stand A011, hall 5.1, où nous présenterons une sélection de notre portefeuille :"
+        },
+        {
+          "items": [
+            "Des vins de Bourgogne, illustrant l’élégance, la précision et l’expression des grands terroirs",
+            "Des vins de Nouvelle-Zélande, réputés pour leur pureté, leur vivacité et leur style contemporain",
+            "Et bien sûr, notre vedette : Monte Carlo Vermouth, une expression raffinée de l’élégance méditerranéenne et du savoir-faire"
+          ]
+        },
+        {
+          "parts": [
+            "Nous partagerons notre stand avec nos amis piémontais de ",
+            "Scarpa",
+            ", offrant aux visiteurs l’occasion de découvrir un dialogue entre le patrimoine italien traditionnel et le savoir-faire moderne."
+          ]
+        },
+        {
+          "text": "Pourquoi Wine Paris est important"
+        },
+        {
+          "text": "Wine Paris est devenu une plateforme incontournable pour façonner l’avenir du secteur. Plus qu’une simple vitrine, c’est un lieu où se discutent les tendances, se nouent des partenariats et où les marques présentent leur vision à un public international. L’influence croissante du salon reflète l’évolution du monde du vin et des spiritueux vers l’authenticité, le récit des marques et des expériences porteuses de sens."
+        },
+        {
+          "text": "Retrouvons-nous à Paris"
+        },
+        {
+          "text": "Que vous soyez un partenaire de longue date ou que vous découvriez notre gamme pour la première fois, nous serons heureux de vous accueillir, de partager nos vins et notre vermouth et d’échanger dans l’atmosphère vibrante de Wine Paris."
+        },
+        {
+          "text": "📍 Stand A011, hall 5.1"
+        },
+        {
+          "text": "🍷 Wine Paris 2026"
+        },
+        {
+          "text": "Au plaisir de vous y retrouver."
+        }
+      ],
+      "merry-christmas-from-monte-carlo-vermouth": [
+        {
+          "text": "Noël approche et nous tenons à vous remercier d’avoir découvert notre produit, de l’avoir dégusté pour la première fois et, finalement, d’en être tombés amoureux !"
+        },
+        {
+          "text": "Servons-nous un verre de vermouth et souhaitons-nous un joyeux Noël — cin-cin !"
+        },
+        {
+          "text": "Nous espérons que vous passez ces merveilleux moments auprès de vos proches et que vous avez choisi de leur offrir une bouteille de notre vermouth, Rosso ou Bianco."
+        },
+        {
+          "text": "Et si, par hasard, vous avez perdu la notion du temps et complètement oublié les cadeaux, la solution idéale est d’acheter le Monte Carlo Vermouth de votre choix à notre point de vente situé sur l’avenue de Monte-Carlo, place du Casino, ou de passer une commande en ligne en 2026 !"
+        },
+        {
+          "text": "Raffiné et élégant, issu des plus belles traditions du vermouth et d’un merveilleux mélange des cultures italienne et française, il saura faire plaisir à chacun. Qu’il s’agisse de votre partenaire de tennis, de votre patron ou d’un ami d’enfance, ce geste sera certainement apprécié !"
+        }
+      ],
+      "from-bitter-tincture-to-sweet-trendsetter": [
+        {
+          "text": "Les origines du vermouth remontent à l’Antiquité. Pourtant, les qualités pour lesquelles cette boisson est appréciée ont considérablement évolué. Au fil des années, son amertume et ses propriétés médicinales supposées ont perdu de leur importance, tandis que sa douceur et son rôle dans les moments de plaisir ont gagné du terrain. Cet article propose un aperçu des fortunes changeantes et des chemins sinueux que peuvent emprunter même les produits les plus anciens. Découvrons comment le destin de cette boisson polyvalente a évolué au fil du temps."
+        },
+        {
+          "text": "Les précurseurs du vermouth"
+        },
+        {
+          "parts": [
+            "Aujourd’hui, nous mettons l’accent sur sa douceur, mais autrefois, le vermouth était surtout apprécié pour son amertume. Depuis au moins l’époque d’Hippocrate, on pensait que l’amertume stimulait le système digestif. Les boissons amères étaient donc considérées comme favorisant la digestion. L’absinthe, dont dérive le nom vermouth (de l’allemand ",
+            "wurmut",
+            ", associé ici à wur + mut, « courage », en raison de son utilisation supposée comme aphrodisiaque), était présentée comme un remède à presque tous les troubles digestifs imaginables."
+          ]
+        },
+        {
+          "parts": [
+            "Un texte médical allemand de 1560 décrivait le ",
+            "« vin de vermouth »",
+            " comme ",
+            "« très bon pour la vieillesse, aussi bien pour les tempéraments froids que chauds… Il élimine la mauvaise haleine due aux troubles de l’estomac et stimule le foie et le pancréas. Il améliore la peau et le teint et doit être bu avant et après les repas »."
+          ]
+        },
+        {
+          "text": "(Avertissement : cet article est uniquement destiné au divertissement et ne constitue en aucun cas un avis ou une recommandation médicale.)"
+        },
+        {
+          "text": "Cependant, si ses propriétés médicinales supposées, souvent peu étayées par des preuves, ont pu maintenir sa consommation à l’échelle locale, ce ne sont pas elles qui lui ont assuré une popularité mondiale. Pour cela, la boisson a dû prendre un virage à 180 degrés."
+        },
+        {
+          "text": "La naissance du vermouth moderne"
+        },
+        {
+          "text": "C’est justement à l’aube de la modernité que le vermouth moderne est né. À la fin du XVIIIe siècle, lorsque la découverte portugaise de la route du cap de Bonne-Espérance avait fait chuter le prix des épices, un jeune homme ambitieux, Benedetto Carpano, partit pour Turin avec en tête la recette familiale du vin à l’absinthe. Benedetto expérimenta une formule mêlant une trentaine de plantes aromatiques macérées dans un vin doux de Moscato. Les épices n’étant plus un luxe, les essais étaient devenus moins coûteux. Il fit envoyer une bouteille à la cour du roi Victor-Amédée III, qui abandonna alors l’apéritif de cour, le Rosalio, au profit du vermouth de Carpano. La popularité de la boisson était ainsi assurée : à cette époque comme aujourd’hui, les gens suivaient les modes des riches et des célébrités. Une boisson richement épicée, légèrement âpre et naturellement douce était également bien plus savoureuse qu’un simple mélange d’alcool, de sucre et d’eau, tel que le Rosalio, qui ne contenait même pas de roses malgré ce que son nom pouvait laisser penser."
+        },
+        {
+          "text": "Fort de l’approbation de la Maison de Savoie et de la position solide ainsi acquise, Benedetto racheta les parts de son associé et développa une entreprise florissante qui devait fonctionner vingt-quatre heures sur vingt-quatre pour répondre à la demande. Par la suite, la popularité du vermouth connut des hauts et des bas, mais conserva une base solide grâce au succès des marques italiennes et françaises. Une nouvelle transformation restait cependant nécessaire pour poursuivre son expansion : s’éloigner de son rôle d’apéritif et de remède populaire polyvalent."
+        },
+        {
+          "text": "Le passage d’une boisson médicinale à une boisson de plaisir consommée dans la haute société déclencha un véritable engouement qui n’échappa pas aux autres entreprises. La maison historique Cinzano, active depuis au moins trente ans avant Carpano, observa cette tendance et cessa de mettre en avant les propriétés médicinales du vermouth pour souligner sa douceur et son caractère récréatif. Elle saisit également très tôt une autre occasion : exporter sa boisson vers le marché américain en plein essor au début des années 1900. De nombreux Italiens avaient émigré aux États-Unis au XIXe siècle, et les Américains commençaient à connaître les marques étrangères. Dès les frères Cora en 1835, des entreprises telles que Cinzano et Martini cherchèrent à conquérir ce marché prometteur. Symbole de cette transition et de cette volonté d’embrasser la modernité, Cinzano fut le premier produit à faire l’objet d’une publicité utilisant une enseigne au néon."
+        },
+        {
+          "text": "De l’Amérique à l’Italie, et retour"
+        },
+        {
+          "text": "L’idée d’aromatiser le vin avec de l’absinthe et d’autres substances remontant au moins à la Chine de la dynastie Shang, il n’est pas surprenant que les soldats révolutionnaires américains aient consommé leur propre version du vermouth, même s’ils ne l’appelaient pas ainsi. Selon l’historien du vermouth Adam Ford, les insurgés diluaient une boisson britannique appelée Royal Purl, une bière à l’absinthe, commercialisée sous le nom, aussi étonnant soit-il, de « Dr. Stoughton’s Elixir Magnum Stomachicum ». Cette préparation contenant 22 herbes ou épices était mélangée à du vin rouge par souci d’économie. Elle était, une fois encore, utilisée à des fins médicinales supposées, mais on considérait également à l’époque que l’alcool était nécessaire pour maintenir les soldats en forme. Là encore, cet article ne constitue pas un conseil médical."
+        },
+        {
+          "parts": [
+            "Les premiers clients ciblés par les grandes marques européennes de vermouth étaient les immigrants italiens. À son arrivée en Amérique, le vermouth italien, devenu synonyme de vermouth rouge (",
+            "rosso",
+            ") ou doux, fut progressivement mentionné dans de nombreux recueils de cocktails. Il figura ensuite à l’Exposition de l’industrie de toutes les nations, organisée à New York en 1853, qui accueillit plus de 4 390 exposants, dont M. Bovone, G & L Cora, Carpano et les frères Dettone. Si cet événement contribua à maintenir la visibilité du vermouth aux États-Unis, ce n’est qu’avec l’exportation de Martini en 1868 que la boisson connut un véritable succès. Entre 1867 et 1889, la société exporta environ 612 000 litres de vermouth vers l’Amérique."
+          ]
+        },
+        {
+          "text": "Cet afflux favorisa la popularité d’une multitude de cocktails aujourd’hui célèbres. La recette du cocktail Marguerite, composé à parts égales de gin et de vermouth, apparut en 1904. Il est aujourd’hui connu sous le nom de Martini. La hausse de la demande conduisit ensuite à la création du Martini & Rossi Extra Dry en 1910, sans que ses créateurs puissent imaginer le caractère presque prémonitoire de ce nom."
+        },
+        {
+          "text": "Gloire et déclin"
+        },
+        {
+          "parts": [
+            "L’association du vermouth à de grandes figures littéraires, réelles ou fictives, renforça sa popularité. Lorsque le jeune Ernest Hemingway fut blessé par des éclats d’obus alors qu’il travaillait comme ambulancier, apportant cigarettes et chocolats aux soldats italiens pendant la Première Guerre mondiale, il demandait à ses amis de faire entrer clandestinement des bouteilles de vermouth rouge (",
+            "rosso",
+            ") dans sa chambre. ",
+            "« J’envoyai chercher le portier et, lorsqu’il arriva, je lui demandai en italien de m’acheter une bouteille de Cinzano chez le marchand de vin, une fiasque de chianti et les journaux du soir. »",
+            " C’est cette période passée dans un hôpital milanais qui inspira son célèbre roman L’Adieu aux armes. Si nos lecteurs souhaitent l’imiter, qu’ils sachent que Hemingway aimait ses Martinis glacés : ",
+            "« le martini le plus froid du monde… si froid qu’on ne peut pas le tenir dans la main. Il colle aux doigts. »",
+            " Pensez donc à bien refroidir vos verres."
+          ]
+        },
+        {
+          "parts": [
+            "L’influence de l’Amérique et des Américains s’exerça parfois dans les deux sens. Par exemple, le célèbre cocktail Americano fut créé par Gaspare Campari à Milan lorsqu’un client américain suggéra qu’un cocktail Campari serait meilleur servi avec des glaçons et de l’eau gazeuse, à la manière d’un long drink américain. Il serait ensuite devenu le Negroni lorsque, selon une histoire peut-être apocryphe, Camillo Negroni demanda que l’on remplace l’eau gazeuse par du gin. Le cocktail fut plus tard popularisé aux États-Unis par des acteurs hollywoodiens comme Orson Welles, qui déclara : ",
+            "« Les amers sont excellents pour le foie, le gin est mauvais pour vous. Ils s’équilibrent. »"
+          ]
+        },
+        {
+          "parts": [
+            "Parallèlement, la proportion de vermouth, généralement blanc/",
+            "bianco",
+            ", dans le Martini diminua jusqu’à devenir presque comique. Au départ composé à parts égales de vermouth et de gin, le cocktail vit sa quantité de vermouth se réduire jusqu’à devenir presque inexistante au cours du XXe siècle. Si James Bond est célèbre pour son Vesper Martini, trois choses méritent d’être précisées avant de vouloir le reproduire. Premièrement, il n’est plus possible de préparer exactement la recette originale, car le Kina Lillet, riche en quinine, a été abandonné en 1987. Deuxièmement, contrairement à un Martini traditionnel, le Kina Lillet est une liqueur et non un vermouth, puisqu’il ne contient pas d’absinthe. Troisièmement, Ian Fleming lui-même n’appréciait pas cette création, déclarant : ",
+            "« J’entrepris d’inventer un cocktail pour Bond (que je goûtai quelques mois plus tard et trouvai désagréable). »",
+            " Winston Churchill, quant à lui, excluait totalement le vermouth de ses Martinis. On lui attribue cette formule : ",
+            "« …il suffit de s’incliner en direction de la France (où l’on fabrique le vermouth) pendant que l’on verse le gin. »",
+            " Dans la même tradition, le cinéaste Luis Buñuel recommandait ",
+            "« …de laisser un rayon de soleil traverser la bouteille de Noilly Prat avant qu’il n’atteigne la bouteille de gin »",
+            " comme quantité idéale."
+          ]
+        },
+        {
+          "text": "Un autre facteur de déclin fut le manque de connaissances de nombreux barmans quant à la conservation d’une bouteille de vermouth ouverte. L’oxydation détériorait ainsi son goût. Une bouteille entamée devrait être refermée et conservée au réfrigérateur ; elle reste généralement en bon état pendant environ un mois et acceptable pendant deux mois. Au cours de la seconde moitié du XXe siècle, le vermouth acquit une image vieillotte et démodée. Pour aggraver la situation, sa définition devint de plus en plus floue et certains fabricants en firent un simple ingrédient de cocktail générique et de faible qualité."
+        },
+        {
+          "text": "Le renouveau"
+        },
+        {
+          "text": "Cette situation regrettable n’a pas duré. Ces dernières années, la douceur du vermouth et sa teneur en alcool relativement modérée lui ont permis de retrouver une place parmi les boissons les plus appréciées d’un marché en pleine expansion. Le retour des producteurs indépendants, désireux de créer bien plus que de simples ingrédients pour cocktails après des décennies de négligence, a également joué un rôle majeur. Des vermouths haut de gamme comme Monte Carlo Vermouth ont vu le jour, permettant aux amateurs de réaliser des versions raffinées de cocktails classiques. Cette renaissance passionnante et innovante se poursuit aujourd’hui. Nous vous invitons à y prendre part et à découvrir de nouvelles saveurs et sensations grâce à une tradition cultivée avec le plus grand soin."
+        }
+      ],
+      "monte-carlo-vermouth-available-online": [
+        {
+          "text": "Le moment tant attendu est enfin arrivé ! Nous avons lancé la vente en ligne de Monte Carlo Vermouth dans certains pays. Un produit créé pour incarner l’esprit de Monaco, son art de vivre et son goût raffiné."
+        },
+        {
+          "text": "Élaboré à partir de vins monocépages de la plus haute qualité, originaires du Piémont, et infusé avec de précieuses herbes françaises et des roses monégasques, ce vermouth haut de gamme se déguste pur ou en cocktail. Il constitue également un cadeau idéal pour tous les amateurs de boissons de luxe."
+        },
+        {
+          "text": "Les deux variétés, Bianco et Rosso, sont prêtes à vous dévoiler leur caractère expressif et leurs nuances aromatiques polyvalentes. Commandez dès maintenant et découvrez une expérience véritablement nouvelle dans l’univers du vermouth !"
+        },
+        {
+          "text": "Si vous résidez à Monaco, en France, en Espagne, en Belgique, aux Pays-Bas ou au Royaume-Uni, vous pouvez commander directement sur notre site. La livraison vers d’autres pays sera bientôt disponible !"
+        }
+      ],
+      "chalet-monte-carlo-vermouth": [
+        {
+          "text": "La magie de Noël s’installe à Monaco. À cette occasion, nous sommes ravis d’annoncer l’ouverture du Chalet Monte Carlo Vermouth. Situé au cœur de la Principauté, sur l’avenue de Monte-Carlo, place du Casino, le Chalet vous invite à savourer un moment d’élégance et de raffinement autour d’un produit unique et local, élaboré à partir de pétales de roses récoltés dans les roseraies de Monaco."
+        },
+        {
+          "text": "Une dégustation guidée par nos experts vous permettra de découvrir la subtilité et la richesse aromatique de Monte Carlo Vermouth Bianco et Monte Carlo Vermouth Rosso."
+        },
+        {
+          "text": "Nos produits naturels s’inscrivent dans les traditions dont Monaco, la France et l’Italie sont fiers."
+        },
+        {
+          "text": "Ils sont élaborés à l’aide de technologies de pointe, tout en respectant les méthodes artisanales de production du vermouth. Les vins de la célèbre région du Piémont, dont certains proviennent de territoires classés au patrimoine mondial de l’UNESCO, notamment le Moscato d’Asti DOCG et le Langhe Nebbiolo DOC, offrent à nos vermouths une palette aromatique incomparable."
+        },
+        {
+          "text": "Les pétales de roses des roseraies monégasques sont au cœur de ces créations. Les plantes distillées par les experts français de Grasse leur apportent mystère et saveurs divines."
+        },
+        {
+          "text": "Pour ceux qui souhaitent découvrir davantage notre univers, nous proposons, en plus des bouteilles individuelles, un coffret cadeau comprenant une bouteille de Monte Carlo Vermouth Bianco ou Rosso ainsi que deux verres en cristal gravés au nom de la marque."
+        },
+        {
+          "text": "Laissez libre cours à votre créativité en ajoutant une touche de Monaco à vos fêtes de fin d’année."
+        }
+      ],
+      "monte-carlo-vermouth-living-wall": [
+        {
+          "text": "Le 3 septembre, nous avons passé une merveilleuse journée lors de la fête organisée par le Club La Vigie Monte-Carlo, où nous avons fièrement présenté notre mur végétal."
+        },
+        {
+          "text": "La prochaine fois que vous rencontrerez notre mur lors d’un événement à Monaco, rien de plus simple : choisissez entre le Monte Carlo Spritz et le Monte Carlo Tonic, sonnez la cloche et savourez votre cocktail préparé avec notre exceptionnel Monte Carlo Vermouth !"
+        }
+      ]
     }
   }
 }

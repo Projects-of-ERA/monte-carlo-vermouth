@@ -364,5 +364,9 @@
       "description2": "In 2024, it has won two gold medals at the Concours de Lyon and the London Spirits Competition, interspersed with a silver award at the Frankfurt International Trophy.",
       "scentDescription": "The depth and sophistication of Rosso’s masculine character is woven from a combination of bitter orange, immortelle, orris, Timur pepper, and ginger, which perfectly matches its 100% Langhe Nebbiolo DOC grapes. A warm and pronounced taste makes it a perfect vermouth for the autumn and winter seasons, both as an aperitif and a digestive."
     }
+  },
+  "newsNotFound": {
+    "title": "News Not Found",
+    "button": "Back to News"
   }
 }
