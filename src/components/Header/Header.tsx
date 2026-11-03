@@ -6,10 +6,12 @@ import { useLocation } from 'react-router-dom';
 import CartIcon from './CartIcon';
 import './Header.css';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useCart } from '../../context/CartContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { openCart, totalQuantity } = useCart();
 
   const { t } = useTranslation();
   const { pathname } = useLocation();
@@ -87,8 +89,18 @@ const Header = () => {
 
         {/* DESKTOP RIGHT NAVIGATION */}
         <nav className="header-desktop-nav header-desktop-nav-right">
-          <button type="button" aria-label={t('header.openCart')} className="header-cart-button">
+          <button
+            type="button"
+            aria-label={`${t('header.openCart')} (${totalQuantity})`}
+            className="header-cart-button"
+            onClick={openCart}>
             <CartIcon />
+
+            {totalQuantity > 0 && (
+              <span className="header-cart-count" aria-hidden="true">
+                {totalQuantity}
+              </span>
+            )}
           </button>
 
           <NavLink
@@ -158,8 +170,21 @@ const Header = () => {
           </NavLink>
         </nav>
 
-        <button type="button" className="header-mobile-cart" onClick={closeMenu}>
-          <CartIcon />
+        <button
+          type="button"
+          className="header-mobile-cart"
+          onClick={openCart}
+          aria-label={`${t('header.openCart')} (${totalQuantity})`}>
+          <span className="header-mobile-cart-icon">
+            <CartIcon />
+
+            {totalQuantity > 0 && (
+              <span className="header-cart-count" aria-hidden="true">
+                {totalQuantity}
+              </span>
+            )}
+          </span>
+
           <span>{t('header.cart')}</span>
         </button>
 

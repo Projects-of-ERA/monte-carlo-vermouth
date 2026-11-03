@@ -356,8 +356,8 @@
     "addToCart": "AJOUTER AU PANIER",
     "scentTitle": "Arômes & Saveurs",
     "switchTo": "Passer à",
-    "decreaseQuantity": "Diminuer la quantité",
-    "increaseQuantity": "Augmenter la quantité",
+    "decreaseQuantity": "Diminuer la quantité de {{name}}",
+    "increaseQuantity": "Augmenter la quantité de {{name}}",
     "bianco": {
       "type": "VERMOUTH BLANC",
       "description1": "Accompagnant aussi bien les fruits, les fruits de mer que les desserts, notre Bianco apporte une touche d’élégance à chaque occasion, sur la Côte d’Azur comme ailleurs. Ce vermouth a remporté des médailles d’or dans les catégories « Boissons à base de vin et vins de fruits » et « Apéritifs à base de vin ou vermouth » au Concours International de Lyon. En 2024, il a également décroché des médailles d’or successives au London Spirits Competition et à l’International Wine & Spirits Competition.",
@@ -374,7 +374,6 @@
     "title": "Actualité introuvable",
     "button": "Retour aux actualités"
   },
-
   "newsDetail": {
     "content": {
       "wine-paris-2026": [
@@ -588,5 +587,16 @@
         }
       ]
     }
+  },
+  "cart": {
+    "title": "Panier",
+    "close": "Fermer le panier",
+    "empty": "Votre panier est vide.",
+    "product": "Vermouth",
+    "remove": "Supprimer",
+    "decreaseQuantity": "Diminuer la quantité de {{name}}",
+    "increaseQuantity": "Augmenter la quantité de {{name}}",
+    "subtotal": "Sous-total :",
+    "checkout": "Passer commande"
   }
 }

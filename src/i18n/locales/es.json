@@ -355,8 +355,8 @@
     "addToCart": "AÑADIR AL CARRITO",
     "scentTitle": "Aroma y Sabor",
     "switchTo": "Cambiar a",
-    "decreaseQuantity": "Disminuir la cantidad",
-    "increaseQuantity": "Aumentar la cantidad",
+    "decreaseQuantity": "Disminuir la cantidad de {{name}}",
+    "increaseQuantity": "Aumentar la cantidad de {{name}}",
     "bianco": {
       "type": "VERMUT BLANCO",
       "description1": "Acompañado de frutas, mariscos o postres, nuestro Bianco aporta un toque elegante a cualquier ocasión, tanto en la Costa Azul como en cualquier otro lugar. Este vermut ha recibido medallas de oro en las categorías « Bebidas a base de vino y vinos de frutas » y « Aperitivos a base de vino o vermut » del Concours International de Lyon. En 2024, también consiguió medallas de oro consecutivas en el London Spirits Competition y el International Wine & Spirits Competition.",
@@ -373,7 +373,6 @@
     "title": "Noticia no encontrada",
     "button": "Volver a noticias"
   },
-
   "newsDetail": {
     "content": {
       "wine-paris-2026": [
@@ -587,5 +586,16 @@
         }
       ]
     }
+  },
+  "cart": {
+    "title": "Carrito de compra",
+    "close": "Cerrar el carrito",
+    "empty": "Tu carrito está vacío.",
+    "product": "Vermut",
+    "remove": "Eliminar",
+    "decreaseQuantity": "Disminuir la cantidad de {{name}}",
+    "increaseQuantity": "Aumentar la cantidad de {{name}}",
+    "subtotal": "Subtotal:",
+    "checkout": "Finalizar compra"
   }
 }

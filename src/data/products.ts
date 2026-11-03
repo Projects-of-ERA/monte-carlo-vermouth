@@ -8,6 +8,7 @@ export interface Product {
   descriptionKeys: string[];
   scentDescriptionKey: string;
   images: string[];
+  cartImage: string;
 }
 
 export const products: Product[] = [
@@ -27,6 +28,7 @@ export const products: Product[] = [
       '/images/ProductDetailPage/bianco/bianco-4.webp',
       '/images/ProductDetailPage/bianco/bianco-5.webp',
     ],
+    cartImage: '/images/ProductDetailPage/bianco/bianco-cart.webp',
   },
   {
     id: 'rosso',
@@ -43,5 +45,6 @@ export const products: Product[] = [
       '/images/ProductDetailPage/rosso/rosso-3.webp',
       '/images/ProductDetailPage/rosso/rosso-4.webp',
     ],
+    cartImage: '/images/ProductDetailPage/rosso/rosso-cart.webp',
   },
 ];

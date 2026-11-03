@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
+import { useCart } from '../../../context/CartContext';
 
 import type { Product } from '../../../data/products';
 
@@ -17,6 +18,7 @@ interface ProductsDetailProps {
 const ProductsDetail = ({ product }: ProductsDetailProps) => {
   const { t } = useTranslation();
   const { pathname } = useLocation();
+  const { addToCart } = useCart();
 
   const language = pathname.split('/')[1];
   const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
@@ -124,7 +126,9 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
                     type="button"
                     onClick={decreaseQuantity}
                     disabled={quantity === 1}
-                    aria-label={t('productsDetail.decreaseQuantity')}>
+                    aria-label={t('productsDetail.decreaseQuantity', {
+                      name: product.shortName,
+                    })}>
                     −
                   </button>
 
@@ -133,12 +137,17 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
                   <button
                     type="button"
                     onClick={increaseQuantity}
-                    aria-label={t('productsDetail.increaseQuantity')}>
+                    aria-label={t('productsDetail.increaseQuantity', {
+                      name: product.shortName,
+                    })}>
                     +
                   </button>
                 </div>
 
-                <button type="button" className="products-detail-cart-button">
+                <button
+                  type="button"
+                  className="products-detail-cart-button"
+                  onClick={() => addToCart(product, quantity)}>
                   {t('productsDetail.addToCart')}
                 </button>
               </div>

@@ -259,7 +259,7 @@
 .header-mobile-cart {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   margin-top: 26px;
   margin-bottom: 26px;
   padding: 8px 12px;
@@ -366,5 +366,44 @@
 
   .header-mobile-cart {
     font-size: 18px;
+  }
+}
+
+/* CART COUNT */
+.header-cart-button,
+.header-mobile-cart-icon {
+  position: relative;
+}
+
+.header-mobile-cart-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 50%;
+  background-color: var(--color-primary-blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .header-mobile-cart-icon .header-cart-count {
+    top: -8px;
+    right: -12px;
   }
 }

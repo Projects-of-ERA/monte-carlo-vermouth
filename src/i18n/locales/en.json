@@ -351,8 +351,8 @@
     "addToCart": "ADD TO CART",
     "scentTitle": "Scent & Flavor",
     "switchTo": "Switch to",
-    "decreaseQuantity": "Decrease quantity",
-    "increaseQuantity": "Increase quantity",
+    "decreaseQuantity": "Decrease {{name}} quantity",
+    "increaseQuantity": "Increase {{name}} quantity",
     "bianco": {
       "type": "WHITE VERMOUTH",
       "description1": "Paired with fruit, seafood, or desserts, our Bianco variety lends an elegant accent to any occasion, whether you’re enjoying it on the Côte d’Azur or beyond. This vermouth has been awarded the gold medal in the ‘Wine-Based Beverages and Fruit Wines’ and ‘Wine-Based Apéritifs or Vermouth’ categories by the Concours International de Lyon. In 2024, it has gone on to win consecutive gold medals at the London Spirits Competition and the International Wine & Spirits Competition.",
@@ -368,5 +368,16 @@
   "newsNotFound": {
     "title": "News Not Found",
     "button": "Back to News"
+  },
+  "cart": {
+    "title": "Shopping cart",
+    "close": "Close shopping cart",
+    "empty": "Your cart is empty.",
+    "product": "Vermouth",
+    "remove": "Remove",
+    "decreaseQuantity": "Decrease {{name}} quantity",
+    "increaseQuantity": "Increase {{name}} quantity",
+    "subtotal": "Subtotal:",
+    "checkout": "Begin checkout"
   }
 }

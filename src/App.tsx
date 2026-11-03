@@ -12,6 +12,8 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import ProductsDetailPage from './pages/ProductsDetailPage/ProductsDetailPage';
 import NewsDetailPage from './pages/NewsDetailPage/NewsDetailPage';
 
+import CartDrawer from './components/Cart/CartDrawer';
+
 const languages = ['', '/fr', '/es'];
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
       </Routes>
 
       <Footer />
+
+      <CartDrawer />
     </div>
   );
 }
