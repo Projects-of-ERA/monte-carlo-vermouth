@@ -1,47 +1,13 @@
-// import { useTranslation } from 'react-i18next';
-// import { varietals } from '../../../data/varietals';
-
-// import './Varietals.css';
-
-// const Varietals = () => {
-//   const { t } = useTranslation();
-
-//   return (
-//     <section className="varietals">
-//       <div className="mx-auto max-w-8xl px-4 lg:px-8">
-//         <h2 className="varietals-heading font-serif">{t('varietals.title')}</h2>
-
-//         <div className="varietals-grid">
-//           {varietals.map((varietal) => (
-//             <article key={varietal.id} className="varietals-card">
-//               <div className="varietals-image-wrapper">
-//                 <img src={varietal.image} alt={varietal.alt} className="varietals-image" />
-//               </div>
-
-//               <div className="varietals-title">
-//                 <h3 className="font-serif">{varietal.name}</h3>
-
-//                 <span className="font-serif">{t(varietal.typeKey)}</span>
-//               </div>
-
-//               <a href="#" className="varietals-button" onClick={(event) => event.preventDefault()}>
-//                 {t('varietals.button')}
-//               </a>
-//             </article>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Varietals;
-
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'motion/react';
+
 import { varietals } from '../../../data/varietals';
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 
 import './Varietals.css';
+
+const MotionLink = motion.create(Link);
 
 const Varietals = () => {
   const { t } = useTranslation();
@@ -51,20 +17,38 @@ const Varietals = () => {
   const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
 
   return (
-    <section className="varietals">
+    <section className="varietals overflow-hidden">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
-        <h2 className="varietals-heading font-serif">{t('varietals.title')}</h2>
+        <motion.h2
+          className="varietals-heading font-serif"
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{
+            duration: 0.9,
+            ease: [0.22, 1, 0.36, 1],
+          }}>
+          <AnimatedText>{t('varietals.title')}</AnimatedText>
+        </motion.h2>
 
         <div className="varietals-grid">
-          {varietals.map((varietal) => {
+          {varietals.map((varietal, index) => {
             const productUrl = `${langPrefix}/products/${varietal.slug}`;
 
             return (
-              <Link
+              <MotionLink
                 key={varietal.id}
                 to={productUrl}
                 className="varietals-card"
-                aria-label={`${varietal.name} ${t(varietal.typeKey)}`}>
+                aria-label={`${varietal.name} ${t(varietal.typeKey)}`}
+                initial={{ opacity: 0, y: 45 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{
+                  duration: 0.9,
+                  delay: index * 0.15,
+                  ease: [0.22, 1, 0.36, 1],
+                }}>
                 {/* IMAGE */}
                 <div className="varietals-image-wrapper">
                   <img src={varietal.image} alt={varietal.alt} className="varietals-image" />
@@ -74,12 +58,16 @@ const Varietals = () => {
                 <div className="varietals-title">
                   <h3 className="font-serif">{varietal.name}</h3>
 
-                  <span className="font-serif">{t(varietal.typeKey)}</span>
+                  <span className="font-serif">
+                    <AnimatedText>{t(varietal.typeKey)}</AnimatedText>
+                  </span>
                 </div>
 
                 {/* BUTTON */}
-                <span className="varietals-button">{t('varietals.button')}</span>
-              </Link>
+                <span className="varietals-button">
+                  <AnimatedText>{t('varietals.button')}</AnimatedText>
+                </span>
+              </MotionLink>
             );
           })}
         </div>

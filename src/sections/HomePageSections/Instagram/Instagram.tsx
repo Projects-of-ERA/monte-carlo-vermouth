@@ -1,18 +1,32 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'motion/react';
+
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 import { instagramPosts } from '../../../data/instagramPosts';
+
 import './Instagram.css';
+
+const MotionLink = motion.create('a');
 
 const Instagram = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="instagram-section">
+    <section className="instagram-section overflow-hidden">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
-        <a
+        {/* PROFILE */}
+        <MotionLink
           href="https://www.instagram.com/montecarlo_vermouth/"
           target="_blank"
           rel="noopener noreferrer"
-          className="instagram-profile">
+          className="instagram-profile"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{
+            duration: 0.9,
+            ease: [0.22, 1, 0.36, 1],
+          }}>
           <div className="instagram-logo-wrapper">
             <img
               src="/images/HomePage/instagram/insta-logo.webp"
@@ -34,32 +48,54 @@ const Instagram = () => {
             <h2 className="instagram-username">montecarlo_vermouth</h2>
 
             <p className="instagram-description">
-              {t('instagram.description1')}
-              <br className="instagram-description-break" /> {t('instagram.description2')}
+              <AnimatedText>
+                {t('instagram.description1')}
+                <br className="instagram-description-break" /> {t('instagram.description2')}
+              </AnimatedText>
             </p>
           </div>
-        </a>
+        </MotionLink>
 
+        {/* POSTS */}
         <div className="instagram-grid">
-          {instagramPosts.map((post) => (
-            <a
+          {instagramPosts.map((post, index) => (
+            <MotionLink
               key={post.id}
               href={post.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="instagram-post">
+              className="instagram-post"
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{
+                duration: 0.85,
+                delay: index * 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
               <img src={post.image} alt={post.alt} className="instagram-post-image" />
-            </a>
+            </MotionLink>
           ))}
         </div>
 
-        <a
-          href="https://www.instagram.com/montecarlo_vermouth/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="instagram-follow-button">
-          {t('instagram.button')}
-        </a>
+        {/* FOLLOW BUTTON */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{
+            duration: 0.8,
+            delay: instagramPosts.length * 0.05,
+            ease: [0.22, 1, 0.36, 1],
+          }}>
+          <a
+            href="https://www.instagram.com/montecarlo_vermouth/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="instagram-follow-button">
+            <AnimatedText>{t('instagram.button')}</AnimatedText>
+          </a>
+        </motion.div>
       </div>
     </section>
   );

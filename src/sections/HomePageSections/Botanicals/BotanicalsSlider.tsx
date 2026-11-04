@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'react-i18next';
 import type { Swiper as SwiperType } from 'swiper';
 
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
+
 import 'swiper/css';
 
 const slides = [
@@ -55,9 +57,13 @@ const BotanicalsSlider = () => {
               <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
               <div className="botanicals-right-content">
-                <h3 className="botanicals-right-title">{t(slide.titleKey)}</h3>
+                <h3 className="botanicals-right-title">
+                  <AnimatedText>{t(slide.titleKey)}</AnimatedText>
+                </h3>
 
-                <p className="botanicals-right-text">{t(slide.textKey)}</p>
+                <p className="botanicals-right-text">
+                  <AnimatedText>{t(slide.textKey)}</AnimatedText>
+                </p>
               </div>
             </div>
           </SwiperSlide>

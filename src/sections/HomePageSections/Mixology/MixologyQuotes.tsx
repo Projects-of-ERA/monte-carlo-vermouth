@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './MixologyQuotes.css';
@@ -53,7 +55,7 @@ const MixologyQuotes = () => {
                   <span className="mixology-quote-mark mixology-quote-mark-top font-serif">“</span>
 
                   <blockquote className="mixology-quote-text font-serif">
-                    {t(item.quoteKey)}
+                    <AnimatedText>{t(item.quoteKey)}</AnimatedText>
                   </blockquote>
 
                   <span className="mixology-quote-mark mixology-quote-mark-bottom font-serif">
@@ -63,7 +65,10 @@ const MixologyQuotes = () => {
 
                 <div className="mixology-quote-author">
                   <p>{item.author}</p>
-                  <span>{t(item.positionKey)}</span>
+
+                  <span>
+                    <AnimatedText>{t(item.positionKey)}</AnimatedText>
+                  </span>
                 </div>
               </div>
             </SwiperSlide>
