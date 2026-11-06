@@ -1,35 +1,87 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'motion/react';
+
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 
 import './VermouthTasting.css';
 
 const VermouthTasting = () => {
   const { t } = useTranslation();
 
+  const tastingDetails = [
+    {
+      id: 'eye',
+      titleKey: 'vermouthTasting.eyeTitle',
+      descriptionKey: 'vermouthTasting.eyeDescription',
+    },
+    {
+      id: 'nose',
+      titleKey: 'vermouthTasting.noseTitle',
+      descriptionKey: 'vermouthTasting.noseDescription',
+    },
+    {
+      id: 'palate',
+      titleKey: 'vermouthTasting.palateTitle',
+      descriptionKey: 'vermouthTasting.palateDescription',
+    },
+  ];
+
   return (
-    <section className="vermouth-tasting">
+    <section className="vermouth-tasting overflow-hidden">
       {/* HEADER */}
       <div className="vermouth-tasting-header">
         <div className="mx-auto max-w-8xl px-4 lg:px-8">
-          <h2 className="vermouth-tasting-title font-serif">
-            <span>{t('vermouthTasting.title1')}</span>
+          <motion.h2
+            className="vermouth-tasting-title font-serif"
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.9,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
             <span>
-              <em>{t('vermouthTasting.title2')}</em>
+              <AnimatedText>{t('vermouthTasting.title1')}</AnimatedText>
             </span>
-          </h2>
 
-          <p className="vermouth-tasting-subtitle">{t('vermouthTasting.subtitle')}</p>
+            <span>
+              <AnimatedText>
+                <em>{t('vermouthTasting.title2')}</em>
+              </AnimatedText>
+            </span>
+          </motion.h2>
+
+          <motion.p
+            className="vermouth-tasting-subtitle"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
+            <AnimatedText>{t('vermouthTasting.subtitle')}</AnimatedText>
+          </motion.p>
         </div>
       </div>
 
       {/* CONTENT */}
-      <div className="vermouth-tasting-content">
+      <div className="vermouth-tasting-content overflow-hidden">
         {/* BACKGROUND */}
         <div className="vermouth-tasting-background">
-          <img
+          <motion.img
             src="/images/VermouthPage/tasting/tasting.png"
             alt=""
             className="vermouth-tasting-image"
             loading="lazy"
+            initial={{ scale: 1.08 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 1.6,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           />
         </div>
 
@@ -38,23 +90,41 @@ const VermouthTasting = () => {
 
         <div className="vermouth-tasting-container mx-auto max-w-8xl px-4 lg:px-8">
           <div className="vermouth-tasting-text">
-            <p className="vermouth-tasting-description">{t('vermouthTasting.description')}</p>
+            <motion.p
+              className="vermouth-tasting-description"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <AnimatedText>{t('vermouthTasting.description')}</AnimatedText>
+            </motion.p>
 
             <div className="vermouth-tasting-details">
-              <div className="vermouth-tasting-detail">
-                <h3>{t('vermouthTasting.eyeTitle')}</h3>
-                <p>{t('vermouthTasting.eyeDescription')}</p>
-              </div>
+              {tastingDetails.map((detail, index) => (
+                <motion.div
+                  key={detail.id}
+                  className="vermouth-tasting-detail"
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: index * 0.15 + 0.1,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}>
+                  <h3>
+                    <AnimatedText>{t(detail.titleKey)}</AnimatedText>
+                  </h3>
 
-              <div className="vermouth-tasting-detail">
-                <h3>{t('vermouthTasting.noseTitle')}</h3>
-                <p>{t('vermouthTasting.noseDescription')}</p>
-              </div>
-
-              <div className="vermouth-tasting-detail">
-                <h3>{t('vermouthTasting.palateTitle')}</h3>
-                <p>{t('vermouthTasting.palateDescription')}</p>
-              </div>
+                  <p>
+                    <AnimatedText>{t(detail.descriptionKey)}</AnimatedText>
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>

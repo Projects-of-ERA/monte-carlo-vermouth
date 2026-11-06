@@ -7,6 +7,7 @@ import CartIcon from './CartIcon';
 import './Header.css';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useCart } from '../../context/CartContext';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,19 +58,19 @@ const Header = () => {
           <NavLink
             to={localizedPath('/vermouth')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            {t('header.theVermouth')}
+            <AnimatedText>{t('header.theVermouth')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/story')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            {t('header.ourStory')}
+            <AnimatedText>{t('header.ourStory')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/mixology')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            {t('header.mixology')}
+            <AnimatedText>{t('header.mixology')}</AnimatedText>
           </NavLink>
         </nav>
 
@@ -106,13 +107,13 @@ const Header = () => {
           <NavLink
             to={localizedPath('/products')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            {t('header.buyNow')}
+            <AnimatedText>{t('header.buyNow')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/news')}
             className={({ isActive }) => `header-link ${isActive ? 'is-active' : ''}`}>
-            {t('header.news')}
+            <AnimatedText>{t('header.news')}</AnimatedText>
           </NavLink>
 
           <LanguageSwitcher />
@@ -138,35 +139,35 @@ const Header = () => {
             to={localizedPath('/vermouth')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            {t('header.theVermouth')}
+            <AnimatedText>{t('header.theVermouth')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/story')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            {t('header.ourStory')}
+            <AnimatedText>{t('header.ourStory')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/mixology')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            {t('header.mixology')}
+            <AnimatedText>{t('header.mixology')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/products')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            {t('header.buyNow')}
+            <AnimatedText>{t('header.buyNow')}</AnimatedText>
           </NavLink>
 
           <NavLink
             to={localizedPath('/news')}
             onClick={closeMenu}
             className={({ isActive }) => (isActive ? 'is-active' : '')}>
-            {t('header.news')}
+            <AnimatedText>{t('header.news')}</AnimatedText>
           </NavLink>
         </nav>
 
@@ -185,7 +186,9 @@ const Header = () => {
             )}
           </span>
 
-          <span>{t('header.cart')}</span>
+          <span>
+            <AnimatedText>{t('header.cart')}</AnimatedText>
+          </span>
         </button>
 
         <LanguageSwitcher />

@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'motion/react';
+
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 
 import './ProductsCollection.css';
+
+const MotionLink = motion.create(Link);
 
 const products = [
   {
@@ -31,38 +36,69 @@ const ProductsCollection = () => {
   const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
 
   return (
-    <section className="product-collection">
+    <section className="product-collection overflow-hidden">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
         {/* INTRO */}
         <div className="product-collection-intro">
-          <h2 className="product-collection-heading font-serif">
+          <motion.h2
+            className="product-collection-heading font-serif"
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.9,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
             <span>
-              <em>{t('productsCollection.title1')}</em>
-              {i18n.language === 'fr' ? '' : ' '}
-              {t('productsCollection.title1Accent')}
+              <AnimatedText>
+                <em>{t('productsCollection.title1')}</em>
+                {i18n.language === 'fr' ? '' : ' '}
+                {t('productsCollection.title1Accent')}
+              </AnimatedText>
             </span>
 
             <span>
-              <em>{t('productsCollection.title2')}</em> {t('productsCollection.title2Accent')}
+              <AnimatedText>
+                <em>{t('productsCollection.title2')}</em> {t('productsCollection.title2Accent')}
+              </AnimatedText>
             </span>
-          </h2>
+          </motion.h2>
 
-          <p className="product-collection-description">
-            {t('productsCollection.description1')}
-            <br />
-            {t('productsCollection.description2')}
-            <br />
-            {t('productsCollection.description3')}
-          </p>
+          <motion.p
+            className="product-collection-description"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
+            <AnimatedText>
+              {t('productsCollection.description1')}
+              <br />
+              {t('productsCollection.description2')}
+              <br />
+              {t('productsCollection.description3')}
+            </AnimatedText>
+          </motion.p>
         </div>
 
         {/* PRODUCTS */}
         <div className="product-collection-grid">
-          {products.map((product) => (
-            <Link
+          {products.map((product, index) => (
+            <MotionLink
               key={product.id}
               to={`${langPrefix}/products/${product.slug}`}
-              className="product-collection-card">
+              className="product-collection-card"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.9,
+                delay: index * 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
               <div className="product-collection-image-wrapper">
                 <img src={product.image} alt={product.alt} className="product-collection-image" />
               </div>
@@ -70,11 +106,15 @@ const ProductsCollection = () => {
               <div className="product-collection-title">
                 <h3 className="font-serif">{product.name}</h3>
 
-                <span className="font-serif">{t(product.typeKey)}</span>
+                <span className="font-serif">
+                  <AnimatedText>{t(product.typeKey)}</AnimatedText>
+                </span>
               </div>
 
-              <span className="product-collection-button">{t('productsCollection.button')}</span>
-            </Link>
+              <span className="product-collection-button">
+                <AnimatedText>{t('productsCollection.button')}</AnimatedText>
+              </span>
+            </MotionLink>
           ))}
         </div>
       </div>

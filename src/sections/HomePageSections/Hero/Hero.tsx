@@ -1,12 +1,20 @@
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 
 import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 
 import './Hero.css';
 
+const MotionLink = motion.create(Link);
+
 const Hero = () => {
   const { t } = useTranslation();
+
+  const { pathname } = useLocation();
+
+  const language = pathname.split('/')[1];
+  const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
 
   const titleLines = [
     <>
@@ -54,8 +62,8 @@ const Hero = () => {
             ))}
           </motion.h1>
 
-          <motion.a
-            href="#"
+          <MotionLink
+            to={`${langPrefix}/products`}
             className="hero-shop-button"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +73,7 @@ const Hero = () => {
               ease: [0.22, 1, 0.36, 1],
             }}>
             <AnimatedText>{t('hero.button')}</AnimatedText>
-          </motion.a>
+          </MotionLink>
         </div>
       </div>
     </section>
