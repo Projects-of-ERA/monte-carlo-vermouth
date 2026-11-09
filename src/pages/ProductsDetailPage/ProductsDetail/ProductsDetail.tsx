@@ -3,6 +3,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'motion/react';
+
+import AnimatedText from '../../../components/AnimatedText/AnimatedText';
 import { useCart } from '../../../context/CartContext';
 
 import type { Product } from '../../../data/products';
@@ -19,11 +22,14 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const language = pathname.split('/')[1];
   const langPrefix = language === 'fr' || language === 'es' ? `/${language}` : '';
 
   const [quantity, setQuantity] = useState(1);
+
+  const isBianco = product.id === 'bianco';
 
   const decreaseQuantity = () => {
     setQuantity((prev) => Math.max(1, prev - 1));
@@ -33,22 +39,25 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
     setQuantity((prev) => prev + 1);
   };
 
-  const navigate = useNavigate();
-
   const handleProductSwitch = () => {
     const nextProduct = isBianco ? 'rosso-red-vermouth' : 'bianco-white-vermouth';
 
     navigate(`${langPrefix}/products/${nextProduct}`);
   };
 
-  const isBianco = product.id === 'bianco';
-
   return (
-    <section className="products-detail">
+    <section className="products-detail overflow-hidden">
       <div className="mx-auto max-w-8xl px-4 lg:px-8">
         <div className="products-detail-grid">
           {/* LEFT — IMAGE SLIDER */}
-          <div className="products-detail-gallery">
+          <motion.div
+            className="products-detail-gallery"
+            initial={{ opacity: 0, x: -35 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 1.8,
+              ease: [0.22, 1, 0.36, 1],
+            }}>
             <Swiper
               modules={[Navigation]}
               navigation
@@ -69,28 +78,63 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </motion.div>
 
           {/* RIGHT — PRODUCT CONTENT */}
           <div className="products-detail-content">
             {/* TITLE */}
-            <h1 className="products-detail-title">
-              {' '}
-              {product.name} {t(product.typeKey)}
-            </h1>
+            <motion.h1
+              className="products-detail-title"
+              initial={{ opacity: 0, y: 35 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              {product.name} <AnimatedText>{t(product.typeKey)}</AnimatedText>
+            </motion.h1>
 
             {/* PRICE */}
-            <p className="products-detail-price">€{product.price.toFixed(2)}</p>
+            <motion.p
+              className="products-detail-price"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.25,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              €{product.price.toFixed(2)}
+            </motion.p>
 
             {/* DESCRIPTION */}
             <div className="products-detail-description">
-              {product.descriptionKeys.map((key) => (
-                <p key={key}>{t(key)}</p>
+              {product.descriptionKeys.map((key, index) => (
+                <motion.p
+                  key={key}
+                  initial={{ opacity: 0, y: 25 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: 0.3 + index * 0.1,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}>
+                  <AnimatedText>{t(key)}</AnimatedText>
+                </motion.p>
               ))}
             </div>
 
             {/* VARIETAL SWITCHER */}
-            <div className="products-detail-varietals">
+            <motion.div
+              className="products-detail-varietals"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.45,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
               <Link
                 to={`${langPrefix}/products/bianco-white-vermouth`}
                 className={isBianco ? 'is-active' : ''}>
@@ -114,11 +158,21 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
                 className={!isBianco ? 'is-active' : ''}>
                 Rosso
               </Link>
-            </div>
+            </motion.div>
 
             {/* QUANTITY AND CART */}
-            <div className="products-detail-purchase">
-              <p className="products-detail-quantity-label">{t('productsDetail.quantityLabel')}</p>
+            <motion.div
+              className="products-detail-purchase"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.55,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <p className="products-detail-quantity-label">
+                <AnimatedText>{t('productsDetail.quantityLabel')}</AnimatedText>
+              </p>
 
               <div className="products-detail-purchase-controls">
                 <div className="products-detail-quantity">
@@ -148,17 +202,30 @@ const ProductsDetail = ({ product }: ProductsDetailProps) => {
                   type="button"
                   className="products-detail-cart-button"
                   onClick={() => addToCart(product, quantity)}>
-                  {t('productsDetail.addToCart')}
+                  <AnimatedText>{t('productsDetail.addToCart')}</AnimatedText>
                 </button>
               </div>
-            </div>
+            </motion.div>
 
             {/* SCENT & FLAVOR */}
-            <div className="products-detail-scent">
-              <h2 className="font-serif">{t('productsDetail.scentTitle')}</h2>
+            <motion.div
+              className="products-detail-scent"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.65,
+                ease: [0.22, 1, 0.36, 1],
+              }}>
+              <h2 className="font-serif">
+                <AnimatedText>{t('productsDetail.scentTitle')}</AnimatedText>
+              </h2>
 
-              <p>{t(product.scentDescriptionKey)}</p>
-            </div>
+              <p>
+                <AnimatedText>{t(product.scentDescriptionKey)}</AnimatedText>
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>

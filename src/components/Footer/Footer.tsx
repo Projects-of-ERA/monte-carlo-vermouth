@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 
+import AnimatedText from '../AnimatedText/AnimatedText';
+
 import './Footer.css';
 
 const Footer = () => {
@@ -24,32 +26,48 @@ const Footer = () => {
         </div>
 
         <div className="footer-grid">
+          {/* MENU */}
           <div className="footer-column">
-            <h3>{t('footer.menu')}</h3>
+            <h3>
+              <AnimatedText>{t('footer.menu')}</AnimatedText>
+            </h3>
 
             <Link to={`${langPrefix}/products`}>
-              <span>{t('footer.shop')}</span>
+              <span>
+                <AnimatedText>{t('footer.shop')}</AnimatedText>
+              </span>
             </Link>
 
             <Link to={`${langPrefix}/vermouth`}>
-              <span>{t('footer.theVermouth')}</span>
+              <span>
+                <AnimatedText>{t('footer.theVermouth')}</AnimatedText>
+              </span>
             </Link>
 
             <Link to={`${langPrefix}/story`}>
-              <span>{t('footer.ourStory')}</span>
+              <span>
+                <AnimatedText>{t('footer.ourStory')}</AnimatedText>
+              </span>
             </Link>
 
             <Link to={`${langPrefix}/mixology`}>
-              <span>{t('footer.mixology')}</span>
+              <span>
+                <AnimatedText>{t('footer.mixology')}</AnimatedText>
+              </span>
             </Link>
 
             <Link to={`${langPrefix}/news`}>
-              <span>{t('footer.news')}</span>
+              <span>
+                <AnimatedText>{t('footer.news')}</AnimatedText>
+              </span>
             </Link>
           </div>
 
+          {/* SOCIAL */}
           <div className="footer-column">
-            <h3>{t('footer.social')}</h3>
+            <h3>
+              <AnimatedText>{t('footer.social')}</AnimatedText>
+            </h3>
 
             <a
               href="https://www.instagram.com/montecarlo_vermouth/"
@@ -66,28 +84,42 @@ const Footer = () => {
             </a>
           </div>
 
+          {/* LEGAL MENU */}
           <div className="footer-column">
-            <h3>{t('footer.legalMenu')}</h3>
+            <h3>
+              <AnimatedText>{t('footer.legalMenu')}</AnimatedText>
+            </h3>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>{t('footer.terms')}</span>
+              <span>
+                <AnimatedText>{t('footer.terms')}</AnimatedText>
+              </span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>{t('footer.cookies')}</span>
+              <span>
+                <AnimatedText>{t('footer.cookies')}</AnimatedText>
+              </span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>{t('footer.legalNotice')}</span>
+              <span>
+                <AnimatedText>{t('footer.legalNotice')}</AnimatedText>
+              </span>
             </a>
 
             <a href="#" onClick={(event) => event.preventDefault()}>
-              <span>{t('footer.privacy')}</span>
+              <span>
+                <AnimatedText>{t('footer.privacy')}</AnimatedText>
+              </span>
             </a>
           </div>
 
+          {/* CONTACT */}
           <div className="footer-column footer-contact">
-            <h3>{t('footer.contact')}</h3>
+            <h3>
+              <AnimatedText>{t('footer.contact')}</AnimatedText>
+            </h3>
 
             <a href="mailto:info@montecarlovermouth.com" className="footer-contact-link">
               <span>info@montecarlovermouth.com</span>
@@ -99,14 +131,22 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* BOTTOM */}
         <div className="footer-bottom">
           <div className="footer-bottom-left">
-            <p>© 2026 Monte Carlo Vermouth. {t('footer.copyright')}</p>
-            <p>{t('footer.responsibleDrinking')}</p>
+            <p>
+              © 2026 Monte Carlo Vermouth. <AnimatedText>{t('footer.copyright')}</AnimatedText>
+            </p>
+
+            <p>
+              <AnimatedText>{t('footer.responsibleDrinking')}</AnimatedText>
+            </p>
           </div>
 
           <div className="footer-bottom-right">
-            <p>{t('footer.licensedTrademark')}</p>
+            <p>
+              <AnimatedText>{t('footer.licensedTrademark')}</AnimatedText>
+            </p>
           </div>
         </div>
       </div>

@@ -144,8 +144,8 @@
 
 .news-detail-body p {
   margin-bottom: 25px;
-  font-size: 17px;
-  line-height: 1.85;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .news-detail-subtitle {
@@ -208,7 +208,7 @@
   opacity: 0.6;
 }
 
-.news-detail-navigation-link span {
+.news-detail-navigation-link > span {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -216,6 +216,7 @@
 }
 
 .news-detail-navigation-link h3 {
+  margin: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
